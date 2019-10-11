@@ -24,8 +24,23 @@ module.exports = {
     },
     {
       resolve: `gatsby-transformer-remark`,
-      options: {},
-      plugins: [],
+      options: {        
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 900,
+           },
+         },
+         {
+           resolve: `gatsby-remark-smartypants`,
+           options: {
+             dashes: "oldschool",
+             ellipse: false,
+           },
+         },
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`, 
