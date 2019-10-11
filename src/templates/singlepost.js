@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+// === REPLACE LAYOUT WITH ONE FOR POSTS ===
 // import Image from "gatsby-image"
 import BackgroundImage from 'gatsby-background-image'
 
@@ -22,7 +23,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(fields: { slug: { eq: $slug, ne: "Home page" } }) {
       frontmatter {
         title
         subtitle
