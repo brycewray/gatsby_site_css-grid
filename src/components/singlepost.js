@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
+import LayoutSinglePost from "./layout-singlepost"
 // === REPLACE LAYOUT WITH ONE FOR POSTS ===
 // import Image from "gatsby-image"
 import BackgroundImage from 'gatsby-background-image'
@@ -9,7 +9,7 @@ export default ({ data }) => {
   const post = data.markdownRemark
   let featuredImageFluid = post.frontmatter.featured_image.childImageSharp.fluid
   return (
-    <Layout>
+    <LayoutSinglePost>
       <BackgroundImage
         fluid={featuredImageFluid}
       >
@@ -17,7 +17,7 @@ export default ({ data }) => {
         <h2><em>{post.frontmatter.subtitle}</em></h2>
         </BackgroundImage>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-    </Layout>
+    </LayoutSinglePost>
   )
 }
 
@@ -35,6 +35,7 @@ export const query = graphql`
             }
           }
         }
+        discussionId
       }
       html
     }
