@@ -1,42 +1,28 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
+// import { Link } from "gatsby"
+// import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#0000a1`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+const Header = () => (
+  <header>
+  <p className="site-logo"><a href="/">BryceWray.com</a></p>
+  <input type="checkbox" id="nav-toggle" className="nav-toggle" aria-hidden="true" />
+  <label for="nav-toggle" className="nav__icon" aria-hidden="true">
+    Expand the menu
+      <span className="nav__icon-line"></span>
+      <span className="nav__icon-line"></span>
+      <span className="nav__icon-line"></span>
+  </label>
+  <nav role="navigation" className="nav">
+    <ul className="nav__items">
+      <li className="nav__item">
+        <a href="/about" title="About">About</a>
+      </li>
+      <li className="nav__item">
+        <a href="/posts" title="Posts">Posts</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
