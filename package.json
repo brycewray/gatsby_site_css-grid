@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@debiki/gatsby-plugin-talkyard": "^0.5.8",
     "babel-plugin-styled-components": "^1.10.6",
     "eslint": "^5.16.0",
     "eslint-plugin-flowtype": "^2.50.3",
@@ -19,6 +20,7 @@
     "gatsby-plugin-styled-components": "^3.1.9",
     "gatsby-remark-copy-linked-files": "^2.1.26",
     "gatsby-remark-images": "^3.1.26",
+    "gatsby-remark-numbered-footnotes": "^1.0.1",
     "gatsby-remark-smartypants": "^2.1.12",
     "gatsby-source-filesystem": "^2.1.29",
     "gatsby-transformer-remark": "^2.6.27",

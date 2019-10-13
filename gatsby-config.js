@@ -47,6 +47,7 @@ module.exports = {
              ellipse: false,
            },
          },
+         `gatsby-remark-numbered-footnotes`,
         ],
       },
     },
@@ -68,6 +69,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {},
+    },
+    {
+      resolve: `@debiki/gatsby-plugin-talkyard`,
+      options: {
+        talkyardServerUrl: 'https://comments-for-brycewray-com.talkyard.net',
+      },
     },
   ],
 }
