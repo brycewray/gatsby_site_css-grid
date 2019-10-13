@@ -1,6 +1,6 @@
 ---
 #layout: layouts/posts/singleposthero.njk
-#tags: post
+tags: post
 title: Roger, Copy
 subtitle: Keeping my .git together with Working Copy
 description: "How I now keep my site files “synced” across my devices—via Git and Working Copy."

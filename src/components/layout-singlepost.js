@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import SinglePostFooter from "./singlepost-footer"
 import Footer from "./footer"
 import "../assets/scss/ofotigrid.scss"
 
@@ -28,6 +29,7 @@ const LayoutSinglePost = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
+      <SinglePostFooter />
       <Footer />
     </>
   )

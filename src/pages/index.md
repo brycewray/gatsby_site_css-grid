@@ -1,5 +1,6 @@
 ---
 #layout: layouts/_default/index.njk
+tags: home
 title: "Home page"
 description: "brycewray.com: Opinions, observations, nerdiness, miscellany." # quotation marks to allow colon
 author: Bryce Wray
