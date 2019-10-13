@@ -12,16 +12,32 @@ export default ({ data }) => {
   let featuredImageFluid = post.frontmatter.featured_image.childImageSharp.fluid
   return (
     <>
-    <SEO title = {post.frontmatter.title} />
+    <SEO />
     <Header />
     <LayoutSinglePost>
       <BackgroundImage
-        fluid={featuredImageFluid}
+        fluid={featuredImageFluid} 
+        className="background-hero-div" 
+        alt={post.frontmatter.featured_image_alt}
       >
-        <h1>{post.frontmatter.title}</h1>
-        <h2><em>{post.frontmatter.subtitle}</em></h2>
+        <div className="background-hero-title-block">
+          <h1 className="background-hero-title-text">{post.frontmatter.title}</h1>
+          <h2 className="background-hero-subtitle-text"><em>{post.frontmatter.subtitle}</em></h2>
+          <p className="background-hero-description-text">{post.frontmatter.description}</p>
+          <p className="background-hero-p-text">
+            <span style={{ fontVariant: "small-caps" }}>published:</span>&nbsp; <strong>{post.frontmatter.date}</strong><br />
+            <span className="pokey">
+              <span style={{ fontVariant: "small-caps" }}>last modifed:</span>&nbsp; [lastmod conditional?]
+            </span>
+          </p>
+        </div>
         </BackgroundImage>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <p className="featured-image-caption">{post.frontmatter.featured_image_caption}</p>
+        <div className="post-line"></div>
+        <div className="container-narrower">
+          <article className="article" dangerouslySetInnerHTML={{ __html: post.html }}>
+          </article>
+        </div>
     </LayoutSinglePost>
     </>
   )
@@ -31,9 +47,11 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug, ne: "Home page" } }) {
       frontmatter {
+        description
         title
         subtitle
-        date
+        date(formatString: "MMMM DD, YYYY")
+        lastmod
         featured_image {
           childImageSharp {
             fluid(maxWidth: 1280) {
@@ -41,6 +59,8 @@ export const query = graphql`
             }
           }
         }
+        featured_image_alt
+        featured_image_caption
         discussionId
       }
       html
