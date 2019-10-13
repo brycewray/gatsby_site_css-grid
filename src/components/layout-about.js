@@ -13,7 +13,7 @@ import Footer from "./footer"
 import "../assets/scss/ofotigrid.scss"
 import SEO from "./seo"
 
-const Layout = ({ children }) => {
+const AboutLayout = ({ children }) => {
   return (
     <>
       <SEO />
@@ -24,8 +24,8 @@ const Layout = ({ children }) => {
   )
 }
 
-Layout.propTypes = {
+AboutLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default AboutLayout

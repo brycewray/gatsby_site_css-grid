@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import SEO from "./seo"
 
 import Header from "./header"
 import SinglePostFooter from "./singlepost-footer"
@@ -22,11 +23,22 @@ const LayoutSinglePost = ({ children }) => {
           title
         }
       }
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              title
+            }
+          }
+        }
+      }
     }
   `)
+  
 
   return (
     <>
+      <SEO title = { data.allMarkdownRemark.edges.node.frontmatter.title } />
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
       <SinglePostFooter />

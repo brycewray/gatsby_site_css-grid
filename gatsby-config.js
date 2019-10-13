@@ -1,8 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `brycewray.com`, // was Gatsby Default Starter
+    titleTemplate: "%s • brycewray.com",
     description: `brycewray.com — Opinions, observations, nerdiness.`,
     author: `@BryceWrayTX`,
+    url: "https://www.brycewray.com",
+    image: "/images/typewriter-monochrome_2242164_1280x720_60pct.jpg",
+    twitterUsername: "@BryceWrayTX",
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -48,6 +52,12 @@ module.exports = {
            },
          },
          `gatsby-remark-numbered-footnotes`,
+         {
+           resolve: `gatsby-plugin-google-analytics`,
+           options: {
+             trackingId: "UA-146418828-1",
+           },
+         },
         ],
       },
     },
