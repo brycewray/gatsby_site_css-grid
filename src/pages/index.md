@@ -8,6 +8,7 @@ date: 2018-09-14T21:00:00-05:00
 #draft: false
 #path: /
 #final-url:
+discussionId: "2018-09-home-page"
 featured_image: typewriter-monochrome_2242164_1280x720_60pct.jpg 
 ---
 
