@@ -8,9 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import SEO from "./seo"
-
-import Header from "./header"
 import SinglePostFooter from "./singlepost-footer"
 import Footer from "./footer"
 import "../assets/scss/ofotigrid.scss"
@@ -23,23 +20,15 @@ const LayoutSinglePost = ({ children }) => {
           title
         }
       }
-      allMarkdownRemark {
-        edges {
-          node {
-            frontmatter {
-              title
-            }
-          }
-        }
-      }
     }
   `)
-  
+  /*
+  Hidden paragraph below is only until I can determine what to do with the data query above, since Gatsby crashes with unused vars if I leave it but don't refer to "data" -- and it crashes for other reasons if I delete the query.
+  */
 
   return (
     <>
-      <SEO title = { data.allMarkdownRemark.edges.node.frontmatter.title } />
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <p style={{ display: "none" }}>{data.site.siteMetadata.title}</p>
       <main>{children}</main>
       <SinglePostFooter />
       <Footer />

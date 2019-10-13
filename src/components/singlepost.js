@@ -4,11 +4,16 @@ import LayoutSinglePost from "./layout-singlepost"
 // === REPLACE LAYOUT WITH ONE FOR POSTS ===
 // import Image from "gatsby-image"
 import BackgroundImage from 'gatsby-background-image'
+import SEO from "./seo"
+import Header from "./header"
 
 export default ({ data }) => {
   const post = data.markdownRemark
   let featuredImageFluid = post.frontmatter.featured_image.childImageSharp.fluid
   return (
+    <>
+    <SEO title = {post.frontmatter.title} />
+    <Header />
     <LayoutSinglePost>
       <BackgroundImage
         fluid={featuredImageFluid}
@@ -18,6 +23,7 @@ export default ({ data }) => {
         </BackgroundImage>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
     </LayoutSinglePost>
+    </>
   )
 }
 
