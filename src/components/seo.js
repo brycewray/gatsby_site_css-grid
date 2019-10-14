@@ -48,6 +48,8 @@ const SEO = ({ title, description, image, pathname, article }) => (
               <meta name="twitter:description" content={seo.description} />
             )}
             {seo.image && <meta name="twitter:image" content={seo.image} />}
+            
+            <script src="/js/twitterMeta.js" type="text/javascript" charset="utf-8" />
           </Helmet>
         </>
       )

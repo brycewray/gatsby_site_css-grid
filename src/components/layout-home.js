@@ -33,7 +33,7 @@ const HomeLayout = ({ children }) => {
           <p className="text-sans-serif"><a href="/posts"><strong>All posts</strong></a></p>
           <h3 className="h5 twitter-border">Tweets by&nbsp;<a href="https://twitter.com/BryceWrayTX" target="_blank" rel="noopener noreferrer">@BryceWrayTX</a></h3>
           <p className="teeny"><strong>Note</strong>: Some retweets with added comments won&rsquo;t show the original&nbsp;tweets unless you click or tap on&nbsp;them.</p>
-          <a className="twitter-timeline" data-chrome="noheader transparent" data-tweet-limits="3" data-dnt="true" data-border-color="#656565" href="https://twitter.com/BryceWrayTX?rel_src=twsrc%5Etfw">Tweets by BryceWrayTX</a>
+          <a className="twitter-timeline" data-chrome="noheader transparent" data-tweet-limit="3" data-dnt="true" data-border-color="#656565" href="https://twitter.com/BryceWrayTX?ref_src=twsrc%5Etfw">Tweets by BryceWrayTX</a>
         </div>
       </div>
       <Footer />
