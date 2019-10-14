@@ -1,18 +1,15 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
+import HomeLayout from "../components/layout-home"
 import SEO from "../components/seo"
-import BackgroundImage from "gatsby-background-image"
 
 export default ({ data }) => {
   const HomePage = data.markdownRemark
-  let featuredImageFluid = HomePage.frontmatter.featured_image.childImageSharp.fluid
   return (
-    <Layout>
+    <HomeLayout>
       <SEO title="Home" />
-      <BackgroundImage fluid={featuredImageFluid}><h1 style={{ color: "white" }}>Some text here in the background</h1></BackgroundImage>
       <div dangerouslySetInnerHTML={{ __html: HomePage.html }} />
-    </Layout>
+    </HomeLayout>
   )
 } 
 
