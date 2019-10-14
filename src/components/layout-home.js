@@ -12,6 +12,7 @@ import Header from "./header"
 import Footer from "./footer"
 import "../assets/scss/ofotigrid.scss"
 import SEO from "./seo"
+// import PostsListHome from "./postslist-home"
 
 const HomeLayout = ({ children }) => {
   return (
@@ -27,9 +28,7 @@ const HomeLayout = ({ children }) => {
         </div>
         <div className="column-home">
           <h2 className="h1" style={{ marginBottom: "0.5em" }}>Latest posts</h2>
-          <div>
-            [Posts loop query results -- latest two]
-          </div>
+          [This is where PostsListHome will go when it works -- REMEMBER TO UNCOMMENT IT ABOVE!!]
           <p className="text-sans-serif"><a href="/posts"><strong>All posts</strong></a></p>
           <h3 className="h5 twitter-border">Tweets by&nbsp;<a href="https://twitter.com/BryceWrayTX" target="_blank" rel="noopener noreferrer">@BryceWrayTX</a></h3>
           <p className="teeny"><strong>Note</strong>: Some retweets with added comments won&rsquo;t show the original&nbsp;tweets unless you click or tap on&nbsp;them.</p>
