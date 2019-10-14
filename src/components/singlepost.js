@@ -27,7 +27,7 @@ export default ({ data }) => {
           <p className="background-hero-p-text">
             <span style={{ fontVariant: "small-caps" }}>published:</span>&nbsp; <strong>{post.frontmatter.date}</strong><br />
             <span className="pokey">
-              <span style={{ fontVariant: "small-caps" }}>last modifed:</span>&nbsp; [lastmod conditional?]
+              <span style={{ fontVariant: "small-caps" }}>last modified:</span>&nbsp; [lastmod conditional?]
             </span>
           </p>
         </div>
