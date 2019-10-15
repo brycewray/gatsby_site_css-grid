@@ -28,7 +28,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: {frontmatter: {tags: {eq: "post"}}}, sort: {fields: frontmatter___date}) {
+    allMarkdownRemark(filter: {frontmatter: {tags: {eq: "post"}}}, sort: {order: DESC, fields: frontmatter___date}) {
       totalCount
       edges {
         node {
