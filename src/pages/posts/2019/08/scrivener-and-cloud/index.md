@@ -1,19 +1,19 @@
 ---
-layout: layouts/posts/singleposthero.njk
+#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Scrivener and The Cloud
 subtitle: Cutting through the fog (maybe)
 description: "When even Ars Technica’s forum users can’t keep this straight, intervention is necessary."
-author: Bryce Wray
+#author: Bryce Wray
 date: 2019-08-18
 #final_date: 2019-08-18
 #lastmod:
-idx: 28
-draft: false # note!
-actual_path: /content/posts/2019/08/scrivener-and-cloud
-final_url: /posts/2019/08/scrivener-and-cloud
+#idx: 28
+#draft: false # note!
+#actual_path: /content/posts/2019/08/scrivener-and-cloud
+#final_url: /posts/2019/08/scrivener-and-cloud
 discussionId: "2019-08-scrivener-and-cloud"
-featured_image: /images/scriv-and-cloud-from-3331240_1280x720_60pct_prog.jpg
+featured_image: ./scriv-and-cloud-from-3331240_1280x720.jpg
 featured_image_alt: Scrivener logo and cloud computing icon
 featured_image_caption: "Images: Literature and Latte; Pixabay" # quotation marks to allow colon
 ---

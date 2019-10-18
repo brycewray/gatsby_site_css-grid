@@ -1,19 +1,19 @@
 ---
-layout: layouts/posts/singleposthero.njk
+#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Now I’m sixty-four
 subtitle: Amending my obligatory earworm
 description: "Having reached this milestone-of-sorts, I offer some different wording for a Lennon/McCartney classic that suits me today."
-author: Bryce Wray
+#author: Bryce Wray
 date: 2019-09-06
 lastmod: 2019-09-10
-idx: 30
+#idx: 30
 #final_date: 2019-09-06T06:40:00-05:00
 #draft: Note!
-actual_path: /content/posts/2019/09/now-im-sixty-four
-final_url: /posts/2019/09/now-im-sixty-four
+#actual_path: /content/posts/2019/09/now-im-sixty-four
+#final_url: /posts/2019/09/now-im-sixty-four
 discussionId: "2019-09-now-im-sixty-four"
-featured_image: /images/chevrolet-1955-stylized-829805_1280x720_60pct_prog.jpg
+featured_image: //chevrolet-1955-stylized-829805_1280x720.jpg
 featured_image_alt: Stylized view of a deep blue 1955 Chevrolet Bel Air two-door automobile
 featured_image_caption: "Original image: Pixabay; edited in Affinity Photo" # quotation marks to allow colon
 ---

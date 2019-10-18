@@ -1,24 +1,24 @@
 ---
-layout: layouts/posts/singleposthero.njk
+#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Back with Hugo
 subtitle: "Well, that didn't last long"
 description: "Even for me, this switcheroo was quick, as the prodigal comes crawling back to Hugo."
-author: Bryce Wray
+#author: Bryce Wray
 date: 2019-09-20
 #final_date: 2019-09-20
 lastmod: 2019-10-11
-idx: 32
+#idx: 32
 #draft: Note!
-actual_path: /content/posts/2019/09/back-with-hugo
-final_url: /posts/2019/09/back-with-hugo
+#actual_path: /content/posts/2019/09/back-with-hugo
+#final_url: /posts/2019/09/back-with-hugo
 discussionId: "2019-09-back-with-hugo"
-featured_image: /images/skid-mark-567668_1280x720_60pct.jpg
+featured_image: ./skid-mark-567668_1280x720.jpg
 featured_image_alt: "Skid marks on asphalt"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
-<div class="yellowBox">
+<div className="yellowBox">
   <p><strong>Note</strong>: See also <a href="/posts/2019/10/otoh">this post</a> for why this post went away and, more to the point, why it&rsquo;s back.</p>
 </div>
 

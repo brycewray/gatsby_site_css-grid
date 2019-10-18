@@ -1,19 +1,19 @@
 ---
-layout: layouts/posts/singleposthero.njk
+#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Getting framed
 subtitle: Why I still use Bootstrap
 description: "In an ideal world, Web devs would never use CSS frameworks, but we’re not in that world: why I still use Bootstrap."
-author: Bryce Wray
+#author: Bryce Wray
 date: 2018-11-14
 lastmod: 2018-11-28
-idx: 8
+#idx: 8
 final_date: 2018-11-14T15:09:00-06:00
-draft: false # note!
-actual_path: /content/posts/2018/11/getting-framed
+#draft: false # note!
+#actual_path: /content/posts/2018/11/getting-framed
 discussionId: "2018-11-getting-framed"
-final_url: /posts/2018/11/getting-framed/
-featured_image: /images/scaffolding-1617969_1280x720_60pct_prog.jpg
+#final_url: /posts/2018/11/getting-framed/
+featured_image: ./scaffolding-1617969_1280x720.jpg
 featured_image_alt: Scaffolding for a building, with construction workers climbing and working within
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
@@ -24,11 +24,11 @@ Breaking news: we don’t live in an ideal world.
 
 Each client wants its site or site modifications finished yesterday, to perfection, and for free—not necessarily in that order, but you get the point. Site-load time, including the [infamous Time to First Byte (TTFB)](https://developers.google.com/web/tools/chrome-devtools/network-performance/understanding-resource-timing#slow_time_to_first_byte), is critical. And, while browsers have advanced a lot in the last three or four years, [not everybody is using the latest and greatest](http://gs.statcounter.com/browser-version-market-share) and, besides, [there are still some CSS shortcomings among even recent browser versions](https://www.w3schools.com/cssref/css3_browsersupport.asp).
 
-<hr style="border: 1px solid #666;" />
+<hr style={{ border: "1px solid #666" }} />
 
 _**Note**: I, uh, kinda [re-thought this](/posts/2018/11/grid-locked-no-more) a few days later, but go ahead and read this one first so you’ll have some perspective on that post._
 
-<hr style="border: 1px solid #666;" />
+<hr style={{ border: "1px solid #666" }} />
 
 ## Frickin’ frameworks?
 
@@ -60,6 +60,6 @@ As for CSS Grid, it’s undeniably cool. As time and events allow, I will learn 
 In the meantime, in our non-ideal world: when the decision is totally up to me, I’m Bootstrappin’.
 
 <p>&nbsp;</p>
-<hr style="border: 1px solid #666;" />
+<hr style={{ border: "1px solid #666" }} />
 
 _**Note**: Many thanks to Carol Skelly for “[Bootstrap (Flexbox) is still better than CSS Grid for creating layouts](https://medium.com/wdstack/bootstrap-is-still-better-than-css-grid-for-creating-layouts-522b7baf0411),” and Maria Antonietta Perna for “[The CSS Grid layout vs. CSS frameworks debate](https://www.sitepoint.com/css-grid-layout-vs-css-frameworks-debate/).”_

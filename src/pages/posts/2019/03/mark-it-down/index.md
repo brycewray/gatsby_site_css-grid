@@ -1,19 +1,19 @@
 ---
-layout: layouts/posts/singleposthero.njk
+#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Mark it down 
 subtitle: Plain but pretty
 description: "Markdown: how to have that plain-text cake and still eat it with formatting intact."
-author: Bryce Wray
+#author: Bryce Wray
 date: 2019-03-08
 #final_date: 2019-03-08
 lastmod: 2019-10-02
-idx: 16
-draft: false # note!
-actual_path: /content/posts/2019/03/mark-it-down
+#idx: 16
+#draft: false # note!
+#actual_path: /content/posts/2019/03/mark-it-down
 discussionId: "2019-03-mark-it-down"
-final_url: /posts/2019/03/mark-it-down
-featured_image: /images/ugly-duckling-young-swan-1639154_1280x720_60pct_prog.jpg
+#final_url: /posts/2019/03/mark-it-down
+featured_image: ./ugly-duckling-young-swan-1639154_1280x720.jpg
 featured_image_alt: A baby swan swimming
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

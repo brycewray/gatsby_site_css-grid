@@ -1,19 +1,19 @@
 ---
-layout: layouts/posts/singleposthero.njk
+#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Make games, not war
 subtitle: "Hey, MLB and NFL: time to unify" # quotation marks to allow colon
 description: "I take a break from my “techy” stuff to opine on more logical layouts for Major League Baseball and the National Football League."
-author: Bryce Wray
+#author: Bryce Wray
 date: 2019-08-03
 #final_date: 2019-08-03
 lastmod: 2019-08-07
-idx: 27
-draft: false # note!
-actual_path: /content/posts/2019/08/make-games-not-war
-final_url: /posts/2019/08/make-games-not-war
+#idx: 27
+#draft: false # note!
+#actual_path: /content/posts/2019/08/make-games-not-war
+#final_url: /posts/2019/08/make-games-not-war
 discussionId: "2019-08-make-games-not-war"
-featured_image: /images/stadium-seats-3310891_1280x720_60pct_prog.jpg
+featured_image: ./stadium-seats-3310891_1280x720.jpg
 featured_image_alt: Rows of empty seats in a sports stadium
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
@@ -44,7 +44,7 @@ Thus, I offer this modest proposal for peace in our time for the two sticklers. 
 
 ## How I'd arrange MLB
 
-<table class="leagues">
+<table className="leagues">
 	<tr>
 		<td><strong>WEST</strong></td>
 		<td><strong>NORTH</strong></td>
@@ -124,7 +124,7 @@ The NFL's divisions already are arranged by the compass within each conference (
 
 Anyway, here we go .&nbsp;.&nbsp;.
 
-<table class="leagues">
+<table className="leagues">
 	<tr>
 		<td><strong>WEST</td>
 		<td><strong>NORTH</td>

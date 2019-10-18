@@ -1,18 +1,18 @@
 ---
-layout: layouts/posts/singleposthero.njk
+#layout: layouts/posts/singleposthero.njk
 tags: post
 title: The version-control follies
 subtitle: Life’s too short for CLI
 description: Why you should go GUI with version control.
-author: Bryce Wray
+#author: Bryce Wray
 date: 2018-10-06
 lastmod: 2019-07-14
-idx: 3
-draft: false # note!!
-actual_path: /content/posts/2018/10/version-control-follies.md
+#idx: 3
+#draft: false # note!!
+#actual_path: /content/posts/2018/10/version-control-follies.md
 discussionId: "2018-10-version-control-follies"
-final_url: /posts/2018/10/version-control-follies/
-featured_image: /images/Sourcetree-screen-shot_blur_1280x720_60pct_prog.jpg
+#final_url: /posts/2018/10/version-control-follies/
+featured_image: ./Sourcetree-screen-shot_1280x720.jpg
 featured_image_alt: Screen capture of Sourcetree software
 ---
 

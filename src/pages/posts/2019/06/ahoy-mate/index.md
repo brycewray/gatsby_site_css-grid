@@ -1,19 +1,19 @@
 ---
-layout: layouts/posts/singleposthero.njk
+#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Ahoy, ’Mate
 subtitle: Considering MailMate
 description: "My last post notwithstanding, “the geek’s prerogative” makes it okay to try other email apps—like MailMate."
-author: Bryce Wray
+#author: Bryce Wray
 date: 2019-06-08
 #final_date: 2019-06-08
 lastmod: 2019-07-25
-idx: 22
-draft: false # note!
-actual_path: /content/posts/2019/06/ahoy-mate
-#discussionId: "2019-06-ahoy-mate" -- assign later when possible
-final_url: /posts/2019/06/ahoy-mate
-featured_image: /images/MailMate_screen_cap_1280x720_60pct_prog.jpg
+#idx: 22
+#draft: false # note!
+#actual_path: /content/posts/2019/06/ahoy-mate
+discussionId: "2019-06-ahoy-mate"
+#final_url: /posts/2019/06/ahoy-mate
+featured_image: ./MailMate_screen_cap_1280x720.jpg
 featured_image_alt: Screen capture of the MailMate app
 featured_image_caption: "MailMate, with its Latin-displaying “distortion mode” engaged for privacy’s sake" # quotation marks to allow colon
 ---
@@ -100,4 +100,4 @@ However, the answers were "No" and "No." The [changes in Apple Mail in Catalina]
 
 My tweet tonight says it all:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Bought a license for, and became a patron of, <a href="https://twitter.com/mailmateapp?ref_src=twsrc%5Etfw">@mailmateapp</a>. Very impressed with the software and the developer, as I made clear in my recent post: <a href="https://t.co/ErdQPfeAps">https://t.co/ErdQPfeAps</a></p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1138614802518020096?ref_src=twsrc%5Etfw">June 12, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Bought a license for, and became a patron of, <a href="https://twitter.com/mailmateapp?ref_src=twsrc%5Etfw">@mailmateapp</a>. Very impressed with the software and the developer, as I made clear in my recent post: <a href="https://t.co/ErdQPfeAps">https://t.co/ErdQPfeAps</a></p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1138614802518020096?ref_src=twsrc%5Etfw">June 12, 2019</a></blockquote>

@@ -1,19 +1,19 @@
 ---
-layout: layouts/posts/singleposthero.njk
+#layout: layouts/posts/singleposthero.njk
 tags: post
 title: iA for IO? 
 subtitle: Evaluating iA Writer for use with an SSG
 description: "A re-consideration of using iA Writer in making Markdown files for this site’s posts."
-author: Bryce Wray
+#author: Bryce Wray
 date: 2019-02-03
 #final_date: 2019-02-19
 lastmod: 2019-10-02
-idx: 12
-draft: false # note!
-actual_path: /content/posts/2019/02/ia-for-io
+#idx: 12
+#draft: false # note!
+#actual_path: /content/posts/2019/02/ia-for-io
 discussionId: "2019-02-ia-for-io"
-final_url: /posts/2019/02/ia-for-io
-featured_image: /images/notebook-933362_1280x720_60pct_prog.jpg
+#final_url: /posts/2019/02/ia-for-io
+featured_image: ./notebook-933362_1280x720.jpg
 featured_image_alt: Stylized photograph of notebook and, in blurry background, a pencil
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
@@ -32,7 +32,7 @@ Perhaps more to the point, I believe I was more concerned about how the TOML (li
 
 ## Footnote follies
 
-<img class="containedImage lazyload" data-src="/images/iA-Writer-inline-footnotes_1548x582.png" alt="Screen capture from iA Writer software showing how footnotes look in it">
+![Screen capture from iA Writer software showing how footnotes look in it](./iA-Writer-inline-footnotes_1548x582.png)
 
 
 That said, iA Writer's inline footnotes, while fine for export from iA Writer, don't fit [Pandoc](https://pandoc.org) standards, which are baked into how some SSGs "think" when converting Markdown to HTML for a site. So, while Pandoc-standard inline footnotes look bad in iA Writer, they work fine in an SSG.^["Inline notes are easier to write, since you don't have to pick an identifier and move down to type the note." See [here](https://github.com/Witiko/markdown/issues/3)---the source of that quote---for an example of what I mean.] However, that is something where Ulysses easily beats iA Writer for this stuff, since the inline footnotes in Ulysses---that is to say, all the ones I've included on [my other posts](/posts) before this one---work perfectly with an SSG. Same is true for [Typora](https://typora.io), as well.

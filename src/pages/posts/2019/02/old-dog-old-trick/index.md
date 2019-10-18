@@ -1,19 +1,19 @@
 ---
-layout: layouts/posts/singleposthero.njk
+#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Old dog learns old trick 
 subtitle: How’d I miss this way to fool IE?
 description: A major ”Do’h” moment in the never-ending battle against Internet Explorer.
-author: Bryce Wray
+#author: Bryce Wray
 date: 2019-02-16
 #final_date: 2019-02-16
 lastmod: 2019-08-09
-idx: 13
-draft: false # note!
-actual_path: /content/posts/2019/02/old-dog-old-trick
+#idx: 13
+#draft: false # note!
+#actual_path: /content/posts/2019/02/old-dog-old-trick
 discussionId: "2019-02-old-dog-old-trick"
-final_url: /posts/2019/02/old-dog-old-trick
-featured_image: /images/dog-2514968_1280x720_60pct_prog.jpg
+#final_url: /posts/2019/02/old-dog-old-trick
+featured_image: ./dog-2514968_1280x720.jpg
 featured_image_alt: Face of an old dog
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
@@ -111,4 +111,4 @@ Woof.
 
 *And, oh, yes: my continued thanks to [Chris Rosser](https://chrisrosser.net) for tweeting* (below) *about my last post. As he might say: "Thanks, mate!"*
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you are a fan of, or contemplating using, iA Writer, I recommend <a href="https://twitter.com/BryceWrayTX?ref_src=twsrc%5Etfw">@BryceWrayTX</a> blog post. While our workflows are different, our ends and opinions are the same!<a href="https://t.co/Oeoaacz8z8">https://t.co/Oeoaacz8z8</a></p>&mdash; Chris Rosser (@CRosserAuthor) <a href="https://twitter.com/CRosserAuthor/status/1095457720709263360?ref_src=twsrc%5Etfw">February 12, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote className="twitter-tweet"><p lang="en" dir="ltr">If you are a fan of, or contemplating using, iA Writer, I recommend <a href="https://twitter.com/BryceWrayTX?ref_src=twsrc%5Etfw">@BryceWrayTX</a> blog post. While our workflows are different, our ends and opinions are the same!<a href="https://t.co/Oeoaacz8z8">https://t.co/Oeoaacz8z8</a></p>&mdash; Chris Rosser (@CRosserAuthor) <a href="https://twitter.com/CRosserAuthor/status/1095457720709263360?ref_src=twsrc%5Etfw">February 12, 2019</a></blockquote>

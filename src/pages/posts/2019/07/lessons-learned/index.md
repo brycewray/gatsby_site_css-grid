@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+#layout: layouts/posts/singleposthero.njk
 title: Lessons learned
 tags: post
 subtitle: What I found while trying other SSGs
@@ -7,17 +7,17 @@ description: During my ill-fated (and ultimately wrong-headed) attempt to conver
 date: 2019-07-21
 #finaldate: 2019-07-27
 lastmod: 2019-10-11
-idx: 25
-draft: false
-actual_path: /content/posts/2019/07/lessons-learned
-final_url: /posts/2019/07/lessons-learned
+#idx: 25
+#draft: false
+#actual_path: /content/posts/2019/07/lessons-learned
+#final_url: /posts/2019/07/lessons-learned
 discussionId: "2019-07-lessons-learned"
-featured_image: /images/binoculars-4143165_1280x719_60pct.jpg
+featured_image: ./binoculars-4143165_1280x719.jpg
 featured_image_alt: A binocular telescope on a stand near a body of water
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
-<div class="yellowBox">
+<div className="yellowBox">
   <p><strong>Note</strong>: See also <a href="/posts/2019/10/otoh">this post</a> for why this post went away and, more to the point, why it&rsquo;s back.</p>
 </div>
 
@@ -51,11 +51,11 @@ Well, I want to tell you: in my admittedly limited research, I found this  to be
 
 More often than not, they lack---and their developers show almost a nonchalance about the importance of---"smart" typography (*e.g.*, see [this](https://github.com/getzola/zola/issues/740) regarding the oddly Hugo-like [Zola](https://www.getzola.org) SSG). So, if *you* can put up with&nbsp;.&nbsp;.&nbsp;.
 
-<p style="font-size: 1.5em; font-weight: normal; font-family: serif;  text-align: center;">goofy-lookin' &quot;punctuation&quot; like this</p>
+<p style={{ fontSize: "1.5em", fontWeight: "normal", fontFamily: "serif",  textAlign: "center" }}>goofy-lookin' &quot;punctuation&quot; like this</p>
 
 .&nbsp;.&nbsp;. as opposed to .&nbsp;.&nbsp;.
 
-<p style="font-size: 1.5em; font-weight: normal; font-family: serif; text-align: center;">nice-lookin&rsquo; &ldquo;punctuation&rdquo; like this</p>
+<p style={{ fontSize: "1.5em", fontWeight: "normal", fontFamily: "serif",  textAlign: "center" }}>nice-lookin&rsquo; &ldquo;punctuation&rdquo; like this</p>
 
 .&nbsp;.&nbsp;. fine. I choose otherwise.
 
@@ -65,12 +65,12 @@ First, understand how easy we Hugo users have it where SCSS/SASS compatibility i
 
 [^ofoti]: That weird file name is from when I originally had considered calling this site *ofoti.com*---a domain which I own---with *OFOTI* standing whimsically for *Old Fart on the Internet*. However, I thought better of it, especially after I learned that the name *Ofoti* had, in fact, [already been used as the title of a prize-winning play](https://en.wikipedia.org/wiki/John_Wheatcroft).
 
-```html {% raw %}
+```html
 <!-- CSS/SCSS -->
 {{ $sass := resources.Get "scss/ofotigrid.scss" }}
 {{ $style := $sass | resources.ToCSS }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-{% endraw %} ```
+```
 
 (**Note**: If you're bothered by the Go code in there, you're apparently not alone. I'll address that below.)
 

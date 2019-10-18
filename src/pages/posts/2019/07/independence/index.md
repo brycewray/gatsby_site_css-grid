@@ -1,19 +1,19 @@
 ---
-layout: layouts/posts/singleposthero.njk
+#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Independence
 subtitle: Thirty-five years a Mac lover
 description: "Thirty-five years ago this week, I encountered a Mac for the first time, and it literally changed my life."
-author: Bryce Wray
+#author: Bryce Wray
 date: 2019-07-06
 #final_date: 2019-07-06
 #lastmod
-idx: 23
-draft: false # note!
-actual_path: /content/posts/2019/07/independence
-final_url: /posts/2019/07/independence
+#idx: 23
+#draft: false # note!
+#actual_path: /content/posts/2019/07/independence
+#final_url: /posts/2019/07/independence
 discussionId: "2019-07-independence"
-featured_image: /images/1984-07-11_01_retouched_1280x720_60pct_prog.jpg
+featured_image: ./1984-07-11_01_retouched_1280x720.jpg
 featured_image_alt: Me, in 1984, eagerly wrapping my new Macintosh.
 featured_image_caption: "July 11, 1984: A much younger and skinnier me eagerly unwraps my new “Skinny Mac.” (Photo by my overly tolerant spouse.)" # quotation marks to allow colon
 ---

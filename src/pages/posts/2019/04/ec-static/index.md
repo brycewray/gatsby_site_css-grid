@@ -1,19 +1,19 @@
 ---
-layout: layouts/posts/singleposthero.njk
+#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Ec-static 
 subtitle: How to go Hugo
 description: "Some tips for ordinary non-geeks on using the Hugo static site generator to create and maintain their own Web sites."
-author: Bryce Wray
+#author: Bryce Wray
 date: 2019-04-07
 lastmod: 2019-10-02
-idx: 17
+#idx: 17
 #final_date: 2019-04-07T14:00:00-05:00
-draft: false # note!
-actual_path: /content/posts/2019/04/ec-static
+#draft: false # note!
+#actual_path: /content/posts/2019/04/ec-static
 discussionId: "2019-04-ec-static"
-final_url: /posts/2019/04/ec-static
-featured_image: /images/server-1235959_1280x720_60pct_prog.jpg
+#final_url: /posts/2019/04/ec-static
+featured_image: ./server-1235959_1280x720.jpg
 featured_image_alt: Internet server
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
@@ -53,7 +53,7 @@ These instructions are based heavily on Hugo's [Quick Start page](https://gohugo
 
 ## Steps to a static site
 
-<span style="color: #d10000;">**IMPORTANT**</span>:
+<span style={{ color: "#d10000" }}>**IMPORTANT**</span>:
 
 - All of these instructions presume you have **full administrative rights** to the system you're using, whether it's a Mac, a Windows PC, or a Linux system. If you don't, stop now because you simply won't be able to do it (and shouldn't be trying). Period.
 - Each time you see a command to enter, make it easier on yourself and just **copy/paste** it from the&nbsp;.&nbsp;.&nbsp;.

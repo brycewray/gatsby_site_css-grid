@@ -7,13 +7,13 @@ description: "Microsoft’s decision about Edge is important on many levels."
 #author: Bryce Wray
 date: 2018-12-07
 #final_date: 2018-12-07
-# lastmod
+#lastmod
 #idx: 10
 #draft: false # note!
 #actual_path: /content/posts/2018/12/on-edge
 discussionId: "2018-12-on-edge"
 #final_url: /posts/2018/12/on-edge/
-featured_image: MS-Edge-logo-and-bkgd_1280x720_60pct_prog.jpg
+featured_image: ./MS-Edge-logo-and-bkgd_1280x720_60pct_prog.jpg
 featured_image_alt: Logos for Microsoft Edge and Chromium
 featured_image_caption: "Images: DeviantArt; The Chromium Projects" # quotation marks to allow colon
 ---

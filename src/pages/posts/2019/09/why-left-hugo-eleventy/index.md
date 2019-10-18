@@ -1,24 +1,24 @@
 ---
-layout: layouts/posts/singleposthero.njk
+#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Why I left Hugo for Eleventy
 subtitle: "The quest to learn more"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
-author: Bryce Wray
+#author: Bryce Wray
 date: 2019-09-08
 #final_date: 2019-09-08
 lastmod: 2019-10-11
-idx: 31
+#idx: 31
 #draft: Note!
-actual_path: /content/posts/2019/09/why-left-hugo-eleventy
-final_url: /posts/2019/09/why-left-hugo-eleventy
+#actual_path: /content/posts/2019/09/why-left-hugo-eleventy
+#final_url: /posts/2019/09/why-left-hugo-eleventy
 discussionId: "2019-09-why-left-hugo-eleventy"
-featured_image: /images/detour-2496197_1280x720_60pct.jpg
+featured_image: ./detour-2496197_1280x720.jpg
 featured_image_alt: "Orange road sign, “DETOUR AHEAD”"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
-<div class="yellowBox">
+<div className="yellowBox">
   <p><strong>Note</strong>: See also <a href="/posts/2019/10/otoh">this post</a> for why this post went away and, more to the point, why it&rsquo;s back.</p>
 </div>
 
@@ -201,11 +201,11 @@ It doesn't build a site as quickly as Hugo---nothing beats Hugo on that score---
 
 While we're on the subject of speed: while I was working on this post, I saw these Leatherman tweets from, respectively, his personal account and the Eleventy account:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Which has a better First Meaningful Paint time?<br><br>① a raw 8.5MB HTML file with the full text of every single one of my 27,506 tweets<br>② a client rendered React site with exactly one tweet on it<br><br>(Spoiler: <a href="https://twitter.com/____lighthouse?ref_src=twsrc%5Etfw">@____lighthouse</a> reports 8.5MB of HTML wins by about 200ms)</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/1169998370041208832?ref_src=twsrc%5Etfw">September 6, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote className="twitter-tweet"><p lang="en" dir="ltr">Which has a better First Meaningful Paint time?<br><br>① a raw 8.5MB HTML file with the full text of every single one of my 27,506 tweets<br>② a client rendered React site with exactly one tweet on it<br><br>(Spoiler: <a href="https://twitter.com/____lighthouse?ref_src=twsrc%5Etfw">@____lighthouse</a> reports 8.5MB of HTML wins by about 200ms)</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/1169998370041208832?ref_src=twsrc%5Etfw">September 6, 2019</a></blockquote>
 
 React. Hmm. Wonder whom he might be zinging there?
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Eleventy seems to handle this 30MB twitter archive JSON and output 27500 files from a single pagination template. 😅 <a href="https://t.co/VTAcXU53be">pic.twitter.com/VTAcXU53be</a></p>&mdash; Eleventy (@eleven_ty) <a href="https://twitter.com/eleven_ty/status/1170187490952712192?ref_src=twsrc%5Etfw">September 7, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote className="twitter-tweet"><p lang="en" dir="ltr">Eleventy seems to handle this 30MB twitter archive JSON and output 27500 files from a single pagination template. 😅 <a href="https://t.co/VTAcXU53be">pic.twitter.com/VTAcXU53be</a></p>&mdash; Eleventy (@eleven_ty) <a href="https://twitter.com/eleven_ty/status/1170187490952712192?ref_src=twsrc%5Etfw">September 7, 2019</a></blockquote>
 
 Good job, sir. In the case of that last tweet in particular: given the Gatsby team's continual boasting about how they can handle massive amounts of data with ease, I hope you're making them sweat, even if just a little.[^tweetEase]
 

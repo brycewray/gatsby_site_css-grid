@@ -1,24 +1,24 @@
 ---
-layout: layouts/posts/singleposthero.njk
+#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Why I’m staying with Hugo
 subtitle: An “interesting” learning experience
 description: After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo.
-author: Bryce Wray
+#author: Bryce Wray
 date: 2019-07-14
 #final_date: 2019-07-14
 lastmod: 2019-10-11
-idx: 24
-draft: false
-actual_path: /content/posts/2019/07/why-staying-with-hugo
-final_url: /posts/2019/07/why-staying-with-hugo
+#idx: 24
+#draft: false
+#actual_path: /content/posts/2019/07/why-staying-with-hugo
+#final_url: /posts/2019/07/why-staying-with-hugo
 discussionId: "2019-07-why-staying-with-hugo"
-featured_image: /images/hugo-logo-16x9.svg
+featured_image: ./hugo-logo-16x9.svg #or ./hugo-logo-on-black-1280x720.png
 featured_image_alt: Logo for the Hugo static site generator.
 featured_image_caption: "Image: Hugo logo by Hugo creator Steve Francia, sourced from gohugo.io."
 ---
 
-<div class="yellowBox">
+<div className="yellowBox">
 	<p><strong>Note</strong>: To put it simply, <a href="/posts/2019/09/why-left-hugo-eleventy">things</a> <a href="/posts/2019/09/back-with-hugo">have</a> <a href="/posts/2019/10/its-about-food-not-decor">changed</a> multiple times since this post, but it reflects my thinking at the time and also provides what I hope are some useful <em>caveats</em>, so <a href="/posts/2019/10/otoh">here it shall&nbsp;stay</a>.</p>
 </div>
 
@@ -254,7 +254,7 @@ Early that afternoon, my mind finally at rest about it all, I tweeted:[^BEP]
 
 [^BEP]: I confess to being extremely pleased that, later that afternoon, none other than [@bepsays](https://twitter.com/bepsays) himself (Bjørn Erik Pedersen, the lead developer of Hugo) "liked" that tweet.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Will have more to say about this in a future post, butl am keeping <a href="https://t.co/QPSmjqXwft">https://t.co/QPSmjqXwft</a> firmly within <a href="https://twitter.com/GoHugoIO?ref_src=twsrc%5Etfw">@GoHugoIO</a> after three weekends’ worth of experimentation with <a href="https://twitter.com/gatsbyjs?ref_src=twsrc%5Etfw">@gatsbyjs</a> and some other kewl kids. <a href="https://twitter.com/hashtag/StayWithTheBest?src=hash&amp;ref_src=twsrc%5Etfw">#StayWithTheBest</a></p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1150104013871955971?ref_src=twsrc%5Etfw">July 13, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Will have more to say about this in a future post, butl am keeping <a href="https://t.co/QPSmjqXwft">https://t.co/QPSmjqXwft</a> firmly within <a href="https://twitter.com/GoHugoIO?ref_src=twsrc%5Etfw">@GoHugoIO</a> after three weekends’ worth of experimentation with <a href="https://twitter.com/gatsbyjs?ref_src=twsrc%5Etfw">@gatsbyjs</a> and some other kewl kids. <a href="https://twitter.com/hashtag/StayWithTheBest?src=hash&amp;ref_src=twsrc%5Etfw">#StayWithTheBest</a></p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1150104013871955971?ref_src=twsrc%5Etfw">July 13, 2019</a></blockquote>
 
 ## "Interesting," indeed
 

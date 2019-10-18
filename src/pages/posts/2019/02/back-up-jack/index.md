@@ -1,19 +1,19 @@
 ---
-layout: layouts/posts/singleposthero.njk
+#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Back up, Jack 
 subtitle: From 3-2-1 to 4-2-2
 description: "Some observations on good backup practices, notably the 4-2-2 approach I’m now using."
-author: Bryce Wray
+#author: Bryce Wray
 date: 2019-02-23
 #final_date: 2019-02-23
 lastmod: 2019-10-07
-idx: 14
-draft: false # note!
-actual_path: /content/posts/2019/02/back-up-jack
+#idx: 14
+#draft: false # note!
+#actual_path: /content/posts/2019/02/back-up-jack
 discussionId: "2019-02-back-up-jack"
-final_url: /posts/2019/02/back-up-jack
-featured_image: /images/binary-2688910_1920x721_60pct_prog.jpg
+#final_url: /posts/2019/02/back-up-jack
+featured_image: ./binary-2688910_1920x721.jpg
 featured_image_alt: Stylistic illustration of moving binary data
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

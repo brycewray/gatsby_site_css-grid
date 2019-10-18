@@ -1,19 +1,19 @@
 ---
-layout: layouts/posts/singleposthero.njk
+#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Publish or perish 
 subtitle: Going live with your Hugo site
 description: In a previous post, I told you how to create a Hugo-based site; now, here’s how to publish it—for free.
-author: Bryce Wray
+#author: Bryce Wray
 date: 2019-04-11
 #final_date: 2019-04-14
 lastmod: 2019-07-29
-idx: 18
-draft: false # note!
-actual_path: /content/posts/2019/04/publish-or-perish
-#discussionId: "2019-04-publish-or-perish" -- assign later if possible
-final_url: /posts/2019/04/publish-or-perish
-featured_image: /images/office-blogging-monochrome-381228_1280x720_60pct_prog.jpg
+#idx: 18
+#draft: false # note!
+#actual_path: /content/posts/2019/04/publish-or-perish
+discussionId: "2019-04-publish-or-perish"
+#final_url: /posts/2019/04/publish-or-perish
+featured_image: ./office-blogging-monochrome-381228_1280x720.jpg
 featured_image_alt: Hand moving a computer mouse near a keyboard
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

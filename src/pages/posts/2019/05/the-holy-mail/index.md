@@ -1,19 +1,19 @@
 ---
-layout: layouts/posts/singleposthero.njk
+#layout: layouts/posts/singleposthero.njk
 tags: post
 title: The Holy Mail
 subtitle: Stopping the e-madness
 description: The way I sort-of cured the email client dance.
-author: Bryce Wray
+#author: Bryce Wray
 date: 2019-05-10
 #final_date: 2019-05-10
 #lastmod
-idx: 21
-draft: false # note!
-actual_path: /content/posts/2019/05/the-holy-mail
+#idx: 21
+#draft: false # note!
+#actual_path: /content/posts/2019/05/the-holy-mail
 discussionId: "2019-05-the-holy-mail"
-final_url: /posts/2019/05/the-holy-mail
-featured_image: /images/letterbox-1926493_1280x720_60pct_prog.jpg
+#final_url: /posts/2019/05/the-holy-mail
+featured_image: ./letterbox-1926493_1280x720.jpg
 featured_image_alt: Old metal mailslot on bright red door
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
