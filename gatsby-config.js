@@ -58,7 +58,13 @@ module.exports = {
              trackingId: "UA-146418828-1",
            },
          },
-         `gatsby-plugin-twitter`,
+         {
+           resolve: `gatsby-remark-embed-youtube`,
+           options: {
+             width: 640,
+             height: 360,
+           },
+         },
         ],
       },
     },
@@ -87,5 +93,6 @@ module.exports = {
         talkyardServerUrl: 'https://comments-for-brycewray-com.talkyard.net',
       },
     },
+    `gatsby-plugin-twitter`,
   ],
 }
