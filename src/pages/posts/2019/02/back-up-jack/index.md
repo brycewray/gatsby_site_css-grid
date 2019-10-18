@@ -13,7 +13,7 @@ lastmod: 2019-10-07
 #actual_path: /content/posts/2019/02/back-up-jack
 discussionId: "2019-02-back-up-jack"
 #final_url: /posts/2019/02/back-up-jack
-featured_image: ./binary-2688910_1920x721.jpg
+featured_image: ./binary-2688910_1920_1280x721.jpg
 featured_image_alt: Stylistic illustration of moving binary data
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

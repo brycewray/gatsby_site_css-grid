@@ -43,7 +43,7 @@ But, rather than rant aimlessly, let me show you some examples of sins against e
 
 ![More thin and dim text that is hard to read](./Typography-scr-cap-3-2018-10-16.png)
 
-![Still more thin and dim text that is hard to read"](./Typography-scr-cap-4-2018-10-16_lowsrc.jpg)
+![Still more thin and dim text that is hard to read"](./Typography-scr-cap-4-2018-10-16.png)
 
 We can do better, friends.
 

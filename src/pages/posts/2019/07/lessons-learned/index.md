@@ -51,11 +51,11 @@ Well, I want to tell you: in my admittedly limited research, I found this  to be
 
 More often than not, they lack---and their developers show almost a nonchalance about the importance of---"smart" typography (*e.g.*, see [this](https://github.com/getzola/zola/issues/740) regarding the oddly Hugo-like [Zola](https://www.getzola.org) SSG). So, if *you* can put up with&nbsp;.&nbsp;.&nbsp;.
 
-<p style={{ fontSize: "1.5em", fontWeight: "normal", fontFamily: "serif",  textAlign: "center" }}>goofy-lookin' &quot;punctuation&quot; like this</p>
+<p style={{fontSize: "1.5em", fontWeight: "normal", fontFamily: "serif",  textAlign: "center"}}>nice-lookin&rsquo; &ldquo;punctuation&rdquo; like this</p>
 
 .&nbsp;.&nbsp;. as opposed to .&nbsp;.&nbsp;.
 
-<p style={{ fontSize: "1.5em", fontWeight: "normal", fontFamily: "serif",  textAlign: "center" }}>nice-lookin&rsquo; &ldquo;punctuation&rdquo; like this</p>
+<p style={{fontSize: "1.5em", fontWeight: "normal", fontFamily: "serif",  textAlign: "center"}}>nice-lookin&rsquo; &ldquo;punctuation&rdquo; like this</p>
 
 .&nbsp;.&nbsp;. fine. I choose otherwise.
 
