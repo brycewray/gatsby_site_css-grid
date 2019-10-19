@@ -10,7 +10,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-p, li {
+p, li, figcaption {
   line-height: 1.4;
 }
 
@@ -171,7 +171,7 @@ a.footnote-return{
   }
 }
 
-.ctr {
+.ctr, figcaption {
   text-align: center;
 }
 
@@ -193,7 +193,7 @@ a.footnote-return{
   font-size: $legal + unquote("rem");
 }
 
-.pokeytxt, .pokey {
+.pokeytxt, .pokey, figcaption {
   font-size: $pokey + unquote("em"); // old browsers
   font-size: $pokey + unquote("rem");
 }

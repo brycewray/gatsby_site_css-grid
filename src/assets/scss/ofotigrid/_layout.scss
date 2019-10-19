@@ -46,6 +46,11 @@ footer {
   }
 }
 
+.gatsby-resp-image-wrapper a img, .gatsby-resp-image-wrapper a span {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 figure, .figure {
   margin-right: auto;
   margin-left: auto;
@@ -379,10 +384,16 @@ $homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720_60pct.jpg";
   &-narrower {
     margin: 1em auto 0 auto;
 		width: 80%;
-		table {
+		table, figure, figcaption {
 			margin: 1em auto 0 auto;
 			width: 80%;
     }
+    @media screen and (min-width: 900px) {
+      figure {
+        width: 60%;
+      }
+    }
+    
     img.containedImage {
       display: block;
       width: 100%;
@@ -440,11 +451,10 @@ $homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720_60pct.jpg";
 			}
 			img {
         display: block;
-        width: 80%;
-        max-width: 80%;
+        // width: 80%;
+        // max-width: 80%;
         height: auto;
         margin: 0.5em auto 0.5em auto;
-        text-align: center;
       }
 
       img.containedImage { /* for lower-res images */
