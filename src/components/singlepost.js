@@ -54,6 +54,7 @@ export const query = graphql`
       frontmatter {
         description
         title
+        tags
         subtitle
         date(formatString: "MMMM D, YYYY")
         lastmod(formatString: "MMMM D, YYYY")
