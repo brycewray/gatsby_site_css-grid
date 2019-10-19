@@ -12,7 +12,7 @@ export default ({ data }) => {
   let featuredImageFluid = post.frontmatter.featured_image.childImageSharp.fluid
   return (
     <>
-    <SEO />
+    <SEO title = {post.frontmatter.title} />
     <Header />
     <LayoutSinglePost>
       <BackgroundImage
