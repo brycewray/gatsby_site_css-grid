@@ -55,7 +55,7 @@ I've mentioned from [time](/posts/2019/01/blox-sux/) [to](/posts/2019/02/ia-for-
 
 <figure>
   <img src="./Ulysses_export_to_Markdown.png" alt="Screen capture of Quick Export feature of Ulysses app">
-  <figcaption>Ulysses's Quick Export feature: the only way you can derive a true, standalone, visible Markdown&nbsp;file from one of its native, proprietary-format&nbsp;files.</figcaption>
+  <figcaption>Ulysses’s Quick Export feature: the only way you can derive a true, standalone, visible Markdown&nbsp;file from one of its native, proprietary-format&nbsp;files.</figcaption>
 </figure>
 
 [^preview]: Sometimes there are disparities between the original Markdown files and how they translate to HTML, so it's best to catch those in a local instance before you publish to the real site, and thus I was having to do that "dance" quite often during the editing process.
@@ -84,7 +84,7 @@ Sync was stuck on my Mac's installation of Ulysses, and had been that way for da
 
 <figure>
   <img src="./iCloud_sync-save_icon_in_Ulysses.png" alt="Screen capture from Ulysses showing iCloud icon, indicating ongoing sync" />
-  <figcaption>When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn't change, even though you edited this file days ago on another device---Houston, we have an iCloud&nbsp;sync&nbsp;problem.</figcaption>
+  <figcaption>When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn&rsquo;t change, even though you edited this file days ago on another device—Houston, we have an iCloud&nbsp;sync&nbsp;problem.</figcaption>
 </figure>
 
 Yet, other apps seemed to be doing fine and there were no signs of trouble in the Mac Finder or even iCloud itself, according to [Apple's status page](https://www.apple.com/support/systemstatus/).
