@@ -134,7 +134,7 @@ td {
   }
 }
 
-sup.footnote-ref {
+sup {
   font-size: $teeny + unquote("em"); // old browsers
   font-size: $teeny + unquote("rem");
 }
