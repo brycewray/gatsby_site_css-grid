@@ -10,6 +10,11 @@ import Header from "./header"
 export default ({ data }) => {
   const post = data.markdownRemark
   let featuredImageFluid = post.frontmatter.featured_image.childImageSharp.fluid
+  var lastModIntro, lastModText /* null unless there's a lastmod */
+  if (post.frontmatter.lastmod) {
+    lastModIntro = "last modified:";
+    lastModText = post.frontmatter.lastmod;
+  }
   return (
     <>
     <SEO title = {post.frontmatter.title} />
@@ -27,7 +32,7 @@ export default ({ data }) => {
           <p className="background-hero-p-text">
             <span style={{ fontVariant: "small-caps" }}>published:</span>&nbsp; <strong>{post.frontmatter.date}</strong><br />
             <span className="pokey">
-              <span style={{ fontVariant: "small-caps" }}>last modified:</span>&nbsp; [lastmod conditional?]
+            <span style={{ fontVariant: "small-caps" }}>{lastModIntro}</span>&nbsp; {lastModText}
             </span>
           </p>
         </div>
@@ -51,7 +56,7 @@ export const query = graphql`
         title
         subtitle
         date(formatString: "MMMM D, YYYY")
-        lastmod
+        lastmod(formatString: "MMMM D, YYYY")
         featured_image {
           childImageSharp {
             fluid(maxWidth: 1280) {
