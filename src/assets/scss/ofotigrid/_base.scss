@@ -77,6 +77,10 @@ a:focus, a:hover, a:active {
   border-bottom: 1px solid $blueFirst;
 }
 
+a img, a figure, a.gatsby-resp-image-link {
+  border-bottom: none !important;
+}
+
 sup a, a.previous, a.next, .footnote-return {
   border-bottom: 0;
 }
