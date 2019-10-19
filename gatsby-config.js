@@ -53,17 +53,15 @@ module.exports = {
          },
          `gatsby-remark-numbered-footnotes`,
          {
-           resolve: `gatsby-plugin-google-analytics`,
-           options: {
-             trackingId: "UA-146418828-1",
-           },
-         },
-         {
            resolve: `gatsby-remark-embed-youtube`,
            options: {
              width: 640,
              height: 360,
            },
+         },
+         {
+           resolve: `gatsby-remark-prismjs`,
+           options: {},
          },
         ],
       },
@@ -94,5 +92,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-twitter`,
-  ],
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-146418828-1",
+      },
+    },
+],
 }
