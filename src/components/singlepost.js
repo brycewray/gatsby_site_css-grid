@@ -50,7 +50,7 @@ export const query = graphql`
         description
         title
         subtitle
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM D, YYYY")
         lastmod
         featured_image {
           childImageSharp {

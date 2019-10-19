@@ -30,6 +30,7 @@ const LayoutSinglePost = ({ children }) => {
     <>
       <p style={{ display: "none" }}>{data.site.siteMetadata.title}</p>
       <main>{children}</main>
+      <p>&nbsp;</p>
       <SinglePostFooter />
       <Footer />
     </>

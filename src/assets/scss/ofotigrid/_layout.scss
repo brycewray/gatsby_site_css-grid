@@ -512,6 +512,9 @@ $homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720_60pct.jpg";
 
 .talkyard-comments {
   font-family: $sans-serif-boot;
+  p {
+    text-align: center;
+  }
 }
 
 li p {
