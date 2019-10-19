@@ -6,8 +6,8 @@ subtitle: Keeping my .git together with Working Copy
 description: "How I now keep my site files “synced” across my devices—via Git and Working Copy."
 author: Bryce Wray
 date: 2019-07-27T06:38:00-05:00
-#final_date: 2019-07-28T10:00:00-05:00
 lastmod: 2019-10-02T19:36:00-05:00
+#final_date: 2019-07-28T10:00:00-05:00
 #idx: 23
 #draft: false # note!
 #actual_path: /content/posts/2019/07/roger-copy

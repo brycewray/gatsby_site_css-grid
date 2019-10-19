@@ -5,9 +5,9 @@ title: "It’s about the food, not the decor"
 subtitle: "The delivery method matters far less than what’s being delivered"
 description: "Thoughts about my recent emphasis on switching between SSGs."
 #author: Bryce Wray
-date: 2019-10-02
-#publishDate: 2019-10-05
-lastmod: 2019-10-11
+date: 2019-10-02T18:15:00-05:00
+#publishDate: 2019-10-05T10:00:00-05:00
+lastmod: 2019-10-11T19:00:00-05:00
 #idx: 34
 #draft: Note!
 discussionId: "2019-10-its-about-food-not-decor" # figure it out later
