@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
+import { StaticQuery, Link, graphql } from "gatsby";
 
 const PostsHomeList = () => (
   <StaticQuery
@@ -25,7 +25,7 @@ const PostsHomeList = () => (
       <div>
         {data.allMarkdownRemark.edges.map(({ node }) =>(
           <div>
-            <h2 className="h5" style={{ marginBottom: "0" }}><a href={ node.fields.slug}>{node.frontmatter.title}</a></h2>
+            <h2 className="h5" style={{ marginBottom: "0" }}><Link to={ node.fields.slug}>{node.frontmatter.title}</Link></h2>
             <time datetime={node.frontmatter.date} className="pokey text-muted text-sans-serif">{node.frontmatter.date}</time>
             <p className="pokey text-body">{node.frontmatter.description}</p>
           </div>

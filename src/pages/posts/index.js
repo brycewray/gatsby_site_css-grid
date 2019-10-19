@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
@@ -14,7 +14,7 @@ export default ({ data }) => {
         <div className="container-narrower">
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <div key={node.id}>
-              <h2 className="h5" style={{ marginBottom: "0" }}><a href={node.fields.slug}>{node.frontmatter.title}</a></h2>
+              <h2 className="h5" style={{ marginBottom: "0" }}><Link to={node.fields.slug}>{node.frontmatter.title}</Link></h2>
               <time datetime={node.frontmatter.date} className="pokey text-muted text-sans-serif">{node.frontmatter.date}</time>
               <p className="pokey text-body">{node.frontmatter.description}</p>
             </div>
