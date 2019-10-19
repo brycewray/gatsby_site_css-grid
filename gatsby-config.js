@@ -98,5 +98,5 @@ module.exports = {
         trackingId: "UA-146418828-1",
       },
     },
-],
+  ],
 }
