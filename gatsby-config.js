@@ -98,34 +98,5 @@ module.exports = {
         trackingId: "UA-146418828-1",
       },
     },
-    {
-      resolve: `gatsby-plugin-paginate`,
-      options: {
-        sources: [
-          {
-            path: `/posts`,
-            pageSize: 5,
-            template: `${__dirname}/src/components/postslist.js`,
-            serialize: (results) => results.allMarkdownRemark.edges,
-            query: `{
-              allMarkdownRemark {
-                edges {
-                  node {
-                    fields {
-                      slug
-                    }
-                    frontmatter {
-                      title
-                      description
-                      date(formatString: "MMMM D, YYYY")
-                    }
-                  }
-                }
-              }
-            }`
-          },
-        ],
-      },
-    },
   ],
 }
