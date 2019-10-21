@@ -1,3 +1,5 @@
+const { paginate } = require('gatsby-awesome-pagination')
+
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -16,11 +18,16 @@ exports.createPages = async ({ graphql, actions }) => {
   // **Note:** The graphql function call returns a Promise
   // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise for more info
   const { createPage } = actions
-  const result = await graphql(`
+  const sitePosts = await graphql(`
     query {
       allMarkdownRemark(filter: {frontmatter: {title: {ne: "Home page"}}}) {
         edges {
           node {
+            frontmatter {
+              date(formatString: "MMMM D, YYYY")
+              description
+              title
+            }
             fields {
               slug
             }
@@ -29,7 +36,7 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  sitePosts.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/components/singlepost.js`),
@@ -39,5 +46,12 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: node.fields.slug,
       },
     })
+  })
+  paginate({
+    createPage,
+    items: sitePosts.data.allMarkdownRemark.edges.node,
+    itemsPerPage: 5,
+    pathPrefix: `/posts`,
+    component: path.resolve(`./src/components/postslist.js`),
   })
 }
