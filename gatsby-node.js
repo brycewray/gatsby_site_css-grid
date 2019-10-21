@@ -36,6 +36,13 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
+  paginate({
+    createPage,
+    items: sitePosts.data.allMarkdownRemark.edges,
+    itemsPerPage: 5,
+    pathPrefix: `/posts`,
+    component: path.resolve(`./src/components/postslist.js`),
+  })
   sitePosts.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
@@ -46,12 +53,5 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: node.fields.slug,
       },
     })
-  })
-  paginate({
-    createPage,
-    items: sitePosts.data.allMarkdownRemark.edges.node,
-    itemsPerPage: 5,
-    pathPrefix: `/posts`,
-    component: path.resolve(`./src/components/postslist.js`),
   })
 }
