@@ -10,6 +10,7 @@ export const postsQuery = graphql`
       sort: { fields: [frontmatter___date], order: DESC }
       skip: $skip
       limit: $limit
+      filter: {frontmatter: {tags: {eq: "post"}}}
     ) {
       edges {
         node {
@@ -45,9 +46,10 @@ const postsList = (props) => {
             </div>
           ))}
         </div>
-        <div className="ctr">
-          {props.pageContext.previousPagePath ? <Link to={props.pageContext.previousPagePath}>Previous</Link> : null}
-          {props.pageContext.nextPagePath ? <Link to={props.pageContext.nextPagePath}>Next</Link> : null}
+        <div className="ctr pokey" style={{ marginTop: "1em" }}>
+          {props.pageContext.previousPagePath ? <Link to={props.pageContext.previousPagePath}>&lt;</Link> : null}
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          {props.pageContext.nextPagePath ? <Link to={props.pageContext.nextPagePath}>&gt;</Link> : null}
         </div>
       </div>
     </Layout>
