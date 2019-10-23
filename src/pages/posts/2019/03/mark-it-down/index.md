@@ -11,6 +11,10 @@ lastmod: 2019-10-02T19:26:00-05:00
 #idx: 16
 #draft: false # note!
 #actual_path: /content/posts/2019/03/mark-it-down
+prevPostPath: /posts/2019/03/plain-truth
+prevPostTitle: "Plain truth"
+nextPostPath: /posts/2019/04/ec-static
+nextPostTitle: "Ec-static"
 discussionId: "2019-03-mark-it-down"
 #final_url: /posts/2019/03/mark-it-down
 featured_image: ./ugly-duckling-young-swan-1639154_1280x720.jpg

@@ -11,6 +11,10 @@ lastmod: 2019-10-07T19:00:00-05:00
 #idx: 14
 #draft: false # note!
 #actual_path: /content/posts/2019/02/back-up-jack
+prevPostPath: /posts/2019/old-dog-old-trick
+prevPostTitle: "Old dog learns old trick"
+nextPostPath: /posts/2019/03/plain-truth
+nextPostTitle: "Plain truth"
 discussionId: "2019-02-back-up-jack"
 #final_url: /posts/2019/02/back-up-jack
 featured_image: ./binary-2688910_1920_1280x721.jpg

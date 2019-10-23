@@ -11,6 +11,10 @@ lastmod: 2019-07-29T20:55:00-05:00
 #idx: 18
 #draft: false # note!
 #actual_path: /content/posts/2019/04/publish-or-perish
+prevPostPath: /posts/2019/04/ec-static
+prevPostTitle: "Ec-static"
+nextPostPath: /posts/2019/04/why-left-ulysses
+nextPostTitle: "Why I left Ulysses"
 discussionId: "2019-04-publish-or-perish"
 #final_url: /posts/2019/04/publish-or-perish
 featured_image: ./office-blogging-monochrome-381228_1280x720.jpg

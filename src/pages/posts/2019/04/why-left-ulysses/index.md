@@ -12,6 +12,10 @@ lastmod: 2019-10-11T19:00:00-05:00
 #draft: false # note!
 #actual_path: /content/posts/2019/04/why-left-ulysses
 #final_url: posts/2019/04/why-left-ulysses
+prevPostPath: /posts/2019/04/publish-or-perish
+prevPostTitle: "Publish or perish"
+nextPostPath: /posts/2019/05/boxed-in
+nextPostTitle: "Boxed in?"
 discussionId: "2019-04-why-left-ulysses"
 featured_image: ./hand-butterfly-3751159_blue-tinted_monochrome_1280x720_60pct.jpg
 featured_image_alt: Hand releases a butterfly (which is the Ulysses logo)

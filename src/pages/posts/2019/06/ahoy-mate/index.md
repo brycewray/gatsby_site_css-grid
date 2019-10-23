@@ -11,6 +11,10 @@ lastmod: 2019-07-25T19:05:00-05:00
 #idx: 22
 #draft: false # note!
 #actual_path: /content/posts/2019/06/ahoy-mate
+prevPostPath: /posts/2019/05/the-holy-mail
+prevPostTitle: "The Holy Mail"
+nextPostPath: /posts/2019/07/independence
+nextPostTitle: "Independence"
 discussionId: "2019-06-ahoy-mate"
 #final_url: /posts/2019/06/ahoy-mate
 featured_image: ./MailMate_screen_cap_1280x720.png

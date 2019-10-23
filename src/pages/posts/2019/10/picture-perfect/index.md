@@ -10,6 +10,11 @@ date: 2019-10-20T19:00:00-05:00  #Post-Eleventy
 #lastmod: 2019-10-21
 lastmod: 2019-10-21T14:05:00-05:00 #Post-Eleventy
 #idx: 36
+prevPostPath: /posts/2019/10/otoh
+prevPostTitle: "OTOH"
+#nextPostPath: /posts
+#nextPostTitle: "
+discussionId: "2019-10-picture-perfect"
 featured_image: camera-nikon-f-733546_1280x720.jpg
 featured_image_alt: "Antique Nikon F camera in subdued light on a windowsill"
 featured_image_caption: "Image: Pixabay"

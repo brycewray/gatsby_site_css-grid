@@ -12,6 +12,10 @@ lastmod: 2019-10-11T19:00:00-05:00
 #draft: false
 #actual_path: /content/posts/2019/07/why-staying-with-hugo
 #final_url: /posts/2019/07/why-staying-with-hugo
+prevPostPath: /posts/2019/07/independence
+prevPostTitle: "Independence"
+nextPostPath: /posts/2019/07/lessons-learned
+nextPostTitle: "Lessons learned"
 discussionId: "2019-07-why-staying-with-hugo"
 featured_image: ./hugo-logo-on-black-1280x720.png
 featured_image_alt: Logo for the Hugo static site generator.

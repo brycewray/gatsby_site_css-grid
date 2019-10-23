@@ -12,6 +12,10 @@ lastmod: 2019-10-11T19:00:00-05:00
 #draft: Note!
 #actual_path: /content/posts/2019/09/back-with-hugo
 #final_url: /posts/2019/09/back-with-hugo
+prevPostPath: /posts/2019/09/why-left-hugo-eleventy
+prevPostTitle: "Why I left Hugo for Eleventy"
+nextPostPath: /posts/2019/09/thinking-dark-thoughts
+nextPostTitle: "Thinking dark thoughts"
 discussionId: "2019-09-back-with-hugo"
 featured_image: ./skid-mark-567668_1280x720.jpg
 featured_image_alt: "Skid marks on asphalt"

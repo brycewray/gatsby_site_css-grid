@@ -11,6 +11,10 @@ lastmod: 2019-10-02T19:23:00-05:00
 #idx: 12
 #draft: false # note!
 #actual_path: /content/posts/2019/02/ia-for-io
+prevPostPath: /posts/2019/01/blox-sux
+prevPostTitle: "Blox sux"
+nextPostPath: /posts/2019/02/old-dog-old-trick
+nextPostTitle: "Old dog learns old trick"
 discussionId: "2019-02-ia-for-io"
 #final_url: /posts/2019/02/ia-for-io
 featured_image: ./notebook-933362_1280x720.jpg

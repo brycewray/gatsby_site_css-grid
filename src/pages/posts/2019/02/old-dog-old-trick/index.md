@@ -11,6 +11,10 @@ lastmod: 2019-08-09T22:39:00-05:00
 #idx: 13
 #draft: false # note!
 #actual_path: /content/posts/2019/02/old-dog-old-trick
+prevPostPath: /posts/2019/02/ia-for-io
+prevPostTitle: "iA for IO?"
+nextPostPath: /posts/2019/02/back-up-jack
+nextPostTitle: "Back up, Jack"
 discussionId: "2019-02-old-dog-old-trick"
 #final_url: /posts/2019/02/old-dog-old-trick
 featured_image: ./dog-2514968_1280x720.jpg

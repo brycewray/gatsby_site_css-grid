@@ -1,11 +1,13 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import LayoutSinglePost from "./layout-singlepost"
 // === REPLACE LAYOUT WITH ONE FOR POSTS ===
 // import Image from "gatsby-image"
 import BackgroundImage from 'gatsby-background-image'
 import SEO from "./seo"
 import Header from "./header"
+import Footer from "./footer"
+import TalkyardCommentsIframe from '@debiki/gatsby-plugin-talkyard'
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -19,7 +21,6 @@ export default ({ data }) => {
     <>
     <SEO title = {post.frontmatter.title} />
     <Header />
-    <LayoutSinglePost>
       <BackgroundImage
         fluid={featuredImageFluid} 
         className="background-hero-div" 
@@ -43,7 +44,19 @@ export default ({ data }) => {
           <article className="article" dangerouslySetInnerHTML={{ __html: post.html }}>
           </article>
         </div>
-    </LayoutSinglePost>
+        <div className="container container-comments">
+          <TalkyardCommentsIframe />
+        </div>
+        <div className="bg-dark">
+          <h3 className="ctr wht"><a href="/posts" style={{ borderBottom: "0" }}>Other posts</a></h3>
+          {post.frontmatter.nextPostTitle && (
+            <p className="ctr"><strong>Next</strong>: <Link to={post.frontmatter.nextPostPath} style={{ border: "0" }}>{post.frontmatter.nextPostTitle}</Link></p>
+          )}
+          {post.frontmatter.prevPostTitle && (
+            <p className="ctr"><strong>Previous</strong>: <Link to={post.frontmatter.prevPostPath} style={{ border: "0" }}>{post.frontmatter.prevPostTitle}</Link></p>
+          )} 
+        </div>
+    <Footer />
     </>
   )
 }
@@ -56,6 +69,10 @@ export const query = graphql`
         title
         tags
         subtitle
+        prevPostPath
+        prevPostTitle
+        nextPostPath
+        nextPostTitle
         date(formatString: "MMMM D, YYYY")
         lastmod(formatString: "MMMM D, YYYY")
         featured_image {

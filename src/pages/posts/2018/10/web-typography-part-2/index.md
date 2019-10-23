@@ -11,6 +11,10 @@ lastmod: 2019-07-29T20:45:00-05:00
 #idx: 6
 #draft: false # note!
 #actual_path: /content/posts/2018/10/web-typography-part-2.md
+prevPostPath: /posts/2018/10/web-typography-part-1
+prevPostTitle: "Readable Web text, pretty please"
+nextPostPath: /posts/2018/11/some-curmudgeonish-thoughts
+nextPostTitle: "Some curmudgeonish thoughts"
 discussionId: "2018-10-web-typography-part-2"
 #final_url: /posts/2018/10/web-typography-part-2/
 featured_image: ./computer-1869236_1920x1080.jpg

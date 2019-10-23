@@ -10,6 +10,10 @@ lastmod: 2019-04-11T20:33:00-05:00
 #idx: 5
 #draft: false # note!
 #actual_path: /content/posts/2018/10/web-typography-part-1.md
+prevPostPath: /posts/2018/10/client-too-smart
+prevPostTitle: "The client is too smart for you"
+nextPostPath: /posts/2018/10/web-typography-part-2
+nextPostTitle: "A stacked deck"
 discussionId: "2018-10-web-typography-part-1"
 #final_url: /posts/2018/10/web-typography-part-1/
 featured_image: ./letters-691842_1280x720.jpg

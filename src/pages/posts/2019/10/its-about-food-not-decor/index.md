@@ -10,6 +10,10 @@ date: 2019-10-02T18:15:00-05:00
 lastmod: 2019-10-11T19:00:00-05:00
 #idx: 34
 #draft: Note!
+prevPostPath: /posts/2019/09/thinking-dark-thoughts
+prevPostTitle: "Thinking dark thoughts"
+nextPostPath: /posts/2019/10/otoh
+nextPostTitle: "OTOH"
 discussionId: "2019-10-its-about-food-not-decor" # figure it out later
 featured_image: ./mount-horeb-lunch-4162348_1280x720.jpg
 featured_image_alt: "Duotone photo of a diner with customers waiting to be served"

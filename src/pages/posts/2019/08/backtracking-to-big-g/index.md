@@ -12,6 +12,10 @@ date: 2019-08-25T10:45:00-05:00
 #draft: false # note!
 #actual_path: /content/posts/2019/08/backtracking-to-big-g
 #final_url: /posts/2019/08/backtracking-to-big-g
+prevPostPath: /posts/2019/08/scrivener-and-cloud
+prevPostTitle: "Scrivener and The Cloud"
+nextPostPath: /posts/2019/09/now-im-sixty-four
+nextPostTitle: "Now I’m sixty-four"
 discussionId: "2019-08-backtracking-to-big-g"
 featured_image: ./BW_shadow_of_G_on_gray_gradient_1280x720.jpg
 featured_image_alt: Google logo overshadowing this site’s logo

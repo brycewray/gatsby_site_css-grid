@@ -11,6 +11,10 @@ lastmod: 2019-08-17T16:21:00-05:00
 #draft: false
 #actual_path: /content/posts/2019/07/lessons-learned
 #final_url: /posts/2019/07/lessons-learned
+prevPostPath: /posts/2019/07/why-staying-with-hugo
+prevPostTitle: "Why I’m staying with Hugo"
+nextPostPath: /posts/2019/07/roger-copy
+nextPostTitle: "Roger, Copy"
 discussionId: "2019-07-lessons-learned"
 featured_image: ./binoculars-4143165_1280x719.jpg
 featured_image_alt: A binocular telescope on a stand near a body of water

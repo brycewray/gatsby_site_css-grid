@@ -10,6 +10,10 @@ lastmod: 2019-04-27T06:38:00-05:00
 #idx: 15
 #draft: false # note!
 #actual_path: /content/posts/2019/03/plain-truth
+prevPostPath: /posts/2019/02/back-up-jack
+prevPostTitle: "Back up, Jack"
+nextPostPath: /posts/2019/03/mark-it-down
+nextPostTitle: "Mark it down"
 discussionId: "2019-03-plain-truth"
 #final_url: /posts/2019/03/plain-truth
 featured_image: ./typewriter-1031024_1280x720.jpg

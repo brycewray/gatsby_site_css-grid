@@ -11,6 +11,10 @@ lastmod: 2019-10-11T19:00:00-05:00
 #idx: 20
 #draft: false # note!
 #actual_path: /content/posts/2019/05/boxed-in
+prevPostPath: /posts/2019/04/why-left-ulysses
+prevPostTitle: "Why I left Ulysses"
+nextPostPath: /posts/2019/05/the-holy-mail
+nextPostTitle: "The Holy Mail"
 discussionId: "2019-05-boxed-in"
 #final_url: /posts/2019/05/boxed-in
 featured_image: ./thunderstorm-3625405_1280x720.jpg

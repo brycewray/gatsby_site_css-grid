@@ -12,6 +12,10 @@ lastmod: 2019-10-11T19:00:00-05:00
 #draft: Note!
 #actual_path: /content/posts/2019/09/why-left-hugo-eleventy
 #final_url: /posts/2019/09/why-left-hugo-eleventy
+prevPostPath: /posts/2019/09/now-im-sixty-four
+prevPostTitle: "Now I’m sixty-four"
+nextPostPath: /posts/2019/09/back-with-hugo
+nextPostTitle: "Back with Hugo"
 discussionId: "2019-09-why-left-hugo-eleventy"
 featured_image: ./detour-2496197_1280x720.jpg
 featured_image_alt: "Orange road sign, “DETOUR AHEAD”"

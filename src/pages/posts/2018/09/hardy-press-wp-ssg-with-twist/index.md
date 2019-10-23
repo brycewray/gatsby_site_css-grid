@@ -9,6 +9,10 @@ lastmod: 2019-04-27T13:45:00-05:00
 #idx: 1
 #draft: false
 #actual_path: /content/posts/2018/09/hardy-press-wp-ssg-with-twist.md
+#prevPostPath:
+#prevPostTitle:
+nextPostPath: /posts/2018/09/why-finally-settled-ulysses
+nextPostTitle: "Why I finally settled on Ulysses"
 discussionId: "2018-09-hardy-press-wp-ssg-with-twist"
 #final_url: /posts/2018/09/hardy-press-wp-ssg-with-twist/
 featured_image: ./Hardy_Press_Web_page_2019-04-27_1280x720_blur.png

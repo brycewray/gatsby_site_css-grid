@@ -12,6 +12,10 @@ lastmod: 2019-09-10T14:37:00-05:00
 #draft: Note!
 #actual_path: /content/posts/2019/09/now-im-sixty-four
 #final_url: /posts/2019/09/now-im-sixty-four
+prevPostPath: /posts/2019/08/backtracking-to-big-g
+prevPostTitle: "Backtracking to Big G"
+nextPostPath: /posts/2019/09/why-left-hugo-eleventy
+nextPostTitle: "Why I left Hugo for Eleventy"
 discussionId: "2019-09-now-im-sixty-four"
 featured_image: ./chevrolet-1955-stylized-829805_1280x720.jpg
 featured_image_alt: Stylized view of a deep blue 1955 Chevrolet Bel Air two-door automobile

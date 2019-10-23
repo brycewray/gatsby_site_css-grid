@@ -11,6 +11,10 @@ date: 2018-12-07T13:35:00-06:00
 #idx: 10
 #draft: false # note!
 #actual_path: /content/posts/2018/12/on-edge
+prevPostPath: /posts/2018/11/grid-locked-no-more
+prevPostTitle: "Grid-locked no more"
+nextPostPath: /posts/2019/01/blox-sux
+nextPostTitle: "Blox sux"
 discussionId: "2018-12-on-edge"
 #final_url: /posts/2018/12/on-edge/
 featured_image: ./MS-Edge-logo-and-bkgd_1280x720_60pct_prog.jpg

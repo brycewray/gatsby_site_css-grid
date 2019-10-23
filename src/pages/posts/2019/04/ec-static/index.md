@@ -11,6 +11,10 @@ lastmod: 2019-10-02T19:30:00-05:00
 #final_date: 2019-04-07T14:00:00-05:00
 #draft: false # note!
 #actual_path: /content/posts/2019/04/ec-static
+prevPostPath: /posts/2019/03/mark-it-down
+prevPostTitle: "Mark it down"
+nextPostPath: /posts/2019/04/publish-or-perish
+nextPostTitle: "Publish or perish"
 discussionId: "2019-04-ec-static"
 #final_url: /posts/2019/04/ec-static
 featured_image: ./server-1235959_1280x720.jpg
