@@ -1,57 +1,82 @@
-const { paginate } = require('gatsby-awesome-pagination')
-
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions
-  if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` })
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slug,
-    })
-  }
-}
 
-exports.createPages = async ({ graphql, actions }) => {
-  // **Note:** The graphql function call returns a Promise
-  // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise for more info
+exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  const sitePosts = await graphql(`
-    query {
-      allMarkdownRemark(filter: {frontmatter: {title: {ne: "Home page"}}}) {
-        edges {
-          node {
-            frontmatter {
-              date(formatString: "MMMM D, YYYY")
-              description
-              title
-            }
-            fields {
-              slug
+  
+
+  const blogPost = path.resolve(`./src/components/singlepost.js`)
+  return graphql(
+    `
+      {
+        allMarkdownRemark(
+          sort: { fields: [frontmatter___date], order: DESC }
+          limit: 1000
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+              }
             }
           }
         }
       }
+    `
+  ).then(result => {
+    if (result.errors) {
+      throw result.errors
     }
-  `)
-  paginate({
-    createPage,
-    items: sitePosts.data.allMarkdownRemark.edges,
-    itemsPerPage: 5,
-    pathPrefix: `/posts`,
-    component: path.resolve(`./src/components/postslist.js`),
-  })
-  sitePosts.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
-      path: node.fields.slug,
-      component: path.resolve(`./src/components/singlepost.js`),
-      context: {
-        // Data passed to context is available
-        // in page queries as GraphQL variables.
-        slug: node.fields.slug,
-      },
+
+    // Create blog posts pages.
+    const posts = result.data.allMarkdownRemark.edges
+
+    posts.forEach((post, index) => {
+      const previous = index === posts.length - 1 ? null : posts[index + 1].node
+      const next = index === 0 ? null : posts[index - 1].node
+
+      createPage({
+        path: post.node.fields.slug,
+        component: blogPost,
+        context: {
+          slug: post.node.fields.slug,
+          previous,
+          next,
+        },
+      })
     })
+
+    // Create blog post list pages
+    const postsPerPage = 5;
+    const numPages = Math.ceil(posts.length / postsPerPage);
+
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/posts` : `/posts/${i + 1}`,
+        component: path.resolve('./src/components/postslist.js'),
+        context: {
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1
+        },
+      });
+    });
   })
+}
+
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+
+  if (node.internal.type === `MarkdownRemark`) {
+    const value = createFilePath({ node, getNode })
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
+  }
 }
