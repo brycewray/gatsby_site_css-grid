@@ -1,59 +1,109 @@
 import React from 'react'
-//import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-import SEO from "./seo"
+import SEO from './seo'
 import Layout from './layout'
 
-export const postsQuery = graphql`
-  query($skip: Int!, $limit: Int!) {
-    posts: allMarkdownRemark(
+class BlogIndex extends React.Component {
+  render() {
+    const { data } = this.props
+    const posts = data.allMarkdownRemark.edges
+    const { currentPage, numPages } = this.props.pageContext
+    const isFirst = currentPage === 1
+    const isLast = currentPage === numPages
+    const prevPage = currentPage - 1 === 1 ? '/posts/' : `posts/${(currentPage - 1).toString()}`
+    const nextPage = `posts/${(currentPage + 1).toString()}`
+
+    return (
+      <Layout location={this.props.location}>
+        <SEO
+          title="Posts"
+        />
+        <h1 className="ctr topOfMain">Posts</h1>
+        {posts.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
+            <div key={node.fields.slug} className="container">
+              <div className="post-line"></div>
+              <div className="container-narrower">
+                <h2 className="h5" style={{ marginBottom: "0" }}>
+                  <Link to={node.fields.slug}>
+                    {node.frontmatter.title}
+                  </Link>
+                </h2>
+                <time datetime={node.frontmatter.date} className="pokey text-muted text-sans-serif">{node.frontmatter.date}</time>
+                <p className="pokey text-body">{node.frontmatter.description}</p>
+              </div>
+            </div>
+          )
+        })}
+        <ul className="postlistNav ctr">
+          {isFirst && (
+            <>
+            ← Prev
+            </>
+          )}
+          {!isFirst && (
+            <Link to={prevPage} rel="prev">
+              ← Prev
+            </Link>
+          )}
+          {Array.from({ length: numPages }, (_, i) => (
+            <li
+              key={`pagination-number${i + 1}`}
+              style={{
+                margin: 0,
+              }}
+            >
+              <Link
+                to={`/posts/${i === 0 ? '' : i + 1}`}
+              >
+                {i + 1}
+              </Link>
+            </li>
+          ))}
+          {isLast && (
+            <>
+            Next →
+            </>
+          )}
+          {!isLast && (
+            <Link to={nextPage} rel="next">
+              Next →
+            </Link>
+          )}
+        </ul>
+      </Layout>
+    )
+  }
+}
+
+export default BlogIndex
+
+export const pageQuery = graphql`
+  query blogPageQuery($skip: Int!, $limit: Int!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      skip: $skip
       limit: $limit
-      filter: {frontmatter: {tags: {eq: "post"}}}
+      skip: $skip
+      filter: { frontmatter: {tags: {eq: "post"}} }
     ) {
       edges {
         node {
-          id
+          fields {
+            slug
+          }
           frontmatter {
             date(formatString: "MMMM D, YYYY")
             title
             description
-          }
-          fields {
-            slug
           }
         }
       }
     }
   }
 `
-
-const postsList = (props) => {
-
-  return (
-    <Layout>
-    <SEO title="Posts" />
-      <div className="container">
-        <h1 className="ctr topOfMain">Posts</h1>
-        <div className="post-line"></div>
-        <div className="container-narrower">
-          {props.data.posts.edges.map(({ node }) => (
-            <div key={node.id}>
-              <h2 className="h5" style={{ marginBottom: "0" }}><Link to={node.fields.slug}>{node.frontmatter.title}</Link></h2>
-              <time datetime={node.frontmatter.date} className="pokey text-muted text-sans-serif">{node.frontmatter.date}</time>
-              <p className="pokey text-body">{node.frontmatter.description}</p>
-            </div>
-          ))}
-        </div>
-        <div className="ctr pokey" style={{ marginTop: "1em" }}>
-          {props.pageContext.previousPagePath ? <Link to={props.pageContext.previousPagePath}>&lt;</Link> : null}
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          {props.pageContext.nextPagePath ? <Link to={props.pageContext.nextPagePath}>&gt;</Link> : null}
-        </div>
-      </div>
-    </Layout>
-  );
-}
-
-export default postsList

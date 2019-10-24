@@ -301,6 +301,18 @@ img.postsFeatImg {
   font-size: $bigger + unquote("rem");
 }
 
+ul.postlistNav {
+  width: 50%;
+  font-size: 85%;
+  margin: 1.5em auto;
+  list-style: none;
+  padding: 0;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 $homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720_60pct.jpg";
 
 .hero { // specifically for home page, at least to begin with
