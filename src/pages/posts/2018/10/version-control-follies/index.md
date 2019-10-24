@@ -1,19 +1,10 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: The version-control follies
 subtitle: Life’s too short for CLI
 description: Why you should go GUI with version control.
-#author: Bryce Wray
-date: 2018-10-06T08:30:00-05:00
-lastmod: 2019-07-14T11:40:00-05:00
-#idx: 3
-#draft: false # note!!
-#actual_path: /content/posts/2018/10/version-control-follies.md
-prevPostPath: /posts/2018/09/why-finally-settled-ulysses
-prevPostTitle: "Why I finally settled on Ulysses"
-nextPostPath: /posts/2018/10/client-too-smart
-nextPostTitle: "The client is too smart for you"
+date: 2018-10-06T08:30:00
+lastmod: 2019-07-14T11:40:00
 discussionId: "2018-10-version-control-follies"
 #final_url: /posts/2018/10/version-control-follies/
 featured_image: ./Sourcetree-screen-shot_1280x720.png

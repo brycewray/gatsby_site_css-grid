@@ -1,21 +1,10 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Why I left Ulysses 
 subtitle: iA Writer wins—for now
 description: "Why, just months after proclaiming my allegiance to the Ulysses writing app, I’ve chosen to abandon it in favor of iA Writer."
-#author: Bryce Wray
-date: 2019-04-20T11:17:00-05:00
-#finaldate: 2019-04-20T11:17:00-05:00
-lastmod: 2019-10-11T19:00:00-05:00
-#idx: 19
-#draft: false # note!
-#actual_path: /content/posts/2019/04/why-left-ulysses
-#final_url: posts/2019/04/why-left-ulysses
-prevPostPath: /posts/2019/04/publish-or-perish
-prevPostTitle: "Publish or perish"
-nextPostPath: /posts/2019/05/boxed-in
-nextPostTitle: "Boxed in?"
+date: 2019-04-20T11:17:00
+lastmod: 2019-10-11T19:00:00
 discussionId: "2019-04-why-left-ulysses"
 featured_image: ./hand-butterfly-3751159_blue-tinted_monochrome_1280x720_60pct.jpg
 featured_image_alt: Hand releases a butterfly (which is the Ulysses logo)

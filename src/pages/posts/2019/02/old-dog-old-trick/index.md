@@ -1,20 +1,10 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Old dog learns old trick 
 subtitle: How’d I miss this way to fool IE?
 description: A major ”Do’h” moment in the never-ending battle against Internet Explorer.
-#author: Bryce Wray
-date: 2019-02-16T10:50:00-06:00
-#final_date: 2019-02-16T10:50:00-06:00
-lastmod: 2019-08-09T22:39:00-05:00
-#idx: 13
-#draft: false # note!
-#actual_path: /content/posts/2019/02/old-dog-old-trick
-prevPostPath: /posts/2019/02/ia-for-io
-prevPostTitle: "iA for IO?"
-nextPostPath: /posts/2019/02/back-up-jack
-nextPostTitle: "Back up, Jack"
+date: 2019-02-16T10:50:00
+lastmod: 2019-08-09T22:39:00
 discussionId: "2019-02-old-dog-old-trick"
 #final_url: /posts/2019/02/old-dog-old-trick
 featured_image: ./dog-2514968_1280x720.jpg

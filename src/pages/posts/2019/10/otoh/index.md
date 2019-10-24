@@ -1,19 +1,11 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: "OTOH"
 subtitle: "Retracting my retractions"
 description: "One shouldn’t make decisions out of spite. I’m living proof."
 author: Bryce Wray
-date: 2019-10-11T19:00:00-05:00
-#publishDate:
+date: 2019-10-11T19:00:00
 #lastmod:
-#idx: 35
-#draft: Note!
-prevPostPath: /posts/2019/10/its-about-food-not-decor
-prevPostTitle: "It’s about the food, not the decor"
-nextPostPath: /posts/2019/10/picture-perfect
-nextPostTitle: "Picture perfect?"
 discussionId: "2019-10-otoh"
 featured_image: ./compass-1344839_1280x720.jpg
 featured_image_alt: "Compass lying on a granite background"

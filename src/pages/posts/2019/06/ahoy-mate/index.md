@@ -1,20 +1,10 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Ahoy, ’Mate
 subtitle: Considering MailMate
 description: "My last post notwithstanding, “the geek’s prerogative” makes it okay to try other email apps—like MailMate."
-#author: Bryce Wray
-date: 2019-06-08T20:25:00-05:00
-#final_date: 2019-06-08T08:25:00-05:00
-lastmod: 2019-07-25T19:05:00-05:00
-#idx: 22
-#draft: false # note!
-#actual_path: /content/posts/2019/06/ahoy-mate
-prevPostPath: /posts/2019/05/the-holy-mail
-prevPostTitle: "The Holy Mail"
-nextPostPath: /posts/2019/07/independence
-nextPostTitle: "Independence"
+date: 2019-06-08T20:25:00
+lastmod: 2019-07-25T19:05:00
 discussionId: "2019-06-ahoy-mate"
 #final_url: /posts/2019/06/ahoy-mate
 featured_image: ./MailMate_screen_cap_1280x720.png

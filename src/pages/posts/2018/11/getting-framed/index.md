@@ -1,20 +1,10 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Getting framed
 subtitle: Why I still use Bootstrap
 description: "In an ideal world, Web devs would never use CSS frameworks, but we’re not in that world: why I still use Bootstrap."
-#author: Bryce Wray
-date: 2018-11-14T15:09:00-06:00
-lastmod: 2018-11-28T11:58:00-06:00
-#idx: 8
-#final_date: 2018-11-14T15:09:00-06:00
-#draft: false # note!
-#actual_path: /content/posts/2018/11/getting-framed
-prevPostPath: /posts/2018/11/some-curmudgeonish-thoughts
-prevPostTitle: "Some curmudgeonish thoughts"
-nextPostPath: /posts/2018/11/grid-locked-no-more
-nextPostTitle: "Grid-locked no more"
+date: 2018-11-14T15:09:00
+lastmod: 2018-11-28T11:58:00
 discussionId: "2018-11-getting-framed"
 #final_url: /posts/2018/11/getting-framed/
 featured_image: ./scaffolding-1617969_1280x720.jpg

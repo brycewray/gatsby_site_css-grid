@@ -1,21 +1,15 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Some curmudgeonish thoughts
 subtitle: (with apologies to the late Andy Rooney)
 description: “Didja ever notice...?” Yes, I did. And here’s the result. 
-#author: Bryce Wray
-date: 2018-11-01T11:00:00-05:00
-lastmod: 2019-07-30T19:50:00-05:00
+date: 2018-11-01T11:00:00
+lastmod: 2019-07-30T19:50:00
 #idx: 7
 #final_date: 2018-11-01T11:00:00-05:00
 #draft: false # note!
 #actual_path: /content/posts/2018/11/some-curmudgeonish-thoughts.md
 discussionId: "2018-11-some-curmudgeonish-thoughts"
-prevPostPath: /posts/2018/10/web-typography-part-2
-prevPostTitle: "A stacked deck"
-nextPostPath: /posts/2018/11/getting-framed
-nextPostTitle: "Getting framed"
 #final_url: /posts/2018/11/some-curmudgeonish-thoughts/
 featured_image: ./brain-1300479_1280x720_60pct.jpg
 featured_image_alt: Cartoonish art depicting ancient myths about which parts of the brain stored which kinds of thoughts

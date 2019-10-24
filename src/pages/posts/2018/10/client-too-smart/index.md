@@ -1,19 +1,10 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: The client is too smart for you
 subtitle: The email client, that is
 description: Pretty emails don’t work so well in an Outlook-centric business world.
-#author: Bryce Wray
-date: 2018-10-11T15:30:00-05:00
-lastmod: 2019-02-17T20:00:00-06:00
-#idx: 4
-#draft: false # note!!
-#actual_path: /content/posts/2018/10/client-too-smart.md
-prevPostPath: /posts/2018/10/version-control-follies
-prevPostTitle: "The version control follies"
-nextPostPath: /posts/2018/10/web-typography-part-1
-nextPostTitle: "Readable Web text, pretty please"
+date: 2018-10-11T15:30:00
+lastmod: 2019-02-17T20:00:00
 discussionId: "2018-10-client-too-smart"
 #final_url: /posts/2018/10/client-too-smart/
 featured_image: ./contact-2805253_1280_cropped_1280x720.jpg

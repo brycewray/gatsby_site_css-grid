@@ -1,21 +1,10 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Make games, not war
 subtitle: "Hey, MLB and NFL: time to unify" # quotation marks to allow colon
 description: "I take a break from my “techy” stuff to opine on more logical layouts for Major League Baseball and the National Football League."
-#author: Bryce Wray
-date: 2019-08-03T11:00:00-05:00
-#final_date: 2019-08-03T11:00:00-05:00
-lastmod: 2019-08-07T12:42:00-05:00
-#idx: 27
-#draft: false # note!
-#actual_path: /content/posts/2019/08/make-games-not-war
-#final_url: /posts/2019/08/make-games-not-war
-prevPostPath: /posts/2019/07/roger-copy
-prevPostTitle: "Roger, Copy"
-nextPostPath: /posts/2019/08/scrivener-and-cloud
-nextPostTitle: "Scrivener and The Cloud"
+date: 2019-08-03T11:00:00
+lastmod: 2019-08-07T12:42:00
 discussionId: "2019-08-make-games-not-war"
 featured_image: ./stadium-seats-3310891_1280x720.jpg
 featured_image_alt: Rows of empty seats in a sports stadium

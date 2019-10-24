@@ -1,16 +1,9 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Thinking dark thoughts
 subtitle: How to keep up with a growing trend
 description: "As Dark Mode grows in use, it’s easy to make your site dark-friendly."
-date: 2019-09-29T10:08:00-05:00
-#lastmod:
-#idx: 33
-prevPostPath: /posts/2019/09/back-with-hugo
-prevPostTitle: "Back with Hugo"
-nextPostPath: /posts/2019/10/its-about-food-not-decor
-nextPostTitle: "It’s about the food, not the decor"
+date: 2019-09-29T10:08:00
 discussionId: "2019-09-thinking-dark-thoughts"
 featured_image: ./sunset-1090164_1280x720.jpg
 featured_image_alt: "Darkening sky at sunset"

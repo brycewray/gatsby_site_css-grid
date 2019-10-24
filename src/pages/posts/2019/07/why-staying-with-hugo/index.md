@@ -1,21 +1,10 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Why I’m staying with Hugo
 subtitle: An “interesting” learning experience
 description: After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo.
-#author: Bryce Wray
-date: 2019-07-14T20:45:00-05:00
-#final_date: 2019-07-14T20:45:00-05:00
-lastmod: 2019-10-11T19:00:00-05:00
-#idx: 24
-#draft: false
-#actual_path: /content/posts/2019/07/why-staying-with-hugo
-#final_url: /posts/2019/07/why-staying-with-hugo
-prevPostPath: /posts/2019/07/independence
-prevPostTitle: "Independence"
-nextPostPath: /posts/2019/07/lessons-learned
-nextPostTitle: "Lessons learned"
+date: 2019-07-14T20:45:00
+lastmod: 2019-10-11T19:00:00
 discussionId: "2019-07-why-staying-with-hugo"
 featured_image: ./hugo-logo-on-black-1280x720.png
 featured_image_alt: Logo for the Hugo static site generator.

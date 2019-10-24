@@ -1,19 +1,10 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Why I finally settled on Ulysses
 subtitle: The write stuff (sorry)
 description: How I came to realize why one particular creative writing app was a better fit for me as compared to its chief rival.
-#author: Bryce Wray
-date: 2018-09-22T11:04:36-05:00
-lastmod: 2019-09-12T19:00:00-05:00
-#idx: 2
-#draft: false
-#actual_path: /content/posts/2018/09/why-finally-settled-ulysses.md
-prevPostPath: /posts/2018/09/hardy-press-wp-ssg-with-twist
-prevPostTitle: "Hardy Press: WP + SSG with a twist"
-nextPostPath: /posts/2018/10/version-control-follies
-nextPostTitle: "The version control follies"
+date: 2018-09-22T11:04:36
+lastmod: 2019-09-12T19:00:00
 discussionId: "2018-09-why-finally-settled-ulysses"
 #final_url: /posts/2018/09/why-finally-settled-ulysses/
 featured_image: ./Ulysses-Preferences-General-screen-shot_blur_1280x720.png

@@ -1,21 +1,10 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Back with Hugo
 subtitle: "Well, that didn't last long"
 description: "Even for me, this switcheroo was quick, as the prodigal comes crawling back to Hugo."
-#author: Bryce Wray
-date: 2019-09-20T16:40:00-05:00
-#final_date: 2019-09-20T16:40:00-05:00
-lastmod: 2019-10-11T19:00:00-05:00
-#idx: 32
-#draft: Note!
-#actual_path: /content/posts/2019/09/back-with-hugo
-#final_url: /posts/2019/09/back-with-hugo
-prevPostPath: /posts/2019/09/why-left-hugo-eleventy
-prevPostTitle: "Why I left Hugo for Eleventy"
-nextPostPath: /posts/2019/09/thinking-dark-thoughts
-nextPostTitle: "Thinking dark thoughts"
+date: 2019-09-20T16:40:00
+lastmod: 2019-10-11T19:00:00
 discussionId: "2019-09-back-with-hugo"
 featured_image: ./skid-mark-567668_1280x720.jpg
 featured_image_alt: "Skid marks on asphalt"

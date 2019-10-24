@@ -1,21 +1,10 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Why I left Hugo for Eleventy
 subtitle: "The quest to learn more"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
-#author: Bryce Wray
-date: 2019-09-08T10:00:00-05:00
-#final_date: 2019-09-08T10:00:00-05:00
-lastmod: 2019-10-11T19:00:00-05:00
-#idx: 31
-#draft: Note!
-#actual_path: /content/posts/2019/09/why-left-hugo-eleventy
-#final_url: /posts/2019/09/why-left-hugo-eleventy
-prevPostPath: /posts/2019/09/now-im-sixty-four
-prevPostTitle: "Now I’m sixty-four"
-nextPostPath: /posts/2019/09/back-with-hugo
-nextPostTitle: "Back with Hugo"
+date: 2019-09-08T10:00:00
+lastmod: 2019-10-11T19:00:00
 discussionId: "2019-09-why-left-hugo-eleventy"
 featured_image: ./detour-2496197_1280x720.jpg
 featured_image_alt: "Orange road sign, “DETOUR AHEAD”"

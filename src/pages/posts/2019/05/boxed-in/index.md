@@ -1,20 +1,10 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Boxed in?
 subtitle: “Shoebox” apps (including Ulysses) and iCloud sync
 description: 'A revisiting of the whole Ulysses matter—after I learned some more about “shoebox” apps in general.'
-#author: Bryce Wray
-date: 2019-05-04T06:00:00-05:00
-#final_date: 2019-05-10T05:22:00-05:00
-lastmod: 2019-10-11T19:00:00-05:00
-#idx: 20
-#draft: false # note!
-#actual_path: /content/posts/2019/05/boxed-in
-prevPostPath: /posts/2019/04/why-left-ulysses
-prevPostTitle: "Why I left Ulysses"
-nextPostPath: /posts/2019/05/the-holy-mail
-nextPostTitle: "The Holy Mail"
+date: 2019-05-04T06:00:00
+lastmod: 2019-10-11T19:00:00
 discussionId: "2019-05-boxed-in"
 #final_url: /posts/2019/05/boxed-in
 featured_image: ./thunderstorm-3625405_1280x720.jpg

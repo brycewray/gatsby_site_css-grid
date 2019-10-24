@@ -1,20 +1,10 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: On Edge
 subtitle: Ch-ch-ch-ch-Chromium
 description: "Microsoft’s decision about Edge is important on many levels."
-#author: Bryce Wray
-date: 2018-12-07T13:35:00-06:00
-#final_date: 2018-12-07T13:35:00-06:00
+date: 2018-12-07T13:35:00
 #lastmod
-#idx: 10
-#draft: false # note!
-#actual_path: /content/posts/2018/12/on-edge
-prevPostPath: /posts/2018/11/grid-locked-no-more
-prevPostTitle: "Grid-locked no more"
-nextPostPath: /posts/2019/01/blox-sux
-nextPostTitle: "Blox sux"
 discussionId: "2018-12-on-edge"
 #final_url: /posts/2018/12/on-edge/
 featured_image: ./MS-Edge-logo-and-bkgd_1280x720_60pct_prog.jpg

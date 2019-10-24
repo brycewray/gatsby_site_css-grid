@@ -1,20 +1,10 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 title: Lessons learned
 tags: post
 subtitle: What I found while trying other SSGs
 description: During my ill-fated (and ultimately wrong-headed) attempt to convert this site from Hugo to Gatsby, I learned a few interesting things.
-date: 2019-07-21T17:43:00-05:00
-#finaldate: 2019-07-27T10:00:00-05:00
-lastmod: 2019-08-17T16:21:00-05:00
-#idx: 25
-#draft: false
-#actual_path: /content/posts/2019/07/lessons-learned
-#final_url: /posts/2019/07/lessons-learned
-prevPostPath: /posts/2019/07/why-staying-with-hugo
-prevPostTitle: "Why I’m staying with Hugo"
-nextPostPath: /posts/2019/07/roger-copy
-nextPostTitle: "Roger, Copy"
+date: 2019-07-21T17:43:00
+lastmod: 2019-08-17T16:21:00
 discussionId: "2019-07-lessons-learned"
 featured_image: ./binoculars-4143165_1280x719.jpg
 featured_image_alt: A binocular telescope on a stand near a body of water

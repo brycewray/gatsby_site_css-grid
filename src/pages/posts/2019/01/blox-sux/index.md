@@ -1,20 +1,10 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Blox sux
 subtitle: Page builders are a pain, but . . .
 description: "Some highly uncomplimentary words about WordPress page builders."
-#author: Bryce Wray
-date: 2019-01-19T09:25:00-06:00
-lastmod: 2019-10-06T19:00:00-05:00
-#final_date: 2019-01-19T09:25:00-06:00
-#idx: 11
-#draft: false # note!
-#actual_path: /content/posts/2019/01/blox-sux
-prevPostPath: /posts/2018/12/on-edge
-prevPostTitle: "On Edge"
-nextPostPath: /posts/2019/02/ia-for-io
-nextPostTitle: "iA for IO?"
+date: 2019-01-19T09:25:00
+lastmod: 2019-10-06T19:00:00
 discussionId: "2019-01-blox-sux"
 #final_url: /posts/2019/01/blox-sux
 featured_image: ./lego-169603_1920x1080_crop_Gaussian_blur.jpg

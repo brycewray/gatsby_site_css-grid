@@ -1,21 +1,10 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Independence
 subtitle: Thirty-five years a Mac lover
 description: "Thirty-five years ago this week, I encountered a Mac for the first time, and it literally changed my life."
-#author: Bryce Wray
-date: 2019-07-06T10:38:00-05:00
-#final_date: 2019-07-06T10:38:00-05:00
+date: 2019-07-06T10:38:00
 #lastmod
-#idx: 23
-#draft: false # note!
-#actual_path: /content/posts/2019/07/independence
-#final_url: /posts/2019/07/independence
-prevPostPath: /posts/2019/06/ahoy-mate
-prevPostTitle: "Ahoy, ’Mate"
-nextPostPath: /posts/2019/07/why-staying-with-hugo
-nextPostTitle: "Why I’m staying with Hugo"
 discussionId: "2019-07-independence"
 featured_image: ./1984-07-11_01_retouched_1280x720.jpg
 featured_image_alt: Me, in 1984, eagerly wrapping my new Macintosh.

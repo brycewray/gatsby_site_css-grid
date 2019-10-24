@@ -1,20 +1,10 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: Mark it down 
 subtitle: Plain but pretty
 description: "Markdown: how to have that plain-text cake and still eat it with formatting intact."
-#author: Bryce Wray
-date: 2019-03-08T22:08:00-06:00
-#final_date: 2019-03-08T21:05:00-06:00
-lastmod: 2019-10-02T19:26:00-05:00
-#idx: 16
-#draft: false # note!
-#actual_path: /content/posts/2019/03/mark-it-down
-prevPostPath: /posts/2019/03/plain-truth
-prevPostTitle: "Plain truth"
-nextPostPath: /posts/2019/04/ec-static
-nextPostTitle: "Ec-static"
+date: 2019-03-08T22:08:00
+lastmod: 2019-10-02T19:26:00
 discussionId: "2019-03-mark-it-down"
 #final_url: /posts/2019/03/mark-it-down
 featured_image: ./ugly-duckling-young-swan-1639154_1280x720.jpg

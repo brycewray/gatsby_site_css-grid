@@ -1,20 +1,10 @@
 ---
-#layout: layouts/posts/singleposthero.njk
 tags: post
 title: The Holy Mail
 subtitle: Stopping the e-madness
 description: The way I sort-of cured the email client dance.
-#author: Bryce Wray
-date: 2019-05-10T07:20:00-05:00
-#final_date: 2019-05-10T07:20:00-05:00
+date: 2019-05-10T07:20:00
 #lastmod
-#idx: 21
-#draft: false # note!
-#actual_path: /content/posts/2019/05/the-holy-mail
-prevPostPath: /posts/2019/05/boxed-in
-prevPostTitle: "Boxed in?"
-nextPostPath: /posts/2019/06/ahoy-mate
-nextPostTitle: "Ahoy, ’Mate"
 discussionId: "2019-05-the-holy-mail"
 #final_url: /posts/2019/05/the-holy-mail
 featured_image: ./letterbox-1926493_1280x720.jpg
