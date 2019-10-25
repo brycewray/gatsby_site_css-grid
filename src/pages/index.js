@@ -1,15 +1,27 @@
 import React from "react"
 import { graphql } from "gatsby"
 import HomeLayout from "../components/layout-home"
+import Header from "../components/header"
 import SEO from "../components/seo"
+import BackgroundImage from 'gatsby-background-image'
 
 export default ({ data }) => {
   const HomePage = data.markdownRemark
   return (
+    <>
+    <Header />
+    <BackgroundImage 
+    fluid={HomePage.frontmatter.featured_image.childImageSharp.fluid}
+    className="background-hero-div"
+    alt={HomePage.frontmatter.featured_image_alt}
+    >
+      <div style={{ height: "40vh" }}></div>
+    </BackgroundImage>
+    <p className="legal ctr text-muted" style={{ marginTop: "0" }}>Image: Pixabay</p>
     <HomeLayout>
-      <SEO title="Home" />
       <div dangerouslySetInnerHTML={{ __html: HomePage.html }} />
     </HomeLayout>
+    </>
   )
 } 
 
@@ -25,7 +37,6 @@ export const query = graphql`
           childImageSharp {
             fluid {
               base64
-              tracedSVG
               aspectRatio
               src
               srcSet
