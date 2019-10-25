@@ -19,7 +19,6 @@ Here are a few odds and ends—some a tad acerbic, some not so much. And I swear
 
 `youtube:https://www.youtube.com/embed/u8pCsfT1gDU`
 
-
 .&nbsp;.&nbsp;.&nbsp;but there may be some hint of that herein, for which I apologize ahead of time.
 
 Since I began this with an embedded YouTube video, that brings me to the first topic.
