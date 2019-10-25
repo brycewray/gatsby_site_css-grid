@@ -8,7 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
-import Header from "./header"
 import Footer from "./footer"
 import "../assets/scss/ofotigrid.scss"
 import SEO from "./seo"
@@ -17,10 +16,7 @@ import PostsListHome from "./postslist-home"
 const HomeLayout = ({ children }) => {
   return (
     <>
-      <SEO />
-      <Header />
-      <div className="hero hero-home"></div>
-      <p className="legal ctr text-muted" style={{ marginTop: "0" }}>Image: Pixabay</p>
+      <SEO title="Home" />
 
       <div className="container-home">
         <div className="column-home">
