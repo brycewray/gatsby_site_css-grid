@@ -230,7 +230,7 @@ table.noborders {
   }
   margin: 1.5em auto 1em auto; // old browsers
   margin: 1.5rem auto 1rem auto;
-  border: 0;
+  border: 1px solid #000;
   border-collapse: collapse;
 
   td {
@@ -238,6 +238,7 @@ table.noborders {
     vertical-align: middle;
     padding: 0.25em 0 0.25em 0.5em; // old browsers
     padding: 0.25rem 0 0.25rem 0.5rem;
+    border: 1px solid #000;
     img {
       display: inline-block;
       vertical-align: middle;
@@ -245,9 +246,11 @@ table.noborders {
     }
   }
 
+  /*
   tr:nth-child(even) {
     background-color: #dfefff;
   }
+  */
 
   thead {
     background-color: $darkblue;
@@ -483,6 +486,8 @@ $homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720_60pct.jpg";
     font-size: 85%;
     width: 85%;
     max-width: 720px !important;
+    margin-top: 2em; // old browsers
+    margin-top: 2rem;
     margin-bottom: 3em; // old browsers
     margin-bottom: 3rem;
     @media (min-width: 900px) {
@@ -545,11 +550,12 @@ li p {
   width: 100% !important;
 }
 
-.YTembed { /* container for iframe */
+.YTembed, .container-narrower article div { /* container for iframe */
   position: relative;
   padding-top: 30px;
   padding-bottom: 56.25%;
   height: 0;
+  border: 0;
   overflow: hidden;
   iframe, object, embed {
     position: absolute;

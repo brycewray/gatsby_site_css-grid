@@ -76,19 +76,21 @@ As for which typefaces to specify and in which order in your CSS, any number of 
 
 In case you aren’t familiar with all of these, here you go (all except the generic sans-serif fallback, since it _is_ so generic and also, obviously, would vary by system and/or device):
 
-<table className="noborders">
-<thead><tr><td className="td30">Typeface name</td><td className="td70">Sample image</td></tr></thead>
-<tr><td className="td30">San Francisco</td><td className="td70"><img src="./Sys_font_stack_San_Francisco.png" alt="San Francisco typeface"></td></tr>
-<tr><td className="td30">Segoe UI</td><td className="td70"><img src="./Sys_font_stack_Segoe_UI.png" alt="Segoe UI typeface"></td></tr>
-<tr><td className="td30">Tahoma</td><td className="td70"><img src="./Sys_font_stack_Tahoma.png" alt="Tahoma typeface"></td></tr>
-<tr><td className="td30">Roboto</td><td className="td70"><img src="./Sys_font_stack_Roboto_from_GF.png" alt="Roboto typeface"></td></tr>
-<tr><td className="td30">Oxygen</td><td className="td70"><img src="./Sys_font_stack_Oxygen_from_GF.png" alt="Oxygen typeface" ></td></tr>
-<tr><td className="td30">Ubuntu</td><td className="td70"><img src="./Sys_font_stack_Ubuntu_from_GF.png" alt="Ubuntu typeface"></td></tr>
-<tr><td className="td30">Cantarell</td><td className="td70"><img src="./Sys_font_stack_Cantarell_from_GF.png" alt="Cantarell typeface"></td></tr>
-<tr><td className="td30">Fira Sans</td><td className="td70"><img src="./Sys_font_stack_Fira_Sans_from_GF.png" alt="Fira Sans typeface"></td></tr>
-<tr><td className="td30">Droid Sans</td><td className="td70"><img src="./Sys_font_stack_Droid_Sans_from_GF.png" alt="Droid Sans typeface"></td></tr>
-<tr><td className="td30">Helvetica Neue</td><td className="td70"><img src="./Sys_font_stack_Helvetica_Neue.png" alt="Helvetica Neue typeface"></td></tr>
-<tr><td className="td30">Lucida Grande</td><td className="ctr td70"><img src="./Sys_font_stack_Lucida_Grande.png" alt="Lucida Grande typeface"></td></tr>
+<table class="noborders">
+<thead><tr><td class="td30">Typeface name</td><td class="td70">Sample image</td></tr></thead>
+<tbody>
+<tr><td class="td30">San Francisco</td><td class="td70"><img src="./Sys_font_stack_San_Francisco.png" alt="San Francisco typeface"></td></tr>
+<tr><td class="td30">Segoe UI</td><td class="td70"><img src="./Sys_font_stack_Segoe_UI.png" alt="Segoe UI typeface"></td></tr>
+<tr><td class="td30">Tahoma</td><td class="td70"><img src="./Sys_font_stack_Tahoma.png" alt="Tahoma typeface"></td></tr>
+<tr><td class="td30">Roboto</td><td class="td70"><img src="./Sys_font_stack_Roboto_from_GF.png" alt="Roboto typeface"></td></tr>
+<tr><td class="td30">Oxygen</td><td class="td70"><img src="./Sys_font_stack_Oxygen_from_GF.png" alt="Oxygen typeface" ></td></tr>
+<tr><td class="td30">Ubuntu</td><td class="td70"><img src="./Sys_font_stack_Ubuntu_from_GF.png" alt="Ubuntu typeface"></td></tr>
+<tr><td class="td30">Cantarell</td><td class="td70"><img src="./Sys_font_stack_Cantarell_from_GF.png" alt="Cantarell typeface"></td></tr>
+<tr><td class="td30">Fira Sans</td><td class="td70"><img src="./Sys_font_stack_Fira_Sans_from_GF.png" alt="Fira Sans typeface"></td></tr>
+<tr><td class="td30">Droid Sans</td><td class="td70"><img src="./Sys_font_stack_Droid_Sans_from_GF.png" alt="Droid Sans typeface"></td></tr>
+<tr><td class="td30">Helvetica Neue</td><td class="td70"><img src="./Sys_font_stack_Helvetica_Neue.png" alt="Helvetica Neue typeface"></td></tr>
+<tr><td class="td30">Lucida Grande</td><td class="ctr td70"><img src="./Sys_font_stack_Lucida_Grande.png" alt="Lucida Grande typeface"></td></tr>
+</tbody>
 </table>
 
 The easiest way[^3] to implement this “system fonts stack” throughout your site is assigning the following CSS to the `<html>` tag (or `<body>` tag, if you prefer):

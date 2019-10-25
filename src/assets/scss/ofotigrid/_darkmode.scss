@@ -35,12 +35,16 @@
   }
 
   table.noborders tr {
-    background-color: $default-color-dark-mode;
+    background-color: #fff;
     color: $default-color;
   }
 
   table.noborders thead tr {
     background-color: $darkblue;
+  }
+
+  table.noborders, table.noborders td {
+    border: 1px solid #777;
   }
 
   .container {
