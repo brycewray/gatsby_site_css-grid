@@ -7,9 +7,9 @@ date: 2018-09-15T08:28:17
 lastmod: 2019-04-27T13:45:00
 discussionId: "2018-09-hardy-press-wp-ssg-with-twist"
 #final_url: /posts/2018/09/hardy-press-wp-ssg-with-twist/
-featured_image: ./Hardy_Press_Web_page_2019-04-27_1280x720_blur.png
-featured_image_alt: Screen capture from hardypress-dot-com
-featured_image_caption: "[Screen capture: April 27, 2019.]" # In quotes to allow brackets
+featured_image: ./wordpress-macbook-pro-923188_1920x1080.jpg
+featured_image_alt: Hands typing in WordPress on laptop computer
+featured_image_caption: "Image: Pixabay"
 ---
 
 While researching the static-site generator (SSG) scene for the first time in a while yesterday, I happened upon  [HardyPress](https://www.hardypress.com).
