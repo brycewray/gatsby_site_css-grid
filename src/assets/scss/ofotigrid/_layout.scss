@@ -109,11 +109,11 @@ h3.twitter-border {
   &-div, &-div::before, &-div::after {
     background-attachment: scroll;
     @media screen and (min-width: 769px) and (max-width: 1024px) {
-      height: 70vh;
+      height: 60vh;
     }
     @media screen and (min-width: 1025px) {
       background-attachment: fixed !important;
-      height: 80vh;
+      height: 60vh;
     }
   }
   &-title-block {
