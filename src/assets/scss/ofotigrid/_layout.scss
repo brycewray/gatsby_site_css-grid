@@ -486,6 +486,8 @@ $homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720_60pct.jpg";
     font-size: 85%;
     width: 85%;
     max-width: 720px !important;
+    margin-top: 2em; // old browsers
+    margin-top: 2rem;
     margin-bottom: 3em; // old browsers
     margin-bottom: 3rem;
     @media (min-width: 900px) {
