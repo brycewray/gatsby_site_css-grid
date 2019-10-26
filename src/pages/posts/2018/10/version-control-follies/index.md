@@ -7,8 +7,9 @@ date: 2018-10-06T08:30:00
 lastmod: 2019-07-14T11:40:00
 discussionId: "2018-10-version-control-follies"
 #final_url: /posts/2018/10/version-control-follies/
-featured_image: ./Sourcetree-screen-shot_1280x720.png
-featured_image_alt: Screen capture of Sourcetree software
+featured_image: ./javascript-programming-1873854_1280x720.png
+featured_image_alt: "Stylistic image of programming code on computer screen"
+featured_image_caption: "Image: Pixabay"
 ---
 
 If you, as did I, came late to all the static site generators (SSGs) fun, don’t feel bad. Besides, from what I can tell in some changelogs and various articles from the last few years, we picked a good time to get in. What were once pretty bare-bones ways of generating and serving Web pages are much better now, and are continuing to improve.
