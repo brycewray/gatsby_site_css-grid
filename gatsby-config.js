@@ -4,6 +4,7 @@ module.exports = {
     titleTemplate: "%s • brycewray.com",
     description: `brycewray.com — Opinions, observations, nerdiness.`,
     author: `@BryceWrayTX`,
+    siteUrl: `https://www.brycewray.com`,
     url: "https://www.brycewray.com",
     image: "/images/typewriter-monochrome_2242164_1280x720_60pct.jpg",
     twitterUsername: "@BryceWrayTX",
@@ -100,6 +101,69 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-146418828-1",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+      }
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.frontmatter.description,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  // custom_elements: [{ "content:encoded": edge.node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  edges {
+                    node {
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                        description
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/feed.xml",
+            title: "RSS feed - brycewray.com",
+            // optional configuration to insert feed reference in pages:
+            // if `string` is used, it will be used to create RegExp and then test if pathname of
+            // current page satisfied this regular expression;
+            // if not provided or `undefined`, all pages will have feed reference inserted
+            // match: "^/blog/",
+          },
+        ],
       },
     },
   ],
