@@ -53,16 +53,20 @@ module.exports = {
          },
          `gatsby-remark-numbered-footnotes`,
          {
-           resolve: `gatsby-remark-embed-youtube`,
-           options: {
-             width: 640,
-             height: 360,
-           },
-         },
-         {
            resolve: `gatsby-remark-prismjs`,
            options: {},
          },
+         {
+           resolve: `gatsby-remark-embed-video`,
+           options: {
+             beginMarker: `{{`,
+             endMarker: `}}`,
+             width: 640,
+             related: false,
+             noIframeBorder: true,
+           },
+         },
+         `gatsby-remark-responsive-iframe`,
         ],
       },
     },
