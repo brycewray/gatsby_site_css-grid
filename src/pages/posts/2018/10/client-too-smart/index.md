@@ -7,7 +7,7 @@ date: 2018-10-11T15:30:00
 lastmod: 2019-02-17T20:00:00
 discussionId: "2018-10-client-too-smart"
 #final_url: /posts/2018/10/client-too-smart/
-featured_image: ./contact-2805253_1280x720.png
+featured_image: contact-2805253_1280x720.png
 featured_image_alt: Illustration - mail flying at a stylized human head
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

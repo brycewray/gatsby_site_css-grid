@@ -7,7 +7,7 @@ date: 2019-03-02T16:00:00
 lastmod: 2019-04-27T06:38:00
 discussionId: "2019-03-plain-truth"
 #final_url: /posts/2019/03/plain-truth
-featured_image: ./typewriter-1031024_1280x720.jpg
+featured_image: typewriter-1031024_1280x720.jpg
 featured_image_alt: A very old Royal-brand typewriter
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

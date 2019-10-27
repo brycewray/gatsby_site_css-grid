@@ -7,7 +7,7 @@ date: 2018-11-28T09:00:00
 lastmod: 2019-10-02T19:20:00
 discussionId: "2018-11-grid-locked-no-more"
 #final_url: /posts/2018/11/grid-locked-no-more/
-featured_image: ./hairpin-turn-sign-94966_1280x720.jpg
+featured_image: hairpin-turn-sign-94966_1280x720.jpg
 featured_image_alt: Road sign - hairpin turn three thousand feet ahead
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

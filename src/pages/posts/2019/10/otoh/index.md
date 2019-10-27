@@ -7,7 +7,7 @@ author: Bryce Wray
 date: 2019-10-11T19:00:00
 #lastmod:
 discussionId: "2019-10-otoh"
-featured_image: ./compass-1344839_1280x720.jpg
+featured_image: compass-1344839_1280x720.jpg
 featured_image_alt: "Compass lying on a granite background"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

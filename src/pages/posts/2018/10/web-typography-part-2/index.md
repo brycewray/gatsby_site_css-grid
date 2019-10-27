@@ -7,7 +7,7 @@ date: 2018-10-25T07:40:00
 lastmod: 2019-07-29T20:45:00
 discussionId: "2018-10-web-typography-part-2"
 #final_url: /posts/2018/10/web-typography-part-2/
-featured_image: ./computer-1869236_1920x1080.jpg
+featured_image: computer-1869236_1920x1080.jpg
 featured_image_alt: Backlit computer keyboard
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

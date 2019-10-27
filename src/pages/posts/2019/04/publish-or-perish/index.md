@@ -7,7 +7,7 @@ date: 2019-04-11T19:00:00
 lastmod: 2019-07-29T20:55:00
 discussionId: "2019-04-publish-or-perish"
 #final_url: /posts/2019/04/publish-or-perish
-featured_image: ./office-blogging-monochrome-381228_1280x720.jpg
+featured_image: office-blogging-monochrome-381228_1280x720.jpg
 featured_image_alt: Hand moving a computer mouse near a keyboard
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

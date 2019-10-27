@@ -6,7 +6,7 @@ description: "Only weeks after telling you I was sticking with Hugo, I switch to
 date: 2019-09-08T10:00:00
 lastmod: 2019-10-11T19:00:00
 discussionId: "2019-09-why-left-hugo-eleventy"
-featured_image: ./detour-2496197_1280x720.jpg
+featured_image: detour-2496197_1280x720.jpg
 featured_image_alt: "Orange road sign, “DETOUR AHEAD”"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

@@ -7,7 +7,7 @@ date: 2019-01-19T09:25:00
 lastmod: 2019-10-06T19:00:00
 discussionId: "2019-01-blox-sux"
 #final_url: /posts/2019/01/blox-sux
-featured_image: ./lego-169603_1920x1080_crop_Gaussian_blur.jpg
+featured_image: lego-169603_1920x1080_crop_Gaussian_blur.jpg
 featured_image_alt: Lego blocks arranged stylistically
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

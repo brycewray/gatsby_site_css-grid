@@ -6,7 +6,7 @@ description: During my ill-fated (and ultimately wrong-headed) attempt to conver
 date: 2019-07-21T17:43:00
 lastmod: 2019-08-17T16:21:00
 discussionId: "2019-07-lessons-learned"
-featured_image: ./binoculars-4143165_1280x719.jpg
+featured_image: binoculars-4143165_1280x719.jpg
 featured_image_alt: A binocular telescope on a stand near a body of water
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

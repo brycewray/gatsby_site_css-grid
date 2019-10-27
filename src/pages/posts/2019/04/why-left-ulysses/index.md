@@ -6,7 +6,7 @@ description: "Why, just months after proclaiming my allegiance to the Ulysses wr
 date: 2019-04-20T11:17:00
 lastmod: 2019-10-11T19:00:00
 discussionId: "2019-04-why-left-ulysses"
-featured_image: ./hand-butterfly-3751159_blue-tinted_monochrome_1280x720_60pct.jpg
+featured_image: hand-butterfly-3751159_blue-tinted_monochrome_1280x720_60pct.jpg
 featured_image_alt: Hand releases a butterfly (which is the Ulysses logo)
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

@@ -7,7 +7,7 @@ date: 2019-03-08T22:08:00
 lastmod: 2019-10-02T19:26:00
 discussionId: "2019-03-mark-it-down"
 #final_url: /posts/2019/03/mark-it-down
-featured_image: ./ugly-duckling-young-swan-1639154_1280x720.jpg
+featured_image: ugly-duckling-young-swan-1639154_1280x720.jpg
 featured_image_alt: A baby swan swimming
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

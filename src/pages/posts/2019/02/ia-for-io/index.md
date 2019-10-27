@@ -7,7 +7,7 @@ date: 2019-02-03T09:25:00
 lastmod: 2019-10-02T19:23:00
 discussionId: "2019-02-ia-for-io"
 #final_url: /posts/2019/02/ia-for-io
-featured_image: ./notebook-933362_1280x720.jpg
+featured_image: notebook-933362_1280x720.jpg
 featured_image_alt: Stylized photograph of notebook and, in blurry background, a pencil
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

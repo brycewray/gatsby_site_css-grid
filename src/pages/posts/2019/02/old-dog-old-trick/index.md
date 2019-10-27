@@ -7,7 +7,7 @@ date: 2019-02-16T10:50:00
 lastmod: 2019-08-09T22:39:00
 discussionId: "2019-02-old-dog-old-trick"
 #final_url: /posts/2019/02/old-dog-old-trick
-featured_image: ./dog-2514968_1280x720.jpg
+featured_image: dog-2514968_1280x720.jpg
 featured_image_alt: Face of an old dog
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

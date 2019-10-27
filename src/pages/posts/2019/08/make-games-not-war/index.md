@@ -6,7 +6,7 @@ description: "I take a break from my “techy” stuff to opine on more logical 
 date: 2019-08-03T11:00:00
 lastmod: 2019-08-07T12:42:00
 discussionId: "2019-08-make-games-not-war"
-featured_image: ./stadium-seats-3310891_1280x720.jpg
+featured_image: stadium-seats-3310891_1280x720.jpg
 featured_image_alt: Rows of empty seats in a sports stadium
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

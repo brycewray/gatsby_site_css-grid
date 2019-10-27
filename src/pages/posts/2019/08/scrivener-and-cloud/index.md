@@ -6,7 +6,7 @@ description: "When even Ars Technica’s forum users can’t keep this straight,
 date: 2019-08-18T14:15:00
 #lastmod:
 discussionId: "2019-08-scrivener-and-cloud"
-featured_image: ./scriv-and-cloud-from-3331240_1280x720.jpg
+featured_image: scriv-and-cloud-from-3331240_1280x720.jpg
 featured_image_alt: Scrivener logo and cloud computing icon
 featured_image_caption: "Images: Literature and Latte; Pixabay" # quotation marks to allow colon
 ---

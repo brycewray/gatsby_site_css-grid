@@ -11,7 +11,7 @@ lastmod: 2019-10-02T19:15:00-05:00
 #actual-path: /content/about/
 discussionId: "2018-09-about"
 #final_url: /about
-featured_image: ./question-mark-over-mac-keyboard-49958_1280x720_60pct_prog.jpg
+featured_image: question-mark-over-mac-keyboard-49958_1280x720_100pct.jpg
 featured_image_alt: Stylistic image of question mark superimposed over computer keyboard
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon 
 ---

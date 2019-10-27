@@ -6,7 +6,7 @@ description: "Thoughts about my recent emphasis on switching between SSGs."
 date: 2019-10-02T18:15:00
 lastmod: 2019-10-11T19:00:00
 discussionId: "2019-10-its-about-food-not-decor" # figure it out later
-featured_image: ./mount-horeb-lunch-4162348_1280x720.jpg
+featured_image: mount-horeb-lunch-4162348_1280x720.jpg
 featured_image_alt: "Duotone photo of a diner with customers waiting to be served"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

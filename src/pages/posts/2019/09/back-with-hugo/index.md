@@ -6,7 +6,7 @@ description: "Even for me, this switcheroo was quick, as the prodigal comes craw
 date: 2019-09-20T16:40:00
 lastmod: 2019-10-11T19:00:00
 discussionId: "2019-09-back-with-hugo"
-featured_image: ./skid-mark-567668_1280x720.jpg
+featured_image: skid-mark-567668_1280x720.jpg
 featured_image_alt: "Skid marks on asphalt"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

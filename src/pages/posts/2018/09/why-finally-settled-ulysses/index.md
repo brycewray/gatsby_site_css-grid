@@ -7,7 +7,7 @@ date: 2018-09-22T11:04:36
 lastmod: 2019-09-12T19:00:00
 discussionId: "2018-09-why-finally-settled-ulysses"
 #final_url: /posts/2018/09/why-finally-settled-ulysses/
-featured_image: ./Ulysses-Preferences-General-screen-shot-dark-mode_blk_bkgd_1280x720.png
+featured_image: Ulysses-Preferences-General-screen-shot-dark-mode_blk_bkgd_1280x720.png
 featured_image_alt: Screen capture - Ulysses app preferences window
 featured_image_caption: ""
 ---

@@ -7,7 +7,7 @@ date: 2018-10-06T08:30:00
 lastmod: 2019-07-14T11:40:00
 discussionId: "2018-10-version-control-follies"
 #final_url: /posts/2018/10/version-control-follies/
-featured_image: ./javascript-programming-1873854_1280x720.png
+featured_image: javascript-programming-1873854_1280x720.png
 featured_image_alt: "Stylistic image of programming code on computer screen"
 featured_image_caption: "Image: Pixabay"
 ---

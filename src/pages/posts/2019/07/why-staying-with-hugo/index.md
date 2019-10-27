@@ -6,7 +6,7 @@ description: After experimenting for a few weeks with Gatsby and a few other tre
 date: 2019-07-14T20:45:00
 lastmod: 2019-10-11T19:00:00
 discussionId: "2019-07-why-staying-with-hugo"
-featured_image: ./hugo-logo-on-black-1280x720.png
+featured_image: hugo-logo-on-black-1280x720.png
 featured_image_alt: Logo for the Hugo static site generator.
 featured_image_caption: "Image: Hugo logo by Hugo creator Steve Francia, sourced from gohugo.io."
 ---

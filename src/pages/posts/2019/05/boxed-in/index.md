@@ -7,7 +7,7 @@ date: 2019-05-04T06:00:00
 lastmod: 2019-10-11T19:00:00
 discussionId: "2019-05-boxed-in"
 #final_url: /posts/2019/05/boxed-in
-featured_image: ./thunderstorm-3625405_1280x720.jpg
+featured_image: thunderstorm-3625405_1280x720.jpg
 featured_image_alt: Thunderstorm clouds with lighting flashes
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

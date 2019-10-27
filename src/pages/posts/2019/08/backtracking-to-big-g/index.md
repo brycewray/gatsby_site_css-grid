@@ -6,7 +6,7 @@ description: "I admit it: I get too much utility from the myriad of Google servi
 date: 2019-08-25T10:45:00
 #lastmod:
 discussionId: "2019-08-backtracking-to-big-g"
-featured_image: ./BW_shadow_of_G_on_gray_gradient_1280x720.jpg
+featured_image: BW_shadow_of_G_on_gray_gradient_1280x720.jpg
 featured_image_alt: Google logo overshadowing this site’s logo
 featured_image_caption: "Google favicon image: Pixabay" # quotation marks to allow colon
 ---

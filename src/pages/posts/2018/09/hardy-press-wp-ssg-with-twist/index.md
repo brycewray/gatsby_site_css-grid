@@ -7,7 +7,7 @@ date: 2018-09-15T08:28:17
 lastmod: 2019-04-27T13:45:00
 discussionId: "2018-09-hardy-press-wp-ssg-with-twist"
 #final_url: /posts/2018/09/hardy-press-wp-ssg-with-twist/
-featured_image: ./wordpress-macbook-pro-923188_1920x1080.jpg
+featured_image: wordpress-macbook-pro-923188_1920x1080.jpg
 featured_image_alt: Hands typing in WordPress on laptop computer
 featured_image_caption: "Image: Pixabay"
 ---
