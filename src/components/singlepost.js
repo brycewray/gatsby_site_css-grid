@@ -21,7 +21,11 @@ class singlePostTemplate extends React.Component {
   
     return (
       <>
-      <SEO title={post.frontmatter.title} description={post.excerpt} />
+      <SEO 
+      title={post.frontmatter.title} 
+      description={post.excerpt} 
+      image={post.frontmatter.featured_image.childImageSharp.resize.src}
+      />
       <Header />
       <LayoutSinglePost location={this.props.location}>
       <BackgroundImage
@@ -81,6 +85,13 @@ export const query = graphql`
           childImageSharp {
             fluid(maxWidth: 1280) {
               ...GatsbyImageSharpFluid
+            }
+            resize(width: 1280) {
+              src
+              width
+              height
+              aspectRatio
+              originalName
             }
           }
         }
