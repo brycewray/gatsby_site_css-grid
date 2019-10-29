@@ -40,7 +40,15 @@
 			margin: 0;
 			padding: 0;
 		}
-	}
+  }
+  
+  ul.postlistNav {
+    margin-right: auto;
+    margin-left: auto;
+    li {
+      padding: 0 10px;
+    }
+  }
 }
 
 /* ==== end, IE 10 and 11 **ONLY** ==== */
