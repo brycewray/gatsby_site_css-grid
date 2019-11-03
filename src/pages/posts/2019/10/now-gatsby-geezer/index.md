@@ -5,6 +5,7 @@ subtitle: Gatsby Experiment III proves the winner
 description: "Project Purple isn’t over, but today is worth celebrating."
 date: 2019-10-27T10:00:00-05:00
 #lastmod: t/k
+discussionId: "2019-10-now-gatsby-geezer"
 featured_image: gatsby-monogram-puzzle-monochrome-1816470_1920x1080_darker.jpg
 featured_image_alt: "Gatsby monogram logo over monochrome photo of puzzle pieces"
 featured_image_caption: "Images: Gatsby; Pixabay"
