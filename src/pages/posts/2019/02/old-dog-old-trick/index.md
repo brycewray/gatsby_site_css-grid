@@ -4,7 +4,7 @@ title: Old dog learns old trick
 subtitle: How’d I miss this way to fool IE?
 description: A major ”Do’h” moment in the never-ending battle against Internet Explorer.
 date: 2019-02-16T10:50:00
-lastmod: 2019-08-09T22:39:00
+lastmod: 2019-11-08T10:00:00
 discussionId: "2019-02-old-dog-old-trick"
 #final_url: /posts/2019/02/old-dog-old-trick
 featured_image: dog-2514968_1280x720.jpg
@@ -38,7 +38,9 @@ Only thing is, my day job is in [one of those enterprise shops where Windows 7 a
 
 Everything had gone fine in that respect *except* for one thing that bedeviled me throughout last weekend, when I completed the vast majority of the transition to the test site that, as it turned out, would earn my path to freedom from what I've [dubbed](/posts/2019/01/blox-sux) "GUPB," for *godforsaken unidentified page builder*.
 
-However, like the pimple on one's nose on the night of a big date, this particular "one thing" was a big, honking problem *on the home page*. On the *first slide* of a slider, carousel, whatchamacallit, at the *top of the home page*.^[I'm no fan of image sliders for a variety of reasons, chiefly that I think they distract from your messaging more than they help it. But [t'ain't my call, McGee](https://www.phrases.org.uk/bulletin_board/61/messages/878.html). When I was a Webmaster working in Marketing, I could influence such decisions; those days are behind me.] Arrgh!
+However, like the pimple on one's nose on the night of a big date, this particular "one thing" was a big, honking problem *on the home page*. On the *first slide* of a slider, carousel, whatchamacallit, at the *top of the home page*.[^sliders] Arrgh!
+
+[^sliders]:I'm no fan of image sliders for a variety of reasons, chiefly that I think they distract from your messaging more than they help it. But [t'ain't my call, McGee](https://www.phrases.org.uk/bulletin_board/61/messages/878.html). When I was a Webmaster working in Marketing, I could influence such decisions; those days are behind me.
 
 To be specific, the text that overlay that first slide was shifted 'way too far to the right. It looked fine in the desktop versions of Chrome, Firefox, and even Edge. And it looked fine on iOS and Android. Only the damnable IE resisted.
 

@@ -4,6 +4,7 @@ title: Thinking dark thoughts
 subtitle: How to keep up with a growing trend
 description: "As Dark Mode grows in use, it’s easy to make your site dark-friendly."
 date: 2019-09-29T10:08:00
+lastmod: 2019-11-09T10:00:00
 discussionId: "2019-09-thinking-dark-thoughts"
 featured_image: sunset-1090164_1280x720.jpg
 featured_image_alt: "Darkening sky at sunset"
@@ -89,4 +90,4 @@ That sounded good in theory, but so far hasn't worked all that well in practice.
 
 ## But it's still a good idea
 
-All that said, I still encourage you to make your site friendly to both Light Mode and Dark Mode. Once you do, the changes will make visiting your site considerably more pleasant to your users, and that should translate into repeat visits. At the very least, it should help make sure that Dark Mode users *don't* yell, "*Augghhh!!!* My *eyes*!" and never return---at least, as long as your site doesn't resemble [something from the GeoCities days](https://gizmodo.com/remember-the-hilarious-horror-of-geocities-with-this-we-5983574). If it does, well, you're on your own.
+All that said, I still encourage you to make your site friendly to both Light Mode and Dark Mode. Once you do, the changes will make visiting your site considerably more pleasant to your users, and that should translate into repeat visits. At the very least, it should help make sure that Dark Mode users *don't* yell, “*Augghhh!!!* My *eyes*!" and never return---at least, as long as your site doesn't resemble [something from the GeoCities days](https://gizmodo.com/remember-the-hilarious-horror-of-geocities-with-this-we-5983574). If it does, well, you're on your own.
