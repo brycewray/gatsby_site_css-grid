@@ -167,5 +167,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify-cache`,
+    {
+      resolve: `gatsby-plugin-html-attributes`,
+      options: {
+        lang: `en`,
+      },
+    },
   ],
 }
