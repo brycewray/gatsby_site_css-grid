@@ -127,6 +127,7 @@ h3.twitter-border {
     );
   }
   &-title-text, &-subtitle-text, &-description-text {
+    font-family: $sans-serif-boot;
     color: #fff;
     margin: 0 auto 0 auto;
     text-shadow: 4px 4px 2px #000;
@@ -174,6 +175,7 @@ h3.twitter-border {
   }
 
   &-p-text {
+    font-family: $sans-serif-boot;
     color: #fff;
     text-shadow: 4px 4px 2px #000;
     text-align: center;
