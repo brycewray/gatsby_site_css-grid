@@ -9,7 +9,7 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
     const { currentPage, numPages } = this.props.pageContext
     const isFirst = currentPage === 1
-    const isLast = currentPage === numPages
+    const isLast = currentPage === numPages - 1 // incremented down by 1
     const prevPage = currentPage - 1 === 1 ? '/posts/' : `posts/${(currentPage - 1).toString()}`
     const nextPage = `posts/${(currentPage + 1).toString()}`
 
@@ -19,105 +19,108 @@ class BlogIndex extends React.Component {
           title="Posts"
         />
         <h1 className="ctr topOfMain">Posts</h1>
-        <ul className="postlistNav ctr">
-          {isFirst && (
-            <>
-            ← Prev
-            </>
-          )}
-          {!isFirst && (
-            <Link to={prevPage} rel="prev">
-              ← Prev
-            </Link>
-          )}
-          {Array.from({ length: numPages }, (_, i) => (
-            <li
-              key={`pagination-number${i + 1}`}
-              style={{
-                margin: 0,
-              }}
-            >
-              <Link
-                to={`/posts/${i === 0 ? '' : i + 1}`}
-              >
-                {i + 1}
-              </Link>
-            </li>
-          ))}
-          {isLast && (
-            <>
-            Next →
-            </>
-          )}
-          {!isLast && (
-            <Link to={nextPage} rel="next">
-              Next →
-            </Link>
-          )}
-        </ul>
-        <hr />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug} className="container">
-              <div className="post-line"></div>
-              <div className="container-narrower">
-                <h2 className="h5" style={{ marginBottom: "0" }}>
-                  <Link to={node.fields.slug}>
-                    {node.frontmatter.title}
+        <div className="container">
+          <div className="post-line"></div>
+          <div className="container-narrower">
+            <ul className="postlistNav ctr">
+              {isFirst && (
+                <>
+                ← Prev
+                </>
+              )}
+              {!isFirst && (
+                <Link to={prevPage} rel="prev">
+                  ← Prev
+                </Link>
+              )}
+              {Array.from({ length: (numPages - 1) }, (_, i) => ( // incremented length (numPages) down by 1 to avoid blank last pages
+                <li
+                  key={`pagination-number${i + 1}`}
+                  style={{
+                    margin: 0,
+                  }}
+                >
+                  <Link
+                    to={`/posts/${i === 0 ? '' : i + 1}`}
+                  >
+                    {i + 1}
                   </Link>
-                </h2>
-                <p>{node.frontmatter.subtitle}</p>
-                <time datetime={node.frontmatter.date} className="pokey text-muted text-sans-serif">Published: {node.frontmatter.date}
-                {node.frontmatter.lastmod && (
-                  <>
-                  <br />Last modified: {node.frontmatter.lastmod}
-                  </>
-                )}
-                </time>
-                <p className="pokey text-body">{node.frontmatter.description}</p>
-              </div>
-            </div>
-          )
-        })}
-        <hr />
-        <ul className="postlistNav ctr">
-          {isFirst && (
-            <>
-            ← Prev
-            </>
-          )}
-          {!isFirst && (
-            <Link to={prevPage} rel="prev">
-              ← Prev
-            </Link>
-          )}
-          {Array.from({ length: numPages }, (_, i) => (
-            <li
-              key={`pagination-number${i + 1}`}
-              style={{
-                margin: 0,
-              }}
-            >
-              <Link
-                to={`/posts/${i === 0 ? '' : i + 1}`}
-              >
-                {i + 1}
-              </Link>
-            </li>
-          ))}
-          {isLast && (
-            <>
-            Next →
-            </>
-          )}
-          {!isLast && (
-            <Link to={nextPage} rel="next">
-              Next →
-            </Link>
-          )}
-        </ul>
-      </Layout>
+                </li>
+              ))}
+              {isLast && (
+                <>
+                Next →
+                </>
+              )}
+              {!isLast && (
+                <Link to={nextPage} rel="next">
+                  Next →
+                </Link>
+              )}
+            </ul>
+            <hr style={{ marginTop: "0", marginBottom: "0.5em" }} />
+            {posts.map(({ node }) => {
+              const title = node.frontmatter.title || node.fields.slug
+              return (
+                <>
+                    <h2 className="h5" style={{ marginBottom: "0.25em" }}>
+                      <Link to={node.fields.slug}>
+                        {node.frontmatter.title}
+                      </Link><br />
+                    <span className="legal"><em>{node.frontmatter.subtitle}</em></span></h2>
+                    <p className="pokey text-muted" style={{ marginTop: "0" }}>
+                    <time datetime={node.frontmatter.date} className="pokey text-muted text-sans-serif">Published: {node.frontmatter.date}
+                    {node.frontmatter.lastmod && (
+                      <>
+                      <br />Last modified: {node.frontmatter.lastmod}
+                      </>
+                    )}
+                    </time>
+                    </p>
+                    <p className="pokey text-body" style={{ marginTop: "0.5em", marginBottom: "2em" }}>{node.frontmatter.description}</p>
+                </>
+              )
+            })}
+            <hr style={{ marginTop: "2em" }} />
+            <ul className="postlistNav ctr">
+              {isFirst && (
+                <>
+                ← Prev
+                </>
+              )}
+              {!isFirst && (
+                <Link to={prevPage} rel="prev">
+                  ← Prev
+                </Link>
+              )}
+              {Array.from({ length: (numPages - 1) }, (_, i) => ( // incremented length (numPages) down by 1 to avoid blank last pages
+                <li
+                  key={`pagination-number${i + 1}`}
+                  style={{
+                    margin: 0,
+                  }}
+                >
+                  <Link
+                    to={`/posts/${i === 0 ? '' : i + 1}`}
+                  >
+                    {i + 1}
+                  </Link>
+                </li>
+              ))}
+              {isLast && (
+                <>
+                Next →
+                </>
+              )}
+              {!isLast && (
+                <Link to={nextPage} rel="next">
+                  Next →
+                </Link>
+              )}
+            </ul>
+          </div>
+        </div>
+     </Layout>
     )
   }
 }
