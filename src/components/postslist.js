@@ -33,7 +33,7 @@ class BlogIndex extends React.Component {
                   ← Prev
                 </Link>
               )}
-              {Array.from({ length: (numPages - 1) }, (_, i) => ( // incremented length (numPages) down by 1 to avoid blank last pages
+              {Array.from({ length: (numPages) }, (_, i) => (
                 <li
                   key={`pagination-number${i + 1}`}
                   style={{
@@ -93,7 +93,7 @@ class BlogIndex extends React.Component {
                   ← Prev
                 </Link>
               )}
-              {Array.from({ length: (numPages - 1) }, (_, i) => ( // incremented length (numPages) down by 1 to avoid blank last pages
+              {Array.from({ length: (numPages) }, (_, i) => ( 
                 <li
                   key={`pagination-number${i + 1}`}
                   style={{
