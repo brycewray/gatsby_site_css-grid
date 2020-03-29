@@ -264,13 +264,8 @@ table.noborders {
 
   & td {
     text-align: left !important;
-    vertical-align: middle;
-    padding: 0.25em 0 0.25em 0.5em;
-    & img {
-      display: inline-block;
-      vertical-align: middle;
-      margin: 0;  
-    }
+    vertical-align: middle !important;
+    padding: 0.25em 0 0.25em 0.5em !important;
   }
 
   & tr:nth-child(even) {
@@ -290,10 +285,7 @@ table.noborders {
   & td.td70 {
     width: 70%;
     & img {
-      display: block;
-      width: 50%;
-      max-width: 50%;
-      height: auto;
+      box-shadow: none !important;
     }
   }
   
