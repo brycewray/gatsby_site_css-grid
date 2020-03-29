@@ -13,7 +13,8 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
+    `gatsby-plugin-postcss`, // config in postcss.config.js
+    // `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
