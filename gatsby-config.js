@@ -13,7 +13,8 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
+    `gatsby-plugin-postcss`, // config in postcss.config.js
+    `gatsby-plugin-twitter`, // still need so embedded tweets will appear
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -42,7 +43,9 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 900, 
+              maxWidth: 900,
+              linkImagesToOriginal: false,
+              backgroundColor: "none",
            },
          },
          {
@@ -83,25 +86,9 @@ module.exports = {
         icon: `src/images/favicon-512x512.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {},
-    },
-    {
-      resolve: `@debiki/gatsby-plugin-talkyard`,
-      options: {
-        talkyardServerUrl: 'https://comments-for-brycewray-com.talkyard.net',
-      },
-    },
-    `gatsby-plugin-twitter`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-146418828-1",
-      },
     },
     {
       resolve: `gatsby-plugin-sitemap`,
@@ -133,7 +120,6 @@ module.exports = {
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  // custom_elements: [{ "content:encoded": edge.node.html }],
                 })
               })
             },

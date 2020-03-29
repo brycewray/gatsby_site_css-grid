@@ -1,10 +1,10 @@
-import { Link } from "gatsby"
+import { Link, Img } from "gatsby"
 // import PropTypes from "prop-types"
 import React from "react"
 
 const Header = () => (
   <header>
-  <p className="site-logo"><Link to="/">BryceWray.com</Link></p>
+  <p className="site-logo"><span className="site-logo-holder"><Link to="/"><img src="/images/BW_avatar_36x36_xpar.png" alt="This site's logo; click here to go to the home page" /></Link></span>&nbsp;&nbsp;&nbsp;<Link to="/">BryceWray.com</Link></p>
   <input type="checkbox" id="nav-toggle" className="nav-toggle" aria-hidden="true" />
   <label for="nav-toggle" className="nav__icon" aria-hidden="true">
     Expand the menu

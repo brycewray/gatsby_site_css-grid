@@ -2,21 +2,21 @@ import React from "react"
 import { graphql } from "gatsby"
 import HomeLayout from "../components/layout-home"
 import Header from "../components/header"
-import SEO from "../components/seo"
-import BackgroundImage from 'gatsby-background-image'
+import Img from 'gatsby-image'
 
 export default ({ data }) => {
   const HomePage = data.markdownRemark
   return (
     <>
     <Header />
-    <BackgroundImage 
-    fluid={HomePage.frontmatter.featured_image.childImageSharp.fluid}
-    className="background-hero-div"
-    alt={HomePage.frontmatter.featured_image_alt}
-    >
-      <div style={{ height: "40vh" }}></div>
-    </BackgroundImage>
+    <div class="hero-home">
+      <Img 
+      fluid={HomePage.frontmatter.featured_image.childImageSharp.fluid}
+      alt={HomePage.frontmatter.featured_image_alt} 
+      className="imgCover"
+      >
+      </Img>
+    </div>
     <p className="legal ctr text-muted" style={{ marginTop: "0" }}>Image: Pixabay</p>
     <HomeLayout>
       <div dangerouslySetInnerHTML={{ __html: HomePage.html }} />
