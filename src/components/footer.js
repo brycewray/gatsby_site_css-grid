@@ -3,7 +3,7 @@ import React from "react"
 const Footer = () => (
   <>
   <footer className="ctr">
-    <p><a href="https://twitter.com/BryceWrayTX" target="_blank" rel="noopener noreferrer" style={{ borderBottom: 
+    <p><a href="https://github.com/brycewray/eleventy_bundler" target="_blank" rel="noopener" style={{ borderBottom: "none" }}><img src="/images/GitHub_octocat_logo_blue_48x48.png" style={{ height: "24px", width: "24px" }} alt="GitHub" /></a>&nbsp;&nbsp;<a href="https://twitter.com/BryceWrayTX" target="_blank" rel="noopener noreferrer" style={{ borderBottom: 
     "none" }}><img src="/images/twitter-2430933_48x48.png" style={{ height: "24px", width: "24px" }} alt="Twitter" /></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/brycewray" target="_blank" rel="noopener noreferrer" style={{ borderBottom: "none" }}><img src="/images/linked-in-2674741_48x48.png" style={{ height: "24px", width: "24px" }} alt="LinkedIn" /></a>&nbsp;&nbsp;<a href="/feed.xml" style={{ borderBottom: "none" }}><img src="/images/rss-2440955_48x48.png" style={{ height: "24px", width: "24px" }} alt="RSS" /></a></p>
     <p className="legaltxt">
       &copy; {new Date().getFullYear()} Bryce Wray.<br />
