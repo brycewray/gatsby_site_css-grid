@@ -5,7 +5,7 @@ const PostsHomeList = () => (
   <StaticQuery
     query={graphql`
       query {
-        allMarkdownRemark(filter: {frontmatter: {tags: {eq: "post"}}}, limit: 2, sort: {fields: frontmatter___date, order: DESC}) {
+        allMarkdownRemark(filter: {frontmatter: {tags: {eq: "post"}}}, limit: 7, sort: {fields: frontmatter___date, order: DESC}) {
           edges {
             node {
               frontmatter {
@@ -30,6 +30,7 @@ const PostsHomeList = () => (
             <p className="pokey text-body">{node.frontmatter.description}</p>
           </div>
         ))}
+        <p><strong>All posts</strong> <em>(listed five per page)</em></p>
       </div>
     }
   />
