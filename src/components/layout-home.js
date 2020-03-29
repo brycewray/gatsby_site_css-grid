@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Footer from "./footer"
-import "../assets/scss/ofotigrid.scss"
 import SEO from "./seo"
 import PostsListHome from "./postslist-home"
 

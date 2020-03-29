@@ -1,5 +1,4 @@
 import React from "react"
-import "../assets/scss/ofotigrid.scss"
 import SEO from "./seo"
 import Layout from "../components/layout"
 
