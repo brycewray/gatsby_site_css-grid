@@ -83,9 +83,6 @@ module.exports = {
         icon: `src/images/favicon-512x512.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {},
@@ -120,7 +117,6 @@ module.exports = {
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  // custom_elements: [{ "content:encoded": edge.node.html }],
                 })
               })
             },

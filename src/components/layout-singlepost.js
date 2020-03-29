@@ -8,7 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import SinglePostFooter from "./singlepost-footer"
 import Footer from "./footer"
 import "../assets/scss/ofotigrid.scss"
 
