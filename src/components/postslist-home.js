@@ -15,7 +15,8 @@ const PostsHomeList = () => (
             node {
               frontmatter {
                 title
-                date(formatString: "MMMM D,YYYY")
+                subtitle
+                date(formatString: "MMMM D, YYYY")
                 lastmod(formatString: "MMMM D, YYYY")
                 description
               }
@@ -32,14 +33,15 @@ const PostsHomeList = () => (
         {data.onlySeven.edges.map(({ node }) =>(
           <div>
             <h2 className="h5" style={{ marginBottom: "0" }}><Link to={ node.fields.slug}>{node.frontmatter.title}</Link></h2>
-            <p><strong><em>{node.frontmatter.subtitle}</em></strong></p>
-            <time datetime={node.frontmatter.date} className="pokey text-muted text-sans-serif">{node.frontmatter.date}
+            <p className="h5"><em>{node.frontmatter.subtitle}</em></p>
+            <p className="legal text-muted" style={{ marginTop: "0" }}>
+              {node.frontmatter.date}
                 {node.frontmatter.lastmod && (
                   <>
-                  &nbsp;&bull;&nbsp;Last modified {node.frontmatter.lastmod}
+                  &nbsp;&nbsp;&bull;&nbsp;&nbsp;Last modified {node.frontmatter.lastmod}
                   </>
                 )}
-                </time>
+            </p>
             <p className="pokey text-body">{node.frontmatter.description}</p>
           </div>
         ))}

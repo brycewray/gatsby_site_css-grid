@@ -10,10 +10,10 @@ const HomeLayout = ({ children }) => {
       <SEO title="Home" />
 
       <div className="container-home">
-        <div className="column-home">
+        <div className="column-home-1">
           {children}
         </div>
-        <div className="column-home">
+        <div className="column-home-2">
           <h2 className="h1" style={{ marginBottom: "0.5em" }}>Latest posts</h2>
           <PostsListHome />
         </div>
