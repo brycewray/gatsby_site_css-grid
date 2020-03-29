@@ -19,6 +19,43 @@ class BlogIndex extends React.Component {
           title="Posts"
         />
         <h1 className="ctr topOfMain">Posts</h1>
+        <ul className="postlistNav ctr">
+          {isFirst && (
+            <>
+            ← Prev
+            </>
+          )}
+          {!isFirst && (
+            <Link to={prevPage} rel="prev">
+              ← Prev
+            </Link>
+          )}
+          {Array.from({ length: numPages }, (_, i) => (
+            <li
+              key={`pagination-number${i + 1}`}
+              style={{
+                margin: 0,
+              }}
+            >
+              <Link
+                to={`/posts/${i === 0 ? '' : i + 1}`}
+              >
+                {i + 1}
+              </Link>
+            </li>
+          ))}
+          {isLast && (
+            <>
+            Next →
+            </>
+          )}
+          {!isLast && (
+            <Link to={nextPage} rel="next">
+              Next →
+            </Link>
+          )}
+        </ul>
+        <hr />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -30,12 +67,20 @@ class BlogIndex extends React.Component {
                     {node.frontmatter.title}
                   </Link>
                 </h2>
-                <time datetime={node.frontmatter.date} className="pokey text-muted text-sans-serif">{node.frontmatter.date}</time>
+                <p>{node.frontmatter.subtitle}</p>
+                <time datetime={node.frontmatter.date} className="pokey text-muted text-sans-serif">Published: {node.frontmatter.date}
+                {node.frontmatter.lastmod && (
+                  <>
+                  <br />Last modified: {node.frontmatter.lastmod}
+                  </>
+                )}
+                </time>
                 <p className="pokey text-body">{node.frontmatter.description}</p>
               </div>
             </div>
           )
         })}
+        <hr />
         <ul className="postlistNav ctr">
           {isFirst && (
             <>
@@ -99,7 +144,9 @@ export const pageQuery = graphql`
           }
           frontmatter {
             date(formatString: "MMMM D, YYYY")
+            lastmod(formatString: "MMMM D, YYYY")
             title
+            subtitle
             description
           }
         }
