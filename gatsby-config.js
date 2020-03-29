@@ -91,19 +91,6 @@ module.exports = {
       options: {},
     },
     {
-      resolve: `@debiki/gatsby-plugin-talkyard`,
-      options: {
-        talkyardServerUrl: 'https://comments-for-brycewray-com.talkyard.net',
-      },
-    },
-    `gatsby-plugin-twitter`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-146418828-1",
-      },
-    },
-    {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/sitemap.xml`,
