@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import HomeLayout from "../components/layout-home"
 import Header from "../components/header"
-import SEO from "../components/seo"
 import BackgroundImage from 'gatsby-background-image'
 
 export default ({ data }) => {
