@@ -14,7 +14,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`, // config in postcss.config.js
-    // `gatsby-plugin-sass`,
+    `gatsby-plugin-twitter`, // still need so embedded tweets will appear
     {
       resolve: `gatsby-source-filesystem`,
       options: {
