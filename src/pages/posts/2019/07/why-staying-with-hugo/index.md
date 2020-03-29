@@ -4,14 +4,14 @@ title: Why I’m staying with Hugo
 subtitle: An “interesting” learning experience
 description: After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo.
 date: 2019-07-14T20:45:00
-lastmod: 2019-10-11T19:00:00
+lastmod: 2019-12-17T18:50:00-06:00
 discussionId: "2019-07-why-staying-with-hugo"
 featured_image: hugo-logo-on-black-1280x720.png
 featured_image_alt: Logo for the Hugo static site generator.
 featured_image_caption: "Image: Hugo logo by Hugo creator Steve Francia, sourced from gohugo.io."
 ---
 
-<div className="yellowBox">
+<div class="yellowBox">
 	<p><strong>Note</strong>: To put it simply, <a href="/posts/2019/09/why-left-hugo-eleventy">things</a> <a href="/posts/2019/09/back-with-hugo">have</a> <a href="/posts/2019/10/its-about-food-not-decor">changed</a> multiple times since this post, but it reflects my thinking at the time and also provides what I hope are some useful <em>caveats</em>, so <a href="/posts/2019/10/otoh">here it shall&nbsp;stay</a>.</p>
 </div>
 
@@ -207,7 +207,7 @@ If you're as unaware of MDX as I was before I started down this rabbit-hole, I'l
 
 One of the frankly cool things about Gatsby, like some of the other kewl-kid JavaScript-based SSGs[^whichOnesJSX] that I tried during these weeks, is the use of JavaScript XML (JSX) to create actions within Web pages, some of which used to require server-side capabilities. In particular, JSX working with GraphQL queries makes possible many of the dynamic capabilities that these SSGs offer. JSX has its quirks and [it *really* doesn't like it when you put multiple JSX elements together without wrapping them in something](https://stackoverflow.com/questions/50565468/returning-multiple-elements-in-jsx), but it's quite powerful when it behaves.
 
-[^whichOnesJSX]: In the original form of this post, I erroneously identified [Eleventy](https://11ty.io) as one of the SSGs which can use JSX and MDX. While those have been [subjects](https://github.com/11ty/eleventy/issues/235) [of](https://github.com/11ty/eleventy/issues/117) [interest](https://github.com/11ty/eleventy/issues/636) in the Eleventy camp, they're not yet in the feature set as of the last time I updated this.
+[^whichOnesJSX]: In the original form of this post, I erroneously identified [Eleventy](https://11ty.dev) as one of the SSGs which can use JSX and MDX. While those have been [subjects](https://github.com/11ty/eleventy/issues/235) [of](https://github.com/11ty/eleventy/issues/117) [interest](https://github.com/11ty/eleventy/issues/636) in the Eleventy camp, they're not yet in the feature set as of the last time I updated this.
 
 So that's JSX---and MDX is simply a form of Markdown that can accept JSX within its content and, when parsed by the right rendering engine, pass the JSX code over to the SSG for whatever the JSX is supposed to make happen. There's a lot more to it than that, but that's about the size of it, and that was enough to keep me interested.[^MDXHugo]
 
@@ -247,7 +247,7 @@ Early that afternoon, my mind finally at rest about it all, I tweeted:[^BEP]
 
 [^BEP]: I confess to being extremely pleased that, later that afternoon, none other than [@bepsays](https://twitter.com/bepsays) himself (Bjørn Erik Pedersen, the lead developer of Hugo) "liked" that tweet.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Will have more to say about this in a future post, butl am keeping <a href="https://t.co/QPSmjqXwft">https://t.co/QPSmjqXwft</a> firmly within <a href="https://twitter.com/GoHugoIO?ref_src=twsrc%5Etfw">@GoHugoIO</a> after three weekends’ worth of experimentation with <a href="https://twitter.com/gatsbyjs?ref_src=twsrc%5Etfw">@gatsbyjs</a> and some other kewl kids. <a href="https://twitter.com/hashtag/StayWithTheBest?src=hash&amp;ref_src=twsrc%5Etfw">#StayWithTheBest</a></p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1150104013871955971?ref_src=twsrc%5Etfw">July 13, 2019</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Will have more to say about this in a future post, butl am keeping <a href="https://t.co/QPSmjqXwft">https://t.co/QPSmjqXwft</a> firmly within <a href="https://twitter.com/GoHugoIO?ref_src=twsrc%5Etfw">@GoHugoIO</a> after three weekends’ worth of experimentation with <a href="https://twitter.com/gatsbyjs?ref_src=twsrc%5Etfw">@gatsbyjs</a> and some other kewl kids. <a href="https://twitter.com/hashtag/StayWithTheBest?src=hash&amp;ref_src=twsrc%5Etfw">#StayWithTheBest</a></p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1150104013871955971?ref_src=twsrc%5Etfw">July 13, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 ## "Interesting," indeed
 
