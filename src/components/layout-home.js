@@ -16,8 +16,7 @@ const HomeLayout = ({ children }) => {
         </div>
         <div className="column-home">
           <h2 className="h1" style={{ marginBottom: "0.5em" }}>Latest posts</h2>
-            <PostsListHome />
-          <p className="text-sans-serif"><a href="/posts"><strong>All posts</strong></a></p>
+          <PostsListHome />
         </div>
       </div>
       <Footer />
