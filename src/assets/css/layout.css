@@ -332,6 +332,18 @@ img.postsFeatImg {
   font-size: calc(var(--bigger) * 1em);
 }
 
+ul.postlistNav {
+  width: 50%;
+  font-size: 85%;
+  margin: 1.5em auto;
+  list-style: none;
+  padding: 0;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .container-home {
   margin: 0 auto;
   width: 90%;
