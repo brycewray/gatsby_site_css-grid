@@ -4,13 +4,9 @@ title: Roger, Copy
 subtitle: Keeping my .git together with Working Copy
 description: "How I now keep my site files “synced” across my devices—via Git and Working Copy."
 date: 2019-07-27T06:38:00
-lastmod: 2019-10-02T19:36:00
+lastmod: 2020-02-03T14:23:00-06:00
 discussionId: "2019-07-roger-copy"
-featured_image: clocks-in-sync-3303560_1280x720_100pct.jpg
-featured_image_alt: Clocks synchronized to the same time, illustrating synchronicity.
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
-
 
 If this site had a horde of regular readers, there probably would be enough of you out there that, probability suggests, a tiny percentage could be expected to watch every change with eagle eyes.
 
@@ -22,7 +18,7 @@ On July 21, I removed that reference.
 
 On July 24, I brought it back.
 
-The reason why the reference went away goes back to something from a [now-deleted](/posts/2019/10/its-about-food-not-decor) previous post:
+The reason why the reference went away goes back to something from a [previous post](/posts/2019/07/lessons-learned):
 
 > .&nbsp;.&nbsp;.&nbsp;using cloud sync with a Git repo is [a bad idea](https://stackoverflow.com/questions/35853139/can-git-and-icloud-drive-be-effectively-used-together).  So, now, I keep my [SSG](https://staticsite.gen) directory in a drive that's not sync'd with the cloud.
 
@@ -54,15 +50,15 @@ The best way to learn about Working Copy is to read Borum's excellent [documenta
 
 [^docs]: After the awfulness of the [SSG](https://staticgen.com) documentation that I recently [attacked](/posts/2019/07/lessons-learned), it was and is a distinct pleasure to use Working Copy's outstanding online manual.
 
-Early this morning in the comfort of the living room recliner, I started this very post in [iA Writer](https://ia.net/writer) on the iPad. I put in some early front matter and a paragraph of text just to get started, and then I opened Working Copy and had both apps running in [split-screen mode](https://support.apple.com/en-us/HT207582). As you can see on the left, I'd started a Git commit of this article's original [Markdown](https://daringfireball.net/projects/markdown) file ("roger-copy.md"), highlighted on the right in iA Writer:
+Early this morning in the comfort of the living room recliner, I started this very post in [iA Writer](https://ia.net/writer) on the iPad. I put in some early front matter and a paragraph of text just to get started, and then I opened Working Copy and had both apps running in [split-screen mode](https://support.apple.com/en-us/HT207582). As you can see on the left, I'd started a Git commit of this article's original [Markdown](https://daringfireball.net/projects/markdown) file, `roger-copy.md`, highlighted on the right in iA Writer:
 
-!["iPad screen capture: Working Copy on the left, iA Writer on the right"](Working_Copy_scr_cap_01.png)
+<img src="Working_Copy_scr_cap_01_1024x768.jpg" alt="iPad screen capture: Working Copy on the left, iA Writer on the right" />
 
 (I didn't have the **Push** slider activated because I have multiple remote repos and prefer to push to each manually; but, if you're using only one remote repo, you may find it more convenient to tap that slider so that each commit auto-pushes to the remote.)
 
 Once I'd done the commit, I returned to the main display for the local repo, where it dutifully noted that each of the remote repos was now behind by that one new commit:
 
-![iPad screen capture: Working Copy display of the local Git repository on the device"](Working_Copy_scr_cap_02.png)
+<img src="Working_Copy_scr_cap_02_1024x768.jpg" alt="iPad screen capture: Working Copy display of the local Git repository on the device" />
 
 Please note that I wanted to push this Markdown file to Bitbucket and then the others, but obviously I *didn't* want this barely-started post to go live on the site; so I simply set the **date** parameter in the front matter to a future date. Then, when Netlify "saw" the change to the remote repo in Bitbucket, the resulting build process would ignore the new post as being not yet ready to go.[^draft]
 
@@ -70,15 +66,15 @@ Please note that I wanted to push this Markdown file to Bitbucket and then the o
 
 So, this matter (pardon the pun) handled, I then pushed the commit---first, to Bitbucket:
 
-!["iPad screen capture: Working Copy display showing a push has gone to Bitbucket"](Working_Copy_scr_cap_04.png)
+<img src="Working_Copy_scr_cap_04_1024x768.jpg" alt="iPad screen capture: Working Copy display showing a push has gone to Bitbucket" />
 
 .&nbsp;.&nbsp;.&nbsp;and then to the others, so that soon the content status appeared as follows. Note that the master branch (*master-grid*) now was all sync'ed up with the three remote repos:
 
-!["iPad screen capture: Working Copy display showing that the master branch is synchronized with the three remote repositories"](Working_Copy_scr_cap_07.png)
+<img src="Working_Copy_scr_cap_07_1024x768.jpg" alt="iPad screen capture: Working Copy display showing that the master branch is synchronized with the three remote repositories" />
 
 So I was all ready to go. Then all I had to do when I got back on the Mac was to use my [currently preferred macOS Git client](https://git-fork.com) to fetch the changes from Bitbucket, which instantly added this Markdown file to the Mac's version of the repo so I could work on it more. Incidentally, I could choose---and have chosen---to do text edits within Working Copy itself. Here you can see the Markdown file for my [last post](/posts/2019/07/lessons-learned):
 
-!["iPad screen capture: Working Copy display showing its built-in text editor"](Working_Copy_scr_cap_11.png)
+<img src="Working_Copy_scr_cap_11_1024x768.jpg" alt="iPad screen capture: Working Copy display showing its built-in text editor" />
 
 However, to Borum's credit, he [advises](https://workingcopyapp.com/manual/extending-ios) using a separate editor that's likely better suited to what a typical user wants, especially if that's involving code editing; so I also added [Textastic](https://www.textasticapp.com) to my iOS devices and have quickly learned it, too, is a great addition for one who wants to do as much site-editing in iOS as possible when necessary.
 
