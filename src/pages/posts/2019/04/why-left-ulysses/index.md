@@ -11,7 +11,7 @@ featured_image_alt: Hand releases a butterfly (which is the Ulysses logo)
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
-<div className="yellowBox">
+<div class="yellowBox">
   <p><em><strong>Note</strong> from 2019-05-04: In case you&rsquo;ve already read this, be advised I&rsquo;ve learned some additional information since the original post (2019-04-20) which doesn&rsquo;t truly exonerate Ulysses regarding the sync issues described herein <strong>but</strong> does raise serious questions about just where the fault really lies. So I went back and renewed the Ulysses sub after all. <a href="/posts/2019/05/boxed-in">For details, see “Boxed in.”</a></em></p>
   <p><em><strong>Note</strong> from 2019-10-11: I originally deleted this post after writing <a href="/posts/2019/05/boxed-in">&ldquo;Boxed in&rdquo;</a>, but <a href="/posts/2019/10/otoh">later decided</a> that had been a bad idea, so it&rsquo;s now back.</em></p>
 </div>
@@ -181,7 +181,7 @@ However, that was probably just how my wandering mind took them; because, by the
 ## The geek's prerogative
 
 <figure>
-  <img src="./iA_Writer_on_why-left-ulysses_post.png" alt="Screen capture from iA Writer app" />
+  <img src="./iA_Writer_on_why-left-ulysses_post_cropped_1272x620.jpg" alt="Screen capture from iA Writer app" />
   <figcaption>Ladies and gentlemen, the winner (for now): iA&nbsp;Writer.</figcaption>
 </figure>
 
