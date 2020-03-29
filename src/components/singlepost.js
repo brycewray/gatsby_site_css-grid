@@ -24,16 +24,27 @@ class singlePostTemplate extends React.Component {
       />
       <Header />
       <LayoutSinglePost location={this.props.location}>
-        <div className="background-hero-title-block">
-          <h1 className="background-hero-title-text">{post.frontmatter.title}</h1>
-          <h2 className="background-hero-subtitle-text"><em>{post.frontmatter.subtitle}</em></h2>
-          <p className="background-hero-description-text">{post.frontmatter.description}</p>
-          <p className="background-hero-p-text">
-            <span style={{ fontVariant: "small-caps" }}>published:</span>&nbsp; <strong>{post.frontmatter.date}</strong><br />
-            <span className="pokey">
-            <span style={{ fontVariant: "small-caps" }}>{lastModIntro}</span>&nbsp; {lastModText}
-            </span>
-          </p>
+        <div className="background-hero-div">
+          <div className="background-hero-title-block-fit">
+            <h1 className="background-hero-title-text">{post.frontmatter.title}</h1>
+            <h2 className="background-hero-subtitle-text">
+            {post.frontmatter.subtitle && (
+              <em>{post.frontmatter.subtitle}</em>
+            )}
+            {!post.frontmatter.subtitle && (
+              <>
+              &nbsp;
+              </>
+            )}
+            </h2>
+            <p className="background-hero-description-text">{post.frontmatter.description}</p>
+            <p className="background-hero-p-text">
+              <span style={{ fontVariant: "small-caps" }}>published:</span>&nbsp; <strong>{post.frontmatter.date}</strong><br />
+              <span className="pokey">
+              <span style={{ fontVariant: "small-caps" }}>{lastModIntro}</span>&nbsp; {lastModText}
+              </span>
+            </p>
+          </div>
         </div>
         <div className="post-line"></div>
         <div className="container-narrower">
