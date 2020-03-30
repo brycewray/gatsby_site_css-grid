@@ -68,10 +68,7 @@ So, until reality *ceases* to bite in at least this specific way it's biting rig
 
 Hunker down. Wash your hands every chance you get, with soap and for twenty seconds. By the way, **here's why that matters**, in case you haven't seen this:
 
-<br />
-<div class="YTembed">
-	<iframe width="1351" height="599" src="https://www.youtube.com/embed/-LKVUarhtvE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{ youtube: https://www.youtube.com/embed/-LKVUarhtvE }}
 
 Do this not just for yourself but for everyone with whom you might unavoidably come into contact.
 
