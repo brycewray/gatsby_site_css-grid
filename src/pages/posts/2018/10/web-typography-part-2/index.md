@@ -4,13 +4,18 @@ title: A stacked deck
 subtitle: Part 2 of a two-part series on Web typography
 description: Making the case for a system “fonts” approach to the typography on Web sites.
 date: 2018-10-25T07:40:00
-lastmod: 2019-07-29T20:45:00
+lastmod: 2019-12-08T17:48:00-06:00
 discussionId: "2018-10-web-typography-part-2"
 #final_url: /posts/2018/10/web-typography-part-2/
 featured_image: computer-1869236_1920x1080.jpg
 featured_image_alt: Backlit computer keyboard
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
+
+<div class="yellowBox">
+	<p><strong>Note from 2019-12-08</strong>: Although the system &ldquo;fonts&rdquo; approach I describe in this post is still quite sensible in many cases, the <a href="/posts/2019/12/packing-up">decision to move the site to an Eleventy/webpack combination</a> allowed me to adopt a standard appearance for all devices and OSs without some of the usual technical drawbacks that I&rsquo;ll mention herein.</p>
+</div>
+&nbsp;<br />
 
 In [Part 1](https://brycewray.com/posts/2018/10/web-typography-part-1/) of this two-part series, I posited that body text on Web sites should, y’know, be _readable_. O&nbsp;M&nbsp;G. Here, in the conclusion, I’ll explain the typographical choices on _this_ site.
 

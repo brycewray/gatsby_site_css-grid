@@ -6,7 +6,7 @@ subtitle: Eleventy and webpack are a powerful pair
 description: "How using a bundler makes the coolest SSG even better."
 author: Bryce Wray
 date: 2019-12-08T17:48:00-06:00
-lastmod: 2020-01-15T19:00:00-06:00
+lastmod: 2020-01-15 #T19:00:00-06:00
 discussionId: "2019-12-packing-up"
 ---
 

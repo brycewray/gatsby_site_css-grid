@@ -4,20 +4,20 @@ title: Back with Hugo
 subtitle: "Well, that didn't last long"
 description: "Even for me, this switcheroo was quick, as the prodigal comes crawling back to Hugo."
 date: 2019-09-20T16:40:00
-lastmod: 2019-11-09T10:00:00
+lastmod: 2020-01-01T08:56:00-06:00
 discussionId: "2019-09-back-with-hugo"
 featured_image: skid-mark-567668_1280x720.jpg
 featured_image_alt: "Skid marks on asphalt"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
-<div className="yellowBox">
+<div class="border-black border-solid yellowBox">
   <p><strong>Note</strong>: See also <a href="/posts/2019/10/otoh">this post</a> for why this post went away and, more to the point, why it&rsquo;s back.</p>
 </div>
 
 I'm not even going to make a big deal of this, or spend a lot of your time explaining it. I'm just going to say it in what for me is a fairly short post.
 
-I do still like, admire the thinking behind, and anticipate a great future for, the [Eleventy](https://11ty.io) [static site generator](https://staticgen.com) (SSG). A lot.
+I do still like, admire the thinking behind, and anticipate a great future for, the [Eleventy](https://11ty.dev) [static site generator](https://staticgen.com) (SSG). A lot.
 
 But this site is back on [Hugo](https://gohugo.io).
 
@@ -55,11 +55,11 @@ While Eleventy does an admirable job of keeping that from its users, it can't do
 
 Thus, I was back to preferring the all-in-one-box, single-binary goodness of Hugo once again. Then I read something that helped me make up my mind, if such a thing is ever possible with a flighty cranium like mine.
 
-### Flavio Copes is 'waaaay smarter than I (no&nbsp;kidding)
+### Flavio Copes is ’waaaay smarter than I (no&nbsp;kidding)
 
 On the day this week when I was pondering whether to revert to Hugo, egg-on-my-face be damned, I encountered one particular article that made the choice a lot easier---if not less personally embarrassing, given the big deal I'd made about the short-lived change.
 
-Back in January, Flavio Copes, the well-known developer and prolific tech blogger (not to mention Hugo user), wrote a piece called “[The pros of using a boring stack](https://flaviocopes.com/boring-stack/)." Among his many salient-as-usual points (and the boldfacing is all his):
+Back in January, Flavio Copes, the well-known developer and prolific tech blogger (not to mention Hugo user), wrote a piece called "[The pros of using a boring stack](https://flaviocopes.com/boring-stack/)." Among his many salient-as-usual points (and the boldfacing is all his):
 
 > .&nbsp;.&nbsp;. if you want to create a blog and be serious at it, then use the most boring and bulletproof thing you can find. Definitely **don’t work on your blog infrastructure if you want to do any serious blogging**.
 > 

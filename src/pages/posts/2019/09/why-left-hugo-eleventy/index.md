@@ -4,14 +4,14 @@ title: Why I left Hugo for Eleventy
 subtitle: "The quest to learn more"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
 date: 2019-09-08T10:00:00
-lastmod: 2019-10-11T19:00:00
+lastmod: 2019-12-17 #T18:50:00-06:00 -- Again a Gatsby time glitch
 discussionId: "2019-09-why-left-hugo-eleventy"
 featured_image: detour-2496197_1280x720.jpg
 featured_image_alt: "Orange road sign, “DETOUR AHEAD”"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
-<div className="yellowBox">
+<div class="border-black border-solid yellowBox">
   <p><strong>Note</strong>: See also <a href="/posts/2019/10/otoh">this post</a> for why this post went away and, more to the point, why it&rsquo;s back.</p>
 </div>
 
@@ -23,7 +23,7 @@ If you know what the JAMstack is (if you don't, follow that link above for a muc
 
 But there was more to it. Things were afoot. Now, you get to find out just what they were.
 
-The fact is: this site, about to enter its second year of life, now comes to you via a different SSG---one also born in 2018, called [Eleventy](https://11ty.io).
+The fact is: this site, about to enter its second year of life, now comes to you via a different SSG---one also born in 2018, called [Eleventy](https://11ty.dev).
 
 Yep, that's what I said. Eleventy. Not Hugo any more.
 
@@ -45,7 +45,7 @@ Second, not long after I dragged my bleeding carcass away from attempting to use
 
 It wasn't so much that I felt Gatsby and its adherents had beaten me. It was more that I felt I'd been laid low by the newer generation of mostly JavaScript-based SSGs in general.
 
-[You may recall](/posts/2019/07/why-sticking-with-hugo) that at least part of my interest in Gatsby in particular, and the new-gen SSGs in general, was because I wanted to amplify my coding chops---especially  since working with this strain of SSGs was more likely to yield real-world experience I could use either on the current job or the next one.
+[You may recall](/posts/2019/07/why-staying-with-hugo) that at least part of my interest in Gatsby in particular, and the new-gen SSGs in general, was because I wanted to amplify my coding chops---especially  since working with this strain of SSGs was more likely to yield real-world experience I could use either on the current job or the next one.
 
 Coding chops? Hah. Instead, it felt as if I were limping away while barely retaining my mouth's choppers.
 
@@ -176,11 +176,11 @@ I chose to use [Nunjucks](https://mozilla.github.io/nunjucks/) for my Eleventy t
 
 [^moreComing]: Details to come in a future post, after I've had more time to play with Eleventy---especially in view of some major look-and-feel changes I'm considering that would be easier thanks to this transition. (The operative word there is *considering*.)
 
-Also: while I'm mostly talking Eleventy *vs.* Hugo here, let me get in a particular Eleventy *vs.* Gatsby dig. It is **vastly** easier to do, say, a list of your site's posts in Eleventy (through its [collections](https://www.11ty.io/docs/collections/) feature) than via the impressive-but-finicky [GraphQL](https://www.gatsbyjs.org/docs/graphql/) in Gatsby (and [Gridsome](https://gridsome.org/docs/querying-data), for that matter).[^graphqlExpII]
+Also: while I'm mostly talking Eleventy *vs.* Hugo here, let me get in a particular Eleventy *vs.* Gatsby dig. It is **vastly** easier to do, say, a list of your site's posts in Eleventy (through its [collections](https://www.11ty.dev/docs/collections/) feature) than via the impressive-but-finicky [GraphQL](https://www.gatsbyjs.org/docs/graphql/) in Gatsby (and [Gridsome](https://gridsome.org/docs/querying-data), for that matter).[^graphqlExpII]
 
 [^graphqlExpII]: Indeed, the Straw That Broke the Camel's Back for Gatsby Experiment II was when I couldn't *reliably* make GraphQL "see" each post's featured image *as* an image rather than a string, no matter how many ways I tried or how many tutorials I followed slavishly over a week's time. And only if you *can* get GraphQL to "see" an image can you make Gatsby apply all the admittedly cool features available through [Gatsby Image](https://www.gatsbyjs.org/docs/using-gatsby-image/), so that's where I drew the line the second and final time around with Gatsby.
 
-Mind you, the Eleventy [documentation](https://www.11ty.io/docs/) (although quite good, please understand) could stand to assume a little less knowledge on the part of its potential users, as [I've mentioned](/posts/2019/07/lessons-learned) is true for all SSGs in general; but Leatherman at least includes [links to quite a few Eleventy sites and, where possible, sample source code](https://www.11ty.io/docs/sites/). Every time I got stuck, I spent some time poring through others' code and, sooner or later, found an answer to a question. (To be fair, the Hugo team [does this, too](https://gohugo.io/showcase/).)
+Mind you, the Eleventy [documentation](https://www.11ty.dev/docs/) (although quite good, please understand) could stand to assume a little less knowledge on the part of its potential users, as [I've mentioned](/posts/2019/07/lessons-learned) is true for all SSGs in general; but Leatherman at least includes [links to quite a few Eleventy sites and, where possible, sample source code](https://www.11ty.dev/docs/sites/). Every time I got stuck, I spent some time poring through others' code and, sooner or later, found an answer to a question. (To be fair, the Hugo team [does this, too](https://gohugo.io/showcase/).)
 
 ### It's far more robust than Gatsby
 
@@ -194,11 +194,11 @@ It doesn't build a site as quickly as Hugo---nothing beats Hugo on that score---
 
 While we're on the subject of speed: while I was working on this post, I saw these Leatherman tweets from, respectively, his personal account and the Eleventy account:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Which has a better First Meaningful Paint time?<br><br>① a raw 8.5MB HTML file with the full text of every single one of my 27,506 tweets<br>② a client rendered React site with exactly one tweet on it<br><br>(Spoiler: <a href="https://twitter.com/____lighthouse?ref_src=twsrc%5Etfw">@____lighthouse</a> reports 8.5MB of HTML wins by about 200ms)</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/1169998370041208832?ref_src=twsrc%5Etfw">September 6, 2019</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Which has a better First Meaningful Paint time?<br><br>① a raw 8.5MB HTML file with the full text of every single one of my 27,506 tweets<br>② a client rendered React site with exactly one tweet on it<br><br>(Spoiler: <a href="https://twitter.com/____lighthouse?ref_src=twsrc%5Etfw">@____lighthouse</a> reports 8.5MB of HTML wins by about 200ms)</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/1169998370041208832?ref_src=twsrc%5Etfw">September 6, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 React. Hmm. Wonder whom he might be zinging there?
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Eleventy seems to handle this 30MB twitter archive JSON and output 27500 files from a single pagination template. 😅 <a href="https://t.co/VTAcXU53be">pic.twitter.com/VTAcXU53be</a></p>&mdash; Eleventy (@eleven_ty) <a href="https://twitter.com/eleven_ty/status/1170187490952712192?ref_src=twsrc%5Etfw">September 7, 2019</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Eleventy seems to handle this 30MB twitter archive JSON and output 27500 files from a single pagination template. 😅 <a href="https://t.co/VTAcXU53be">pic.twitter.com/VTAcXU53be</a></p>&mdash; Eleventy (@eleven_ty) <a href="https://twitter.com/eleven_ty/status/1170187490952712192?ref_src=twsrc%5Etfw">September 7, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Good job, sir. In the case of that last tweet in particular: given the Gatsby team's continual boasting about how they can handle massive amounts of data with ease, I hope you're making them sweat, even if just a little.[^tweetEase]
 
@@ -216,4 +216,4 @@ Indeed, one part of the transition was to convert all my Hugo site's Markdown fi
 
 To put it another way: if, somewhere down the line, I decide I'd rather switch back to Hugo, I will be able to do so without a great deal of angst.
 
-.&nbsp;.&nbsp;. except for worrying about making you [further](/posts/2018/11/grid-locked-no-more) [doubt](/posts/2019/05/boxed-in) [my](/posts/2019-06/ahoy-mate) [ability](/posts/2019/07/why-staying-with-hugo) to stick with anything, that is.
+.&nbsp;.&nbsp;. except for worrying about making you [further](/posts/2018/11/grid-locked-no-more) [doubt](/posts/2019/05/boxed-in) [my](/posts/2019/06/ahoy-mate) [ability](/posts/2019/07/why-staying-with-hugo) to stick with anything, that is.
