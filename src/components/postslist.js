@@ -13,42 +13,25 @@ class BlogIndex extends React.Component {
     const prevPage = currentPage - 1 === 1 ? '/posts/' : `posts/${(currentPage - 1).toString()}`
     const nextPage = `posts/${(currentPage + 1).toString()}`
     const pagerThing = (
-    <ul className="postlistNav ctr">
+    <p className="postlistNav ctr">
       {isFirst && (
-        <span className="text-muted">
-        &lt;&lt;
-        </span>
+        <span className="text-muted">&lt;&lt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
       )}
       {!isFirst && (
-        <Link to={prevPage} rel="prev">
-          ← Newer
-        </Link>
+        <>
+        <Link to="/posts">&lt;&lt;</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Link to={prevPage} rel="prev">&lt;</Link>
+        </>
       )}
-      {Array.from({ length: (numPages) }, (_, i) => (
-        <li
-          key={`pagination-number${i + 1}`}
-          style={{
-            margin: 0,
-          }}
-        >
-          <Link
-            to={`/posts/${i === 0 ? '' : i + 1}`}
-          >
-            {i + 1}
-          </Link>
-        </li>
-      ))}
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       {isLast && (
-        <span className="text-muted">
-        &gt;&gt;
-        </span>
+        <span className="text-muted">&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;</span>
       )}
       {!isLast && (
-        <Link to={nextPage} rel="next">
-          &gt;&gt;
-        </Link>
+        <>
+        <Link to={nextPage} rel="next">&gt;</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Link to={`/posts/${numPages}`}>&gt;&gt;</Link>
+        </>
       )}
-    </ul>
+    </p>
     )
 
 
