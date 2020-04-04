@@ -9,9 +9,48 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
     const { currentPage, numPages } = this.props.pageContext
     const isFirst = currentPage === 1
-    const isLast = currentPage === numPages - 1 // incremented down by 1
+    const isLast = currentPage === numPages
     const prevPage = currentPage - 1 === 1 ? '/posts/' : `posts/${(currentPage - 1).toString()}`
     const nextPage = `posts/${(currentPage + 1).toString()}`
+    const pagerThing = (
+    <ul className="postlistNav ctr">
+      {isFirst && (
+        <span className="text-muted">
+        &lt;&lt;
+        </span>
+      )}
+      {!isFirst && (
+        <Link to={prevPage} rel="prev">
+          ← Newer
+        </Link>
+      )}
+      {Array.from({ length: (numPages) }, (_, i) => (
+        <li
+          key={`pagination-number${i + 1}`}
+          style={{
+            margin: 0,
+          }}
+        >
+          <Link
+            to={`/posts/${i === 0 ? '' : i + 1}`}
+          >
+            {i + 1}
+          </Link>
+        </li>
+      ))}
+      {isLast && (
+        <span className="text-muted">
+        &gt;&gt;
+        </span>
+      )}
+      {!isLast && (
+        <Link to={nextPage} rel="next">
+          &gt;&gt;
+        </Link>
+      )}
+    </ul>
+    )
+
 
     return (
       <Layout location={this.props.location}>
@@ -22,42 +61,7 @@ class BlogIndex extends React.Component {
         <div className="container">
           <div className="post-line"></div>
           <div className="container-narrower">
-            <ul className="postlistNav ctr">
-              {isFirst && (
-                <>
-                ← Prev
-                </>
-              )}
-              {!isFirst && (
-                <Link to={prevPage} rel="prev">
-                  ← Prev
-                </Link>
-              )}
-              {Array.from({ length: (numPages) }, (_, i) => (
-                <li
-                  key={`pagination-number${i + 1}`}
-                  style={{
-                    margin: 0,
-                  }}
-                >
-                  <Link
-                    to={`/posts/${i === 0 ? '' : i + 1}`}
-                  >
-                    {i + 1}
-                  </Link>
-                </li>
-              ))}
-              {isLast && (
-                <>
-                Next →
-                </>
-              )}
-              {!isLast && (
-                <Link to={nextPage} rel="next">
-                  Next →
-                </Link>
-              )}
-            </ul>
+            {pagerThing}
             <hr style={{ marginTop: "0", marginBottom: "0.5em" }} />
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
@@ -82,43 +86,8 @@ class BlogIndex extends React.Component {
               )
             })}
             <hr style={{ marginTop: "2em" }} />
-            <ul className="postlistNav ctr">
-              {isFirst && (
-                <>
-                ← Prev
-                </>
-              )}
-              {!isFirst && (
-                <Link to={prevPage} rel="prev">
-                  ← Prev
-                </Link>
-              )}
-              {Array.from({ length: (numPages) }, (_, i) => ( 
-                <li
-                  key={`pagination-number${i + 1}`}
-                  style={{
-                    margin: 0,
-                  }}
-                >
-                  <Link
-                    to={`/posts/${i === 0 ? '' : i + 1}`}
-                  >
-                    {i + 1}
-                  </Link>
-                </li>
-              ))}
-              {isLast && (
-                <>
-                Next →
-                </>
-              )}
-              {!isLast && (
-                <Link to={nextPage} rel="next">
-                  Next →
-                </Link>
-              )}
-            </ul>
-          </div>
+            {pagerThing}
+         </div>
         </div>
      </Layout>
     )
