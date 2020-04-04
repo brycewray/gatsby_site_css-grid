@@ -8,41 +8,57 @@ exports.createPages = ({ graphql, actions }) => {
   const blogPost = path.resolve(`./src/components/singlepost.js`)
   return graphql(
     `
-      {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-              }
+    {
+      onlyPosts: allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}, limit: 1000, filter: {frontmatter: {tags: {eq: "post"}}}) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              subtitle
+              description
+              tags
             }
           }
         }
       }
+      allContent: allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}, limit: 1000) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              subtitle
+              description
+              tags
+            }
+          }
+        }
+      }
+    }
     `
   ).then(result => {
     if (result.errors) {
       throw result.errors
     }
 
-    // Create blog posts pages.
-    const posts = result.data.allMarkdownRemark.edges
+    // Create site pages
+    const pages = result.data.allContent.edges
+    const posts = result.data.onlyPosts.edges
 
-    posts.forEach((post, index) => {
-      const previous = index === posts.length - 1 ? null : posts[index + 1].node
-      const next = index === 0 ? null : posts[index - 1].node
+    pages.forEach((page, index) => {
+      const previous = index === pages.length - 1 ? null : pages[index + 1].node
+      const next = index === 0 ? null : pages[index - 1].node
 
       createPage({
-        path: post.node.fields.slug,
+        path: page.node.fields.slug,
         component: blogPost,
         context: {
-          slug: post.node.fields.slug,
+          slug: page.node.fields.slug,
           previous,
           next,
         },
