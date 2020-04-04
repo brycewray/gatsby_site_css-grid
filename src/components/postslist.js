@@ -12,8 +12,9 @@ class BlogIndex extends React.Component {
     const isLast = currentPage === numPages
     const prevPage = currentPage - 1 === 1 ? '/posts/' : `posts/${(currentPage - 1).toString()}`
     const nextPage = `posts/${(currentPage + 1).toString()}`
+
     const pagerThing = (
-    <p className="postlistNav ctr">
+    <p className="ctr pokey" style={{ marginTop: "0.5em", marginBottom: "0.5em" }}>
       {isFirst && (
         <span className="text-muted">&lt;&lt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
       )}
@@ -33,7 +34,6 @@ class BlogIndex extends React.Component {
       )}
     </p>
     )
-
 
     return (
       <Layout location={this.props.location}>
@@ -56,7 +56,7 @@ class BlogIndex extends React.Component {
                       </Link><br />
                     <span className="legal"><em>{node.frontmatter.subtitle}</em></span></h2>
                     <p className="pokey text-muted" style={{ marginTop: "0" }}>
-                    <time datetime={node.frontmatter.date} className="pokey text-muted text-sans-serif">Published: {node.frontmatter.date}
+                    <time datetime={node.frontmatter.date}>Published: {node.frontmatter.date}
                     {node.frontmatter.lastmod && (
                       <>
                       <br />Last modified: {node.frontmatter.lastmod}
