@@ -51,6 +51,7 @@ exports.createPages = ({ graphql, actions }) => {
     const posts = result.data.onlyPosts.edges
 
     pages.forEach((page, index) => {
+      // for "Previous" and "Next" links
       const previous = index === pages.length - 1 ? null : pages[index + 1].node
       const next = index === 0 ? null : pages[index - 1].node
 
