@@ -8,8 +8,8 @@ class singlePostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     // const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
-
+    var { previous, next } = this.props.pageContext
+    
     var lastModIntro, lastModText /* null unless there's a lastmod */
     if (post.frontmatter.lastmod) {
       lastModIntro = "last modified:";
@@ -56,9 +56,11 @@ class singlePostTemplate extends React.Component {
           {next && (
             <p className="ctr"><strong>Next</strong>: <Link to={next.fields.slug} style={{ borderBottom: "0" }}>{next.frontmatter.title}</Link></p>
           )}
-          {previous && (
+          {previous.fields.slug !== "/"
+            ? (
             <p className="ctr"><strong>Previous</strong>: <Link to={previous.fields.slug} style={{ borderBottom: "0" }}>{previous.frontmatter.title}</Link></p>
-          )}
+            ) : null
+          }
         </div>
       </LayoutSinglePost>
     </>
