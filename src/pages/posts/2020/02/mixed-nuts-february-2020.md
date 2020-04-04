@@ -26,9 +26,7 @@ One thing I did *not* expect to occur when I made [this site's repository](https
 
 *For those reviewers out there who believe you can't do long-form writing in [iA Writer](https://ia.net/writer) because it requires you to rename individual chapters' files when you want to move around scenes&nbsp;.&nbsp;.&nbsp;.* **Really**?
 
-I long in vain for a return to the days when athletes *did not* engage in elaborate celebrations after every frigging accomplishment during a game[^Volleyball]. Celebrate when you win, folks---maybe (*i.e.*, if the win doesn't simply advance you to a .350 record).
-
-[^Volleyball]: This extends even to *NCAA volleyball*, for God's sake. High-fiving after *every point*?!? Man alive.
+I long in vain for a return to the days when athletes *did not* engage in elaborate celebrations after every frigging accomplishment during a game[^This extends even to *NCAA volleyball*, for God's sake. High-fiving after *every point*?!? Man alive.]. Celebrate when you win, folks---maybe (*i.e.*, if the win doesn't simply advance you to a .350 record).
 
 *I shudder for those of my long-ago colleagues who are still in the terrestrial radio business. Between satellite radio and the ease of adding one's own music to a typical automobile sound system, how in the* world *can those folks compete, long-term?*
 
