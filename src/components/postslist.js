@@ -45,7 +45,7 @@ class BlogIndex extends React.Component {
           <div className="post-line"></div>
           <div className="container-narrower">
             {pagerThing}
-            <hr style={{ marginTop: "0", marginBottom: "0.5em" }} />
+            <hr style={{ marginTop: "0.5em", marginBottom: "1.5em" }} />
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (
@@ -68,7 +68,7 @@ class BlogIndex extends React.Component {
                 </>
               )
             })}
-            <hr style={{ marginTop: "2em" }} />
+            <hr style={{ marginTop: "1.5em" }} />
             {pagerThing}
          </div>
         </div>
