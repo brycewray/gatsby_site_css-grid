@@ -7,7 +7,6 @@ import Header from './header'
 class singlePostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    // const siteTitle = this.props.data.site.siteMetadata.title
     var { previous, next } = this.props.pageContext
     
     var lastModIntro, lastModText /* null unless there's a lastmod */
