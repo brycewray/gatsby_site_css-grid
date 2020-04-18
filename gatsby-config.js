@@ -159,5 +159,20 @@ module.exports = {
         lang: `en`,
       },
     },
+    {
+      resolve: `gatsby-plugin-webmention`,
+      options: {
+        username: `brycewray.com`,
+        identity: {
+          twitter: 'BryceWrayTX'
+        },
+        mentions: true,
+        pingbacks: false,
+        forwardPingbacksAsWebmentions: 'https://brid.gy',
+        domain: 'brycewray.com',
+        fetchLimit: 10000,
+        token: process.env.WEBMENTION_TOKEN
+      },
+    },
   ],
 }
