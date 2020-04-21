@@ -50,6 +50,13 @@ class singlePostTemplate extends React.Component {
           <article className="article" dangerouslySetInnerHTML={{ __html: post.html }}>
           </article>
         </div>
+
+        {post.frontmatter.oldComments && (
+          post.frontmatter.oldComments
+        )}
+
+        <p className="ctr">Webmentions code goes here</p>
+
         <div className="bg-dark">
           <h3 className="ctr wht"><a href="/posts" style={{ borderBottom: "0" }}>Other posts</a></h3>
           {next && (
@@ -80,6 +87,7 @@ export const query = graphql`
         date(formatString: "MMMM D, YYYY")
         lastmod(formatString: "MMMM D, YYYY")
         discussionId
+        oldComments
       }
       html
     }
