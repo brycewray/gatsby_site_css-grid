@@ -6,9 +6,17 @@ description: "Having reached this milestone-of-sorts, I offer some different wor
 date: 2019-09-06T06:40:00
 lastmod: 2020-03-29T10:08:00-05:00
 discussionId: "2019-09-now-im-sixty-four"
-featured_image: chevrolet-1955-stylized-829805_1280x720.jpg
-featured_image_alt: Stylized view of a deep blue 1955 Chevrolet Bel Air two-door automobile
-featured_image_caption: "Original image: Pixabay; edited in Affinity Photo" # quotation marks to allow colon
+oldComments: |
+  <div class="webmentions">
+    <h3 class="ctr">Comments</h3>
+    <p class="legal ctr">
+      (Imported from previous comments host, <a href="https://talkyard.io">Talkyard</a>.)
+    </p>
+
+    <p class="commentOpen"><strong>Cap Pike</strong> <em>2019-09-07</em></p>
+    <p class="commentBody">People that use Word that don't &quot;get&quot; styles and formatting in general are generally just annoying. Like people who drive that don't bother with turn signals.<br />
+      ...and then there's Excel...</p>
+  </div>
 ---
 
 *(With apologies to the late John&nbsp;Lennon and the very much still-with-us Sir&nbsp;Paul&nbsp;McCartney. [Original lyrics](https://en.wikipedia.org/wiki/When_I'm_Sixty-Four) &copy; Sony/ATV Music Publishing LLC.*)

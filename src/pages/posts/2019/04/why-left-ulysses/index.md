@@ -6,9 +6,18 @@ description: "Why, just months after proclaiming my allegiance to the Ulysses wr
 date: 2019-04-20T11:17:00
 lastmod: 2019-10-11T19:00:00
 discussionId: "2019-04-why-left-ulysses"
-featured_image: hand-butterfly-3751159_blue-tinted_monochrome_1280x720_60pct.jpg
-featured_image_alt: Hand releases a butterfly (which is the Ulysses logo)
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
+oldComments: |
+    <div class="webmentions">
+      <h3 class="ctr">Comments</h3>
+      <p class="legal ctr">
+        (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="nofollow">Talkyard</a>.)
+      </p>
+      <p class="commentOpen"><strong>Chris Rosser</strong> <em>2019-04-30</em></p>
+      <p class="commentBody">An excellent and very well considered article as always. Thanks for posting it!</p>
+    
+      <p class="commentOpen"><strong>Bryce Wray</strong> <em>2019-05-01</em></p>
+      <p class="commentBody">Thank you, sir. I&rsquo;d have liked nothing more than for it to have been a &ldquo;Why I was able to stick with Ulysses despite a few scary moments&rdquo; article, instead (although that would have been a goofy article title); but, sadly, the continuing glitches left me no good choice in the end.</p>
+    </div>
 ---
 
 <div class="yellowBox">
