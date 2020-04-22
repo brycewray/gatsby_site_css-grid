@@ -67,8 +67,8 @@ exports.createPages = ({ graphql, actions }) => {
     })
 
     // Create blog post list pages
-    const postsPerPage = 5;
-    const numPages = Math.ceil(posts.length / postsPerPage);
+    const postsPerPage = 5
+    const numPages = Math.ceil(posts.length / postsPerPage)
 
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
@@ -80,12 +80,12 @@ exports.createPages = ({ graphql, actions }) => {
           numPages,
           currentPage: i + 1
         },
-      });
-    });
+      })
+    })
   })
 }
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+exports.onCreateNode = ({ node, actions, getNode, getNodes }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
@@ -93,7 +93,17 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       name: `slug`,
       node,
-      value,
+      value
     })
   }
+
+  if (node.internal.type === "WebMentionEntry") {
+		const {
+			siteMetadata: { siteUrl }
+		} = getNodes().find(n => n.internal.type === "Site")
+
+		const slug = node.wmTarget.replace(siteUrl, "")
+		createNodeField({ node, name: "slug", value: slug })
+	}
+
 }
