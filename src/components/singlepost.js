@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import WebmentionsList from './webmentionslist'
 import LayoutSinglePost from "./layout-singlepost"
 import SEO from './seo'
 import Header from './header'
@@ -51,11 +52,11 @@ class singlePostTemplate extends React.Component {
           </article>
         </div>
 
-        {post.frontmatter.oldComments && (
-          post.frontmatter.oldComments
+        {post.oldComments && (
+          post.oldComments
         )}
 
-        <p className="ctr">Webmentions code goes here</p>
+        <WebmentionsList />
 
         <div className="bg-dark">
           <h3 className="ctr wht"><a href="/posts" style={{ borderBottom: "0" }}>Other posts</a></h3>
