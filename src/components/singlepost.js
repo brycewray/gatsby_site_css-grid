@@ -56,7 +56,7 @@ class singlePostTemplate extends React.Component {
           post.oldComments
         )}
 
-        <WebmentionsList />
+        {/* <WebmentionsList /> */}
 
         <div className="bg-dark">
           <h3 className="ctr wht"><a href="/posts" style={{ borderBottom: "0" }}>Other posts</a></h3>
