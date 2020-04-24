@@ -1,5 +1,5 @@
-import React from "react";
-import { StaticQuery, Link, graphql } from "gatsby";
+import React from "react"
+import { StaticQuery, Link, graphql } from "gatsby"
 
 const PostsHomeList = () => (
   <StaticQuery
@@ -49,6 +49,6 @@ const PostsHomeList = () => (
       </div>
     }
   />
-);
+)
 
 export default PostsHomeList
