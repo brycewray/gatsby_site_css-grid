@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Footer from "./footer"
+// import Footer from "./footer"
 
 const LayoutSinglePost = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,7 +29,6 @@ const LayoutSinglePost = ({ children }) => {
       <p style={{ display: "none" }}>{data.site.siteMetadata.title}</p>
       <main>{children}</main>
       <p>&nbsp;</p>
-      <Footer />
     </>
   )
 }

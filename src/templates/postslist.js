@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
+import Footer from '../components/footer'
 
 class BlogIndex extends React.Component {
   render() {
@@ -72,6 +73,7 @@ class BlogIndex extends React.Component {
             {pagerThing}
          </div>
         </div>
+        <Footer />
      </Layout>
     )
   }
