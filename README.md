@@ -8,7 +8,7 @@ While this is a Gatsby version of the actual site&rsquo;s repo rather than a sta
 
 1. Clone it to a local repo.
 2. Make appropriate changes to `gatsby-config.js`.
-3. Delete from `src/pages/**.*` the Markdown files and images (well, maybe you should keep one or two of each around at the start, until you see how things work).
+3. Delete from `src/pages/**/*.*` the Markdown files and images (well, maybe you should keep one or two of each around at the start, until you see how things work).
 
 ## What&rsquo;s under the hood
 
