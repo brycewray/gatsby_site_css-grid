@@ -2,10 +2,9 @@ const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
-  
+  const { createPage } = actions  
 
-  const blogPost = path.resolve(`./src/components/singlepost.js`)
+  const blogPost = path.resolve(`./src/templates/singlepost.js`)
   return graphql(
     `
     {
@@ -19,6 +18,24 @@ exports.createPages = ({ graphql, actions }) => {
               title
               subtitle
               description
+              tags
+            }
+          }
+          next {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              tags
+            }
+          }
+          previous {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
               tags
             }
           }
@@ -54,6 +71,7 @@ exports.createPages = ({ graphql, actions }) => {
       // for "Previous" and "Next" links
       const previous = index === pages.length - 1 ? null : pages[index + 1].node
       const next = index === 0 ? null : pages[index - 1].node
+      const urlToCheck = "https://brycewray.com" + page.node.fields.slug
 
       createPage({
         path: page.node.fields.slug,
@@ -62,6 +80,8 @@ exports.createPages = ({ graphql, actions }) => {
           slug: page.node.fields.slug,
           previous,
           next,
+          permalink: `https://brycewray.com${path}`,
+          urlToCheck
         },
       })
     })
@@ -73,7 +93,7 @@ exports.createPages = ({ graphql, actions }) => {
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
         path: i === 0 ? `/posts` : `/posts/${i + 1}`,
-        component: path.resolve('./src/components/postslist.js'),
+        component: path.resolve('./src/templates/postslist.js'),
         context: {
           limit: postsPerPage,
           skip: i * postsPerPage,
@@ -98,12 +118,13 @@ exports.onCreateNode = ({ node, actions, getNode, getNodes }) => {
   }
 
   if (node.internal.type === "WebMentionEntry") {
-		const {
-			siteMetadata: { siteUrl }
-		} = getNodes().find(n => n.internal.type === "Site")
 
-		const slug = node.wmTarget.replace(siteUrl, "")
-		createNodeField({ node, name: "slug", value: slug })
+    const slug = node.wmTarget
+		createNodeField({ 
+      node, 
+      name: "slug", 
+      value: slug
+    })
 	}
 
 }
