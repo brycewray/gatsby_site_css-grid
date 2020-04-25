@@ -7,6 +7,7 @@
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
     "cssnano": "^4.1.10",
+    "dotenv": "^8.2.0",
     "gatsby": "^2.20.7",
     "gatsby-background-image": "^0.10.2",
     "gatsby-image": "^2.3.1",
@@ -33,6 +34,7 @@
     "gatsby-transformer-remark": "^2.7.1",
     "gatsby-transformer-sharp": "^2.4.2",
     "intersection-observer": "^0.7.0",
+    "moment-timezone": "^0.5.28",
     "postcss-css-variables": "^0.14.0",
     "postcss-nesting": "^7.0.1",
     "postcss-partial-import": "^4.1.0",

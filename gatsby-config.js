@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `brycewray.com`, // was Gatsby Default Starter
@@ -162,16 +166,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-webmention`,
       options: {
-        username: `brycewray.com`,
+        username: `https://brycewray.com`,
         identity: {
-          twitter: 'BryceWrayTX'
+          twitter: 'BryceWrayTX',
+          email: 'bw@brycewray.com'
         },
         mentions: true,
-        pingbacks: false,
+        pingbacks: true,
         forwardPingbacksAsWebmentions: 'https://brid.gy',
         domain: 'brycewray.com',
         fetchLimit: 10000,
-        token: process.env.WEBMENTION_TOKEN
+        token: process.env.GATSBY_WEBMENTION_IO_TOKEN,
       },
     },
   ],
