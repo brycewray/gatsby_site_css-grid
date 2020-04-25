@@ -27,11 +27,11 @@ export const query = graphql`
         date
       }
     }
-    likesQuery: allWebMentionEntry(sort: {fields: wmReceived, order: ASC}, filter: {wmTarget: {eq: $urlToCheck}, wmProperty: {eq: "like-of"}}) {
+    likesQuery: allWebMentionEntry(sort: {fields: published, order: ASC}, filter: {wmTarget: {eq: $urlToCheck}, wmProperty: {eq: "like-of"}}) {
       edges {
         node {
           likeOf
-          published(formatString: "MMM D, YYYY")
+          published(formatString: "MMM D, YYYY hh")
           type
           url
           wmReceived(formatString: "MMM D, YYYY")
@@ -46,7 +46,7 @@ export const query = graphql`
         }
       }
     }
-    repostsQuery: allWebMentionEntry(sort: {fields: wmReceived, order: ASC}, filter: {wmTarget: {eq: $urlToCheck}, wmProperty: {eq: "repost-of"}}) {
+    repostsQuery: allWebMentionEntry(sort: {fields: published, order: ASC}, filter: {wmTarget: {eq: $urlToCheck}, wmProperty: {eq: "repost-of"}}) {
       edges {
         node {
           repostOf
@@ -65,11 +65,11 @@ export const query = graphql`
         }
       }
     }
-    repliesQuery: allWebMentionEntry(sort: {fields: wmReceived, order: ASC}, filter: {wmTarget: {eq: $urlToCheck}, wmProperty: {eq: "in-reply-to"}}) {
+    repliesQuery: allWebMentionEntry(sort: {fields: published, order: ASC}, filter: {wmTarget: {eq: $urlToCheck}, wmProperty: {eq: "in-reply-to"}}) {
       edges {
         node {
           inReplyTo
-          published(formatString: "MMM D, YYYY")
+          published(formatString: "MMM D, YYYY hh:mm:ss z")
           type
           url
           wmReceived(formatString: "MMM D, YYYY")
@@ -88,11 +88,11 @@ export const query = graphql`
         }
       }
     }
-    mentionsQuery: allWebMentionEntry(sort: {fields: wmReceived, order: ASC}, filter: {wmTarget: {eq: $urlToCheck}, wmProperty: {eq: "mention-of"}}) {
+    mentionsQuery: allWebMentionEntry(sort: {fields: published, order: ASC}, filter: {wmTarget: {eq: $urlToCheck}, wmProperty: {eq: "mention-of"}}) {
       edges {
         node {
           likeOf
-          published(formatString: "MMM D, YYYY")
+          published(formatString: "MMM D, YYYY hh:mm:ss z")
           type
           url
           wmReceived(formatString: "MMM D, YYYY")
@@ -111,7 +111,7 @@ export const query = graphql`
         }
       }
     }
-    wmsAQuery: allWebMentionEntry(sort: {fields: wmReceived, order: ASC}, filter: {wmTarget: {eq: $urlToCheck}}) {
+    wmsAQuery: allWebMentionEntry(sort: {fields: published, order: ASC}, filter: {wmTarget: {eq: $urlToCheck}}) {
       edges {
         node {
           published(formatString: "MMM D, YYYY")
