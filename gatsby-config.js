@@ -23,21 +23,21 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/images`
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/src/pages`,
+        path: `${__dirname}/src/pages`
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `assets`,
-        path: `${__dirname}/src/assets`,
+        path: `${__dirname}/src/assets`
       }
     },
     {
@@ -49,20 +49,20 @@ module.exports = {
             options: {
               maxWidth: 900,
               linkImagesToOriginal: false,
-              backgroundColor: "none",
+              backgroundColor: "none"
            },
          },
          {
            resolve: `gatsby-remark-smartypants`,
            options: {
              dashes: "oldschool",
-             ellipse: false,
+             ellipse: false
            },
          },
          `gatsby-remark-numbered-footnotes`,
          {
            resolve: `gatsby-remark-prismjs`,
-           options: {},
+           options: {}
          },
          {
            resolve: `gatsby-remark-embed-video`,
@@ -71,10 +71,17 @@ module.exports = {
              endMarker: `}}`,
              width: 640,
              related: false,
-             noIframeBorder: true,
+             noIframeBorder: true
            },
          },
          `gatsby-remark-responsive-iframe`,
+         {
+           resolve: `gatsby-remark-external-links`,
+           options: {
+             target: "_blank",
+             rel: "noopener noreferrer"
+           }
+         },
         ],
       },
     },
@@ -87,17 +94,17 @@ module.exports = {
         background_color: `#0000d1`,
         theme_color: `#0000d1`,
         display: `minimal-ui`,
-        icon: `src/images/favicon-512x512.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon-512x512.png` // This path is relative to the root of the site.
       },
     },
     {
       resolve: `gatsby-plugin-styled-components`,
-      options: {},
+      options: {}
     },
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        output: `/sitemap.xml`,
+        output: `/sitemap.xml`
       }
     },
     {
@@ -123,7 +130,7 @@ module.exports = {
                   description: edge.node.frontmatter.description,
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug
                 })
               })
             },
@@ -160,7 +167,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-html-attributes`,
       options: {
-        lang: `en`,
+        lang: `en`
       },
     },
     {
@@ -176,7 +183,7 @@ module.exports = {
         forwardPingbacksAsWebmentions: 'https://brid.gy',
         domain: 'brycewray.com',
         fetchLimit: 10000,
-        token: process.env.GATSBY_WEBMENTION_IO_TOKEN,
+        token: process.env.GATSBY_WEBMENTION_IO_TOKEN
       },
     },
   ],
