@@ -4,12 +4,8 @@ title: iA for IO?
 subtitle: Evaluating iA Writer for use with an SSG
 description: "A re-consideration of using iA Writer in making Markdown files for this site’s posts."
 date: 2019-02-03T09:25:00
-lastmod: 2019-10-02T19:23:00
+lastmod: 2020-04-22T19:30:00-05:00
 discussionId: "2019-02-ia-for-io"
-#final_url: /posts/2019/02/ia-for-io
-featured_image: notebook-933362_1280x720.jpg
-featured_image_alt: Stylized photograph of notebook and, in blurry background, a pencil
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
 My comments at the end of my [previous post](/posts/2019/01/blox-sux) aside, I have to say [iA Writer](https://www.ia.net/writer) can be a halfway decent editor for [Markdown](https://daringfireball.net/projects/markdown/), after all.
@@ -32,7 +28,9 @@ That said, iA Writer's inline footnotes, while fine for export from iA Writer, d
 
 ## Status quo, or no?
 
-Bottom line: I still haven't made up my mind about whether to go with a different editor for future Markdown work or stick with Ulysses for it as well as for my other creative writing (that WIP ain't finishing itself). However, if you are an SSG user and you're trying to decide about which editor to use for your writing, I hope these thoughts have been helpful.
+Bottom line: I still haven't made up my mind about whether to go with a different editor for future Markdown work or stick with Ulysses for it as well as for my other creative writing (that WIP ain't finishing itself).[^RIPWIP] However, if you are an SSG user and you're trying to decide about which editor to use for your writing, I hope these thoughts have been helpful.
+
+[^RIPWIP]: [Unfortunately, I didn't finish it either](/posts/2020/04/murdered-darlings).
 
 <br />
 <hr />

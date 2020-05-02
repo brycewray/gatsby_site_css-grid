@@ -1,14 +1,13 @@
 ---
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: Mixed nuts • November, 2019
 subtitle: In a nutshell, odds and ends
 description: "Observations worth exactly what you’re paying for them."
-date: 2019-11-24T10:15:00-06:00
-lastmod: 2019-12-17 #T18:50:00-06:00 - another Gatsby time glitch
-discussionId: "2019-11-odds-ends-2019-11"
-featured_image: nuts-768243_1920x1080.jpg
-featured_image_alt: "Closeup view of mixed nuts"
-featured_image_caption: "Image: Pixabay"
+author: Bryce Wray
+date: 2019-11-24T10:15:00
+lastmod: 2020-04-22T19:30:00
+discussionId: "2019-11-mixed-nuts-2019-11"
 ---
 
 For decades, Dallas/Fort Worth-area newspaper readers got to enjoy content from the late [Blackie Sherrod](https://www.dallasnews.com/news/obituaries/2016/04/28/legendary-news-sportswriter-blackie-sherrod-dies-at-96/#). Perhaps his best-remembered output, although certainly only a small sample of his work, came in the form of a Sunday column he called "Scattershooting." Each edition thereof was---rather than the usual format and dedicated to just one subject---a collection of one- or two-sentence (mostly) sports-related opinions, reportage, *bon mots*, and just general Blackie-isms. He'd always begin each by saying something like: "Scattershooting while wondering whatever happened to *[formerly prominent person]* &nbsp;.&nbsp;.&nbsp;."
@@ -34,7 +33,9 @@ The open-office concept is simply a way for businesses to cram more people into 
 
 In September's "[Now I'm sixty-four](/posts/2019/09/now-im-sixty-four)," I referred to our inbound grandchild as "a little lass or lad" because we didn't know which, yet. We do now. That kiddo, due next April, will be a lass.
 
-*Real authors deliver something. And even "eventually" has a shelf life.*
+*Real authors deliver something. And even "eventually" has a shelf life.*[^RIPWIP]
+
+[^RIPWIP]: That realization [eventually](/posts/2020/04/murdered-darlings) caused a probably inevitable decision.
 
 WordPress has its purposes, as do all things, but don't kid yourself into thinking you're a Web developer if that's all you can use. So can a reasonably motivated nine-year-old.
 

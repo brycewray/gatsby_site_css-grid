@@ -4,15 +4,13 @@ title: Boxed in?
 subtitle: “Shoebox” apps (including Ulysses) and iCloud sync
 description: 'A revisiting of the whole Ulysses matter—after I learned some more about “shoebox” apps in general.'
 date: 2019-05-04T06:00:00
-lastmod: 2020-01-31T14:23:00-06:00
+lastmod: 2020-04-22T19:30:00
 discussionId: "2019-05-boxed-in"
-#final_url: /posts/2019/05/boxed-in
-featured_image: thunderstorm-3625405_1280x720.jpg
-featured_image_alt: Thunderstorm clouds with lighting flashes
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
-Constant reexamination is part of my daily life. It's an inescapable part of my Day Job, to be sure. It's part of why it takes me so long to write some things---the Work-in-Progress (WIP) being the most damnable example thereof.
+Constant reexamination is part of my daily life. It's an inescapable part of my Day Job, to be sure. It's part of why it takes me so long to write some things---the Work-in-Progress (WIP) being the most damnable example thereof.[^RIPWIP]
+
+[^RIPWIP]: [How sadly true that turned out to be](/posts/2020/04/murdered-darlings).
 
 Yeah, I know: "Write it all the way through, first, then edit later." Still, you may as well tell me not to cross my “t”s and dot my “i”s in mid-word, and I've been doing that since I was a kid. (Don't get me started on why.)
 
