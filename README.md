@@ -14,8 +14,7 @@ While this is a Gatsby version of the actual site&rsquo;s repo rather than a sta
 
 This isn&rsquo;t a complete list but, rather, covers only the biggies. Check out `package.json` and `gatsby-config.js` for the whole shebang. They&rsquo;re handled primarily through Gatsby plugins.
 
-- [PostCSS](https://postcss.org) for, among other things, transpiling my CSS for easier consumption — even for obsolete browsers (looking at you, IE).
-- [typefaces](https://github.com/kyleamathews/typefaces), through which I&rsquo;m using the [Public Sans](https://public-sans.digital.gov) Web &ldquo;[font](https://brycewray.com/posts/2018/10/web-typography-part-2/)&rdquo; for all non-code text and [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) for code and code blocks. In my real site repo, a separate webpack installation handles this but, of course, webpack comes out of the proverbial box with Gatsby. For this repo, I provide these fonts (as well as the CSS that PostCSS manipulates) via the `gatsby-browser.js` file.
+- [PostCSS](https://postcss.org) and [Tailwind CSS](https://tailwindcss.com).
 - [Prism](https://prismjs.com) for syntax highlighting of code and code blocks.
 - [Webmentions](https://indieweb.org), made possible through [Chris Biscardi](https://www.christopherbiscardi.com/post/building-gatsby-plugin-webmentions)&rsquo;s [gatsby-plugin-webmention plugin](https://www.npmjs.com/package/gatsby-plugin-webmention) and my admittedly spaghetti-ish code, the latter based on hours of studying articles and code by [Knut Malvær](https://www.knutmelvaer.no/blog/2019/06/getting-started-with-webmentions-in-gatsby/), [Sung M. Kim](https://sung.codes/blog/2020/02/17/clientside-webmentions-in-gatsby/), and [Chad Lee](https://www.chadly.net/embracing-the-indieweb/).
 
