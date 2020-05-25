@@ -186,5 +186,13 @@ module.exports = {
         token: process.env.GATSBY_WEBMENTION_IO_TOKEN
       },
     },
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: /\.svg$/
+        },
+      },
+    },
   ],
 }

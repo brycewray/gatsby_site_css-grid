@@ -1,10 +1,9 @@
-import { Link, Img } from "gatsby"
-// import PropTypes from "prop-types"
 import React from "react"
+import SvgNavIcon from "../assets/svg/svgNavIcon.svg"
 
 const Header = () => (
-  <header>
-  <p className="site-logo"><span className="site-logo-holder"><Link to="/"><img src="/images/BW_avatar_36x36_xpar.png" alt="This site's logo; click here to go to the home page" /></Link></span>&nbsp;&nbsp;&nbsp;<Link to="/">BryceWray.com</Link></p>
+  <header className="h-12 bg-blue-700 w-full fixed p-0 mt-0 z-50">
+  <p className="text-white font-bold mt-2 pt-1 text-lg ml-4 md:ml-8 lg:ml-10 xb:ml-16 w-full"><span className="site-logo-holder"><a href="/" className="text-white no-underline border-b-0 active:text-gray-400 hover:text-gray-400" aria-label="This site's “BW” logo"><SvgNavIcon /></a></span>&nbsp;&nbsp;<a href="/" className="text-white active:text-gray-400 hover:text-gray-400">BryceWray.com</a></p>
   <input type="checkbox" id="nav-toggle" className="nav-toggle" aria-hidden="true" />
   <label for="nav-toggle" className="nav__icon" aria-hidden="true">
     Expand the menu
@@ -15,10 +14,10 @@ const Header = () => (
   <nav role="navigation" className="nav">
     <ul className="nav__items">
       <li className="nav__item">
-        <Link to="/about" title="About">About</Link>
+        <a href="/about" title="About">About</a>
       </li>
       <li className="nav__item">
-        <Link to="/posts" title="Posts">Posts</Link>
+        <a href="/posts" title="Posts">Posts</a>
       </li>
     </ul>
   </nav>

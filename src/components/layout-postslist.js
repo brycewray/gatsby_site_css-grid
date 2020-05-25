@@ -7,11 +7,11 @@ const LayoutPostsList = ({ pageContext }) => {
     <>
       <Layout>
         <SEO title = "Posts" />
-        <main>
-          <div className="container">
-            <h1 className="ctr topOfMain">Posts</h1>
+        <main className="py-16">
+          <div className="px-10 w-full md:w-2/3 lg:w-1/2 mx-auto">
+            <h1 className="text-center tracking-tight">Posts</h1>
             <div className="post-line"></div>
-            <div className="container-narrower">
+            <div>
               {prevPath}
             </div>
           </div>

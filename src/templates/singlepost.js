@@ -1,4 +1,10 @@
+let copyYear = new Date().getFullYear()
 import React from 'react'
+import SvgGitHubIcon from "../assets/svg/svgGitHubIcon.svg"
+import SvgTwitterIcon from "../assets/svg/svgTwitterIcon.svg"
+import SvgLinkedInIcon from "../assets/svg/svgLinkedInIcon.svg"
+import SvgRSSIcon from "../assets/svg/svgRSSIcon.svg"
+import SvgFooterIcon from "../assets/svg/svgFooterIcon.svg"
 import { Link, graphql } from 'gatsby'
 import LayoutSinglePost from "../components/layout-singlepost"
 import SEO from '../components/seo'
@@ -148,31 +154,28 @@ const singlePostTemplate = ({ data, pageContext }) => {
     />
     <Header />
     <LayoutSinglePost>
-      <div className="background-hero-div">
-        <div className="background-hero-title-block-fit">
-          <h1 className="background-hero-title-text">{post.frontmatter.title}</h1>
-          <h2 className="background-hero-subtitle-text">
-          {post.frontmatter.subtitle && (
-            <em>{post.frontmatter.subtitle}</em>
-          )}
-          {!post.frontmatter.subtitle && (
-            <>
-            &nbsp;
-            </>
-          )}
-          </h2>
-          <p className="background-hero-description-text">{post.frontmatter.description}</p>
-          <p className="background-hero-p-text">
-            <span style={{ fontVariant: "small-caps" }}>published:</span>&nbsp; <strong>{post.frontmatter.date}</strong><br />
-            <span className="pokey">
-            <span style={{ fontVariant: "small-caps" }}>{lastModIntro}</span>&nbsp; {lastModText}
-            </span>
-          </p>
-        </div>
+      <div className="container h-auto w-full min-w-full relative overflow-hidden gradient-titles pt-24 pb-6 px-4 md:px-12 xb:px-20">
+        <h1 className="text-center text-4xl md:text-left md:text-5xl lg:text-6xl xb:text-8xl tracking-tight leading-tight mb-6 px-4 md:px-0 text-white">{post.frontmatter.title}</h1>
+        <h2 className="italic text-center text-2xl md:text-left md:text-3xl lg:text-5xl xb:text-6xl leading-tight tracking-tight px-6 md:px-0 text-white">
+        {post.frontmatter.subtitle && (
+          <em>{post.frontmatter.subtitle}</em>
+        )}
+        {!post.frontmatter.subtitle && (
+          <>
+          &nbsp;
+          </>
+        )}
+        </h2>
+        <p className="hidden not-italic md:block md:text-2xl xb:text-4xl tracking-tight md:text-base md:mt-8 mb-6 text-white">{post.frontmatter.description}</p>
+        <p className="text-base xb:text-lg text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
+          <span style={{ fontVariant: "small-caps" }}>published:</span>&nbsp; <strong>{post.frontmatter.date}</strong><br />
+          <span className="text-sm">
+          <span style={{ fontVariant: "small-caps" }}>{lastModIntro}</span>&nbsp; {lastModText}
+          </span>
+        </p>
       </div>
-      <div className="post-line"></div>
-      <div className="container-narrower">
-        <article className="article" dangerouslySetInnerHTML={{ __html: post.html }}>
+      <div className="sm:w-5/6 md:w-4/5 xl:w-1/2 xb:w-5/12 mt-10 mr-auto ml-auto px-6 lg:px-16">
+        <article dangerouslySetInnerHTML={{ __html: post.html }}>
         </article>
       </div>
 
@@ -181,21 +184,21 @@ const singlePostTemplate = ({ data, pageContext }) => {
       )}
 
 
-      <div class="webmentions" id="webmentions">
-        <h3>Webmentions</h3>
+      <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6" id="webmentions">
+        <h3 className="mt-2 mb-4 italic text-center text-3xl tracking-tight">Webmentions</h3>
         {wmsA.totalCount > 0
           ? <>
             {likes.length > 0
               ? <>
                 <details>
-                  <summary className="h4">Likes&nbsp;&nbsp;<span className="legal" style={{ fontWeight: "normal" }}>({likes.length})</span></summary>
-                  <ul class="webmentions__list_facepile">
+                  <summary className="md:text-2xl font-bold tracking-tight">Likes&nbsp;&nbsp;<span className="text-base font-normal">({likes.length})</span></summary>
+                  <div>
                     {likes.map(({ node }) => {
                       return (
-                      <><li><img className="webmention__author__photo u-photo" src={node.author.photo} /></li></>
+                      <><a className="border-0 no-underline" href={node.url}><img className="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" aria-label={node.author.name} src={node.author.photo} alt={node.author.name} /></a></>
                       )
                     })}
-                  </ul>
+                  </div>
                 </details>
                 </>
               : ''
@@ -203,14 +206,14 @@ const singlePostTemplate = ({ data, pageContext }) => {
             {reposts.length > 0
               ? <>
                 <details>
-                  <summary className="h4">Reposts&nbsp;&nbsp;<span className="legal" style={{ fontWeight: "normal" }}>({reposts.length})</span></summary>
-                  <ul class="webmentions__list_facepile">
+                  <summary className="md:text-2xl font-bold tracking-tight">Reposts&nbsp;&nbsp;<span className="text-base font-normal">({reposts.length})</span></summary>
+                  <div>
                     {reposts.map(({ node }) => {
                       return (
-                      <><li><img className="webmention__author__photo u-photo" src={node.author.photo} /></li></>
+                      <><a href={node.url} className="border-0 no-underline" aria-label={node.author.name}><img className="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" src={node.author.photo} alt={node.author.name} /></a></>
                       )
                     })}
-                  </ul>
+                  </div>
                 </details>
                 </>
               : ''
@@ -218,17 +221,17 @@ const singlePostTemplate = ({ data, pageContext }) => {
             {replies.length > 0
               ? <>
                 <details>
-                  <summary className="h4">Comments&nbsp;&bull;&nbsp;Replies&nbsp;&nbsp;<span className="legal" style={{ fontWeight: "normal" }}>({replies.length})</span></summary>
-                  <ol className="webmentions__list">
+                  <summary className="md:text-2xl font-bold tracking-tight">Comments&nbsp;&bull;&nbsp;Replies&nbsp;&nbsp;<span className="text-base font-normal">({replies.length})</span></summary>
+                  <ol className="list-none p-0">
                     {replies.map(({ node }) => {
                       return (
                       <>
-                      <li className="webmentions__item">
-                        <article className="webmention h-cite">
-                          <div className="webmention__meta">
-                            <a className="webmention__author p-author h-card u-url" href={node.url}><img className="webmention__author__photo u-photo" src={node.author.photo} alt={node.author.name} /><strong className="p-name">{node.author.name}</strong></a>&nbsp;<span className="legal"><time className="webmention__pubdate dt-published" datetime={node.published}>{node.published}</time></span>
+                      <li className="mt-8">
+                        <article className="block h-cite">
+                          <div className="flex items-center flex-wrap">
+                            <a className="text-black dark:text-white flex items-center flex-wrap border-0 no-underline p-author h-card" href={node.url} aria-label={node.author.name}><img className="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" src={node.author.photo} alt={node.author.name} /><strong className="p-name text-base">{node.author.name}</strong></a>&nbsp;<span className="legal"><time className="italic dt-published" datetime={node.published}>{node.published}</time></span>
                           </div>
-                          <div className="webmention__content p-content" dangerouslySetInnerHTML={{ __html: node.content.html}} />
+                          <div className="p-content pt-2 pl-2 text-base leading-normal" dangerouslySetInnerHTML={{ __html: node.content.html}} />
                         </article>
                       </li>
                       </>
@@ -242,17 +245,17 @@ const singlePostTemplate = ({ data, pageContext }) => {
             {mentions.length > 0
               ? <>
                 <details>
-                  <summary className="h4">Mentions&nbsp;&nbsp;<span className="legal" style={{ fontWeight: "normal" }}>({mentions.length})</span></summary>
-                  <ol className="webmentions__list">
+                  <summary className="md:text-2xl font-bold tracking-tight">Mentions&nbsp;&nbsp;<span className="text-base font-normal">({mentions.length})</span></summary>
+                  <ol className="list-none p-0">
                     {mentions.map(({ node }) => {
                       return (
                       <>
-                      <li className="webmentions__item">
-                        <article className="webmention h-cite">
-                          <div className="webmention__meta">
-                            <a className="webmention__author p-author h-card u-url" href={node.url}><img className="webmention__author__photo u-photo" src={node.author.photo} alt={node.author.name} /><strong className="p-name">{node.author.name}</strong></a>&nbsp;<span className="legal"><time className="webmention__pubdate dt-published" datetime={node.published}>{node.published}</time></span>
+                      <li className="mt-8">
+                        <article className="block h-cite">
+                          <div className="flex items-center flex-wrap">
+                            <a className="text-black dark:text-white flex items-center flex-wrap border-0 no-underline p-author h-card" href={node.url} aria-label={node.author.name}><img className="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" src={node.author.photo} alt={node.author.name} /><strong className="p-name text-base">{node.author.name}</strong></a>&nbsp;<span className="text-sm"><time className="italic dt-published" datetime={node.published}>{node.published}</time></span>
                           </div>
-                          <div className="webmention__content p-content" dangerouslySetInnerHTML={{ __html: node.content.html}} />
+                          <div className="p-content text-base" dangerouslySetInnerHTML={{ __html: node.content.html}} />
                         </article>
                       </li>
                       </>
@@ -265,36 +268,42 @@ const singlePostTemplate = ({ data, pageContext }) => {
             }
             </>
           : <>
-            <p className="ctr">(No webmentions yet.)</p>
+            <p className="text-center text-base">(No webmentions yet.)</p>
             </>
         }
       </div>
 
-      <div className="bg-dark">
-        <h3 className="ctr wht"><a href="/posts" style={{ borderBottom: "0" }}>Other posts</a></h3>
+      <div className="w-full px-8 md:px-0 bg-blue-700 align-middle mt-10 mb-10">
+        <h3 className="text-center text-3xl tracking-normal mb-0 pt-2"><a href="/posts" className="border-transparent text-blue-100 hover:text-white italic">Other posts</a></h3>
         {next && (
-          <p className="ctr"><strong>Next</strong>: <Link to={next.fields.slug} style={{ borderBottom: "0" }}>{next.frontmatter.title}</Link></p>
+          <p className="text-center mt-2 mb-2 text-xl text-white leading-tight tracking-tight"><strong>Next</strong>: <Link to={next.fields.slug} className="border-transparent text-blue-100 hover:text-white hover:border-blue-100">{next.frontmatter.title}</Link></p>
         )}
         {previous.fields.slug !== "/"
           ? (
-          <p className="ctr"><strong>Previous</strong>: <Link to={previous.fields.slug} style={{ borderBottom: "0" }}>{previous.frontmatter.title}</Link></p>
-          ) : null
+          <p className="text-center pb-4 my-0 text-xl text-white leading-tight tracking-tight"><strong>Previous</strong>: <Link to={previous.fields.slug} className="border-transparent text-blue-100 hover:text-white hover:border-blue-100">{previous.frontmatter.title}</Link></p>
+          )
+          : (
+          <p className="text-xs my-0 py-0 leading-tight">&nbsp;</p>
+          )
         }
       </div>
 
-      <footer className="ctr">
-        <p><a href="https://github.com/brycewray/eleventy_bundler" target="_blank" rel="noopener" style={{ borderBottom: "none" }}><img src="/images/GitHub_octocat_logo_blue_48x48.png" style={{ height: "24px", width: "24px" }} alt="GitHub" /></a>&nbsp;&nbsp;<a href="https://twitter.com/BryceWrayTX" target="_blank" rel="noopener noreferrer" style={{ borderBottom: 
-        "none" }}><img src="/images/twitter-2430933_48x48.png" style={{ height: "24px", width: "24px" }} alt="Twitter" /></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/brycewray" target="_blank" rel="noopener noreferrer" style={{ borderBottom: "none" }}><img src="/images/linked-in-2674741_48x48.png" style={{ height: "24px", width: "24px" }} alt="LinkedIn" /></a>&nbsp;&nbsp;<a href="/feed.xml" style={{ borderBottom: "none" }}><img src="/images/rss-2440955_48x48.png" style={{ height: "24px", width: "24px" }} alt="RSS" /></a></p>
-        <p className="legaltxt">
-          &copy; {new Date().getFullYear()} <a className="h-card" rel="me" href="https://brycewray.com">Bryce Wray</a>.<br />
-            Site built and managed with <a href="https://jamstack.org" target="_blank" rel="noopener noreferrer">the JAMstack</a>, <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" rel="noopener noreferrer">CSS Grid</a>, <a href="https://www.apple.com/macos" target="_blank" rel="noopener noreferrer">macOS</a>, <a href="https://www.apple.com/ios">iOS</a>, <a href="https://daringfireball.net/projects/markdown" target="_blank" rel="noopener noreferrer">Markdown</a>, <span className="text-nowrap">time, and&nbsp;love.</span> <span className="text-nowrap">Hosted by&nbsp;<a href="https://netlify.com" target="_blank" rel="noopener noreferrer">Netlify</a></span>.
+      <footer className="text-center pb-6">
+        <div className="w-5/6 md:w-3/4 lg:w-2/3 mx-auto">
+          <p className="text-xs inline-flex mt-4 mb-4"><a href="https://github.com/brycewray/eleventy_solo" target="_blank" rel="noopener" className="mb-0 border-transparent" aria-label="GitHub"><SvgGitHubIcon /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/BryceWrayTX" target="_blank" rel="noopener" className="mb-0 border-transparent" aria-label="Twitter"><SvgTwitterIcon /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/brycewray" target="_blank" rel="noopener" className="mb-0 border-transparent" aria-label="LinkedIn"><SvgLinkedInIcon /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/feed.xml" className="mb-0 border-transparent" aria-label="RSS"><SvgRSSIcon /></a></p>
+          <p className="text-xs">
+            &copy;&nbsp;{copyYear}&nbsp;<a className="h-card" rel="me" href="https://brycewray.com">Bryce Wray</a>.<br />
+            Site built and managed with <a href="https://jamstack.org" target="_blank" rel="noopener">the Jamstack</a>, <a href="https://11ty.dev" target="_blank" rel="noopener">Eleventy</a>, <a href="https://tailwindcss.com/" target="_blank" rel="noopener">Tailwind CSS</a>, <a href="https://www.apple.com/macos" target="_blank" rel="noopener">macOS</a>, <a href="https://www.apple.com/ios" target="_blank" rel="noopener">iOS</a>, <a href="https://daringfireball.net/projects/markdown" target="_blank" rel="noopener">Markdown</a>, <span className="text-nowrap">time, and&nbsp;love.</span> <span className="text-nowrap">Hosted by&nbsp;<a href="https://netlify.com" target="_blank" rel="noopener">Netlify</a></span>.
           </p>
-          <hr style={{ marginTop: "2em"}} />
-          <h4 className="ctr pokey">Information for webmentions</h4>
-          <img className="u-photo" alt="This site's 'BW' logo" src="/images/favicon-512x512.png" style={{ width: "45px", height: "45px" }} />
-          <p className="p-note legal">Unrepentant advocate for and user of the Oxford comma (sorry,&nbsp;AP). Webmentions&nbsp;of others&rsquo; content do&nbsp;not necessarily constitute endorsements. Comments&nbsp;and opinions expressed herein are my&nbsp;own, unless otherwise&nbsp;noted.</p>
-          <h4 className="ctr legal">About this page</h4>
-          <article className="h-entry legal">
+        </div>
+        <hr className="mt-8 border-black" />
+        <div className="w-5/6 md:w-3/4 lg:w-2/3 mx-auto">
+          <p className="font-bold text-base tracking-tight mt-4 mb-2">Information for webmentions</p>
+          <p className="inline-flex mt-0"><SvgFooterIcon /></p>
+          <p className="p-note text-xs leading-tight mt-0">Unrepentant advocate for and user of the Oxford comma (sorry,&nbsp;AP). Webmentions&nbsp;of others&rsquo; content do&nbsp;not necessarily constitute endorsements. Comments&nbsp;and&nbsp;opinions expressed herein are my&nbsp;own, unless otherwise&nbsp;noted.</p>
+        </div>
+          <h4 className="font-bold text-center text-sm mt-4 mb-0 tracking-tight">About this page</h4>
+          <article className="h-entry text-xs leading-tight">
             <div className="e-content p-name">
               {post.frontmatter.title}
               {post.frontmatter.subtitle 
@@ -306,11 +315,11 @@ const singlePostTemplate = ({ data, pageContext }) => {
                 : ``
               }
             </div>
-            <a className="u-url" href={post.fields.slug}>Published <time className="dt-published">{wmDate.frontmatter.date}</time></a>
+            <a className="u-url no-underline border-0 text-black dark:text-white tracking-normal" href={post.fields.slug}>Published <time className="dt-published">{wmDate.frontmatter.date}</time></a>
             <link rel="author" href="https://brycewray.com" />
           </article>
-        </footer>
-      </LayoutSinglePost>
+      </footer>
+    </LayoutSinglePost>
   </>
   )
 }

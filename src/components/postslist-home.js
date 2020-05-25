@@ -32,9 +32,9 @@ const PostsHomeList = () => (
       <div>
         {data.onlySeven.edges.map(({ node }) =>(
           <div>
-            <h2 className="h5" style={{ marginBottom: "0" }}><Link to={ node.fields.slug}>{node.frontmatter.title}</Link></h2>
-            <p className="h5"><em>{node.frontmatter.subtitle}</em></p>
-            <p className="legal text-muted" style={{ marginTop: "0" }}>
+            <h2 className="h4 not-italic tracking-tight"><Link to={ node.fields.slug}>{node.frontmatter.title}</Link></h2>
+            <p className="font-bold text-base mt-2 mb-0 leading-5">{node.frontmatter.subtitle}</p>
+            <p className="text-xs tracking-normal mt-0 mb-1">
               {node.frontmatter.date}
                 {node.frontmatter.lastmod && (
                   <>
@@ -42,7 +42,7 @@ const PostsHomeList = () => (
                   </>
                 )}
             </p>
-            <p className="pokey text-body">{node.frontmatter.description}</p>
+            <p className="text-sm mt-2 mb-3">{node.frontmatter.description}</p>
           </div>
         ))}
         <p><Link to= "/posts"><strong>All {data.wholeThing.pageInfo.itemCount} posts</strong></Link> <span className="pokey"><em>(listed five per page)</em></span></p>

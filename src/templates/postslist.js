@@ -1,4 +1,8 @@
 import React from 'react'
+import SvgFirstPageIcon from "../assets/svg/svgFirstPageIcon.svg"
+import SvgPrevPageIcon from "../assets/svg/svgPrevPageIcon.svg"
+import SvgNextPageIcon from "../assets/svg/svgNextPageIcon.svg"
+import SvgLastPageIcon from "../assets/svg/svgLastPageIcon.svg"
 import { Link, graphql } from 'gatsby'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
@@ -15,22 +19,22 @@ class BlogIndex extends React.Component {
     const nextPage = `posts/${(currentPage + 1).toString()}`
 
     const pagerThing = (
-    <p className="ctr pokey" style={{ marginTop: "0.5em", marginBottom: "0.5em" }}>
+    <p className="text-center text-sm mt-2 mb-2">
       {isFirst && (
-        <span className="text-muted">&lt;&lt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+        <><SvgFirstPageIcon /><SvgFirstPageIcon />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<SvgFirstPageIcon /></>
       )}
       {!isFirst && (
         <>
-        <Link to="/posts">&lt;&lt;</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Link to={prevPage} rel="prev">&lt;</Link>
+        <Link className="border-transparent" aria-label="First page" to="/posts"><SvgPrevPageIcon /><SvgPrevPageIcon /></Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Link className="border-transparent" to={prevPage} rel="prev" aria-label="Previous page"><SvgPrevPageIcon /></Link>
         </>
       )}
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       {isLast && (
-        <span className="text-muted">&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;</span>
+        <span className="text-muted"><SvgLastPageIcon />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<SvgLastPageIcon /><SvgLastPageIcon /></span>
       )}
       {!isLast && (
         <>
-        <Link to={nextPage} rel="next">&gt;</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Link to={`/posts/${numPages}`}>&gt;&gt;</Link>
+        <Link className="border-transparent" to={nextPage} rel="next" aria-label="Next page"><SvgNextPageIcon /></Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Link className="border-transparent" to={`/posts/${numPages}`} aria-label="Last page"><SvgNextPageIcon /><SvgNextPageIcon /></Link>
         </>
       )}
     </p>
@@ -41,22 +45,21 @@ class BlogIndex extends React.Component {
         <SEO
           title="Posts"
         />
-        <h1 className="ctr topOfMain">Posts</h1>
-        <div className="container">
+        <div className="px-10 w-full md:w-2/3 lg:w-1/2 mx-auto">
+          <h1 className="text-center tracking-tight">Posts</h1>
           <div className="post-line"></div>
-          <div className="container-narrower">
             {pagerThing}
-            <hr style={{ marginTop: "0.5em", marginBottom: "1.5em" }} />
+            <hr className="mt-2 mb-6" />
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (
                 <>
-                    <h2 className="h5" style={{ marginBottom: "0.25em" }}>
+                    <h2 className="text-xl mb-1 leading-tight tracking-tight">
                       <Link to={node.fields.slug}>
                         {node.frontmatter.title}
                       </Link><br />
-                    <span className="legal"><em>{node.frontmatter.subtitle}</em></span></h2>
-                    <p className="pokey text-muted" style={{ marginTop: "0" }}>
+                    <span className="text-base tracking-tight"><em>{node.frontmatter.subtitle}</em></span></h2>
+                    <p className="text-sm dateInfo" style={{ marginTop: "0" }}>
                     <time datetime={node.frontmatter.date}>Published: {node.frontmatter.date}
                     {node.frontmatter.lastmod && (
                       <>
@@ -65,14 +68,13 @@ class BlogIndex extends React.Component {
                     )}
                     </time>
                     </p>
-                    <p className="pokey text-body" style={{ marginTop: "0.5em", marginBottom: "2em" }}>{node.frontmatter.description}</p>
+                    <p className="text-sm mt-2 mb-10">{node.frontmatter.description}</p>
                 </>
               )
             })}
-            <hr style={{ marginTop: "1.5em" }} />
+            <hr class="mt-6" />
             {pagerThing}
-         </div>
-        </div>
+          </div>
         <Footer />
      </Layout>
     )
