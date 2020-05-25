@@ -1,5 +1,3 @@
-require('typeface-public-sans')
-require('typeface-roboto-mono')
 import "./src/assets/css/index.css"
 
 export const onClientEntry = () => {
