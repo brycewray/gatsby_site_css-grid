@@ -9,7 +9,7 @@ export default ({ data }) => {
   return (
     <>
     <Header />
-    <div class="hero-home">
+    <div class="w-full height-hero pt-12">
       <Img 
       fluid={HomePage.frontmatter.featured_image.childImageSharp.fluid}
       alt={HomePage.frontmatter.featured_image_alt} 
@@ -17,7 +17,7 @@ export default ({ data }) => {
       >
       </Img>
     </div>
-    <p className="legal ctr text-muted" style={{ marginTop: "0" }}>Image: Pixabay</p>
+    <p className="text-center text-xs tracking-normal mt-1">Image: Pixabay</p>
     <HomeLayout>
       <div dangerouslySetInnerHTML={{ __html: HomePage.html }} />
     </HomeLayout>
