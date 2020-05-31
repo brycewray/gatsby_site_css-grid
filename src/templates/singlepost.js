@@ -179,36 +179,36 @@ const singlePostTemplate = ({ data, pageContext }) => {
         className="background-hero-div" 
         alt={post.frontmatter.featured_image_alt}
       >
-        <div className="background-hero-title-block">
+        <div className="background-hero-title-block-fit">
           <div class="background-hero-title-text">
-              <h1 className="text-center text-4xl md:text-left md:text-5xl lg:text-6xl xb:text-8xl tracking-tight leading-tight mb-6 px-4 md:px-0 text-white">{post.frontmatter.title}</h1>
-              <h2 class="italic text-center text-2xl md:text-left md:text-3xl lg:text-5xl xb:text-6xl leading-tight tracking-tight px-6 md:px-0 text-white">
-                {post.frontmatter.subtitle && (
-                  <em>{post.frontmatter.subtitle}</em>
-                )}
-                {!post.frontmatter.subtitle && (
-                  <>
-                  &nbsp;
-                  </>
-                )}
-              </h2>
-              <p className="hidden not-italic md:block md:text-2xl xb:text-4xl tracking-tight md:text-base md:mt-8 mb-6 text-white">{post.frontmatter.description}</p>
-              <p className="text-base xb:text-lg text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
-                <span style={{ fontVariant: "small-caps" }}>published:</span>&nbsp; <strong>{post.frontmatter.date}</strong><br />
-                <span className="text-sm">
-                  <span style={{ fontVariant: "small-caps" }}>{lastModIntro}</span>&nbsp; {lastModText}
-                </span>
-              </p>
-              <p className="text-center text-white text-xs mt-4 mb-0 md:mb-1 pb-1">
-                {post.frontmatter.featured_image_caption && (
-                  post.frontmatter.featured_image_caption
-                )}
-                {!post.frontmatter.featured_image_caption && (
-                  <>
-                  &nbsp;
-                  </>
-                )}
-              </p>
+            <h1 className="text-center text-4xl md:text-left md:text-5xl lg:text-6xl xb:text-8xl tracking-tight leading-tight mb-6 px-4 md:px-0 text-white">{post.frontmatter.title}</h1>
+            <h2 class="italic text-center text-2xl md:text-left md:text-3xl lg:text-5xl xb:text-6xl leading-tight tracking-tight px-6 md:px-0 text-white">
+              {post.frontmatter.subtitle && (
+                <em>{post.frontmatter.subtitle}</em>
+              )}
+              {!post.frontmatter.subtitle && (
+                <>
+                &nbsp;
+                </>
+              )}
+            </h2>
+            <p className="hidden not-italic md:block md:text-2xl xb:text-4xl tracking-tight md:text-base md:mt-8 mb-6 text-white">{post.frontmatter.description}</p>
+            <p className="text-base xb:text-lg text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
+              <span style={{ fontVariant: "small-caps" }}>published:</span>&nbsp; <strong>{post.frontmatter.date}</strong><br />
+              <span className="text-sm">
+                <span style={{ fontVariant: "small-caps" }}>{lastModIntro}</span>&nbsp; {lastModText}
+              </span>
+            </p>
+            <p className="text-center text-white text-xs mt-4 mb-0 md:mb-1 pb-1">
+              {post.frontmatter.featured_image_caption && (
+                post.frontmatter.featured_image_caption
+              )}
+              {!post.frontmatter.featured_image_caption && (
+                <>
+                &nbsp;
+                </>
+              )}
+            </p>
           </div>
         </div>
       </BackgroundImage>
