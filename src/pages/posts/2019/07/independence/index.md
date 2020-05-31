@@ -7,8 +7,8 @@ date: 2019-07-06T10:38:00
 lastmod: 2020-01-31T14:27:00-06:00
 discussionId: "2019-07-independence"
 featured_image: 1984-07-11_01_retouched_1280x720.jpg
-featured_image_alt: Me, in 1984, eagerly wrapping my new Macintosh.
-featured_image_caption: "July 11, 1984: A much younger and skinnier me eagerly unwraps my new “Skinny Mac.” (Photo by my overly tolerant spouse.)" # quotation marks to allow colon
+featured_image_alt: "Bryce Wray, in 1984, unwrapping his new Macintosh computer."
+featured_image_caption: "July 11, 1984: A much younger and skinnier me eagerly unwraps my new “Skinny Mac.” (Photo by my overly tolerant spouse.)"
 ---
 
 This most recent Fourth of July was the 243rd anniversary of the *signing* of the Declaration of Independence---not the actual small-d declaration itself, which actually was [two days earlier](https://www.archives.gov/press/press-releases/2005/nr05-83.html), as all we American history nerds know.

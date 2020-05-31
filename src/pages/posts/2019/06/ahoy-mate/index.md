@@ -6,6 +6,9 @@ description: "My last post notwithstanding, “the geek’s prerogative” makes
 date: 2019-06-08T20:25:00
 lastmod: 2019-07-25T19:05:00
 discussionId: "2019-06-ahoy-mate"
+featured_image: MailMate_screen_cap_1280x720.jpg
+featured_image_alt: Screen capture of the MailMate app
+featured_image_caption: "Image: Screen capture of MailMate, with its Latin-displaying “distortion mode” engaged for privacy’s sake" # quotation marks to allow colon
 oldComments: |
     <div class="webmentions">
       <h3 class="ctr">Comments</h3>
