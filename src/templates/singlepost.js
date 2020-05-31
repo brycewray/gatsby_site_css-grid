@@ -6,6 +6,7 @@ import SvgLinkedInIcon from "../assets/svg/svgLinkedInIcon.svg"
 import SvgRSSIcon from "../assets/svg/svgRSSIcon.svg"
 import SvgFooterIcon from "../assets/svg/svgFooterIcon.svg"
 import { Link, graphql } from 'gatsby'
+import BackgroundImage from 'gatsby-background-image'
 import LayoutSinglePost from "../components/layout-singlepost"
 import SEO from '../components/seo'
 import Header from '../components/header'
@@ -23,8 +24,24 @@ export const query = graphql`
         subtitle
         date(formatString: "MMMM D, YYYY")
         lastmod(formatString: "MMMM D, YYYY")
-        discussionId
         oldComments
+        featured_image {
+          childImageSharp {
+            fluid(maxWidth: 1280) {
+              ...GatsbyImageSharpFluid
+            }
+            resize(width: 1280) {
+              src
+              width
+              height
+              aspectRatio
+              originalName
+            }
+          }
+        }
+        featured_image_alt
+        featured_image_caption
+        discussionId
       }
       html
     }
@@ -140,6 +157,8 @@ const singlePostTemplate = ({ data, pageContext }) => {
   const mentions = data.mentionsQuery.edges
   
   const { previous, next, urlToCheck } = pageContext
+
+  let featuredImageFluid = post.frontmatter.featured_image.childImageSharp.fluid
   var lastModIntro, lastModText /* null unless there's a lastmod */
   if (post.frontmatter.lastmod) {
     lastModIntro = "last modified:";
@@ -149,35 +168,55 @@ const singlePostTemplate = ({ data, pageContext }) => {
   return (
     <>
     <SEO 
-    title={post.frontmatter.title} 
-    description={post.frontmatter.description}
+      title={post.frontmatter.title} 
+      description={post.frontmatter.description} 
+      image={post.frontmatter.featured_image.childImageSharp.resize.src}
     />
     <Header />
     <LayoutSinglePost>
-      <div className="container h-auto w-full min-w-full relative overflow-hidden gradient-titles pt-24 pb-6 px-4 md:px-12 xb:px-20">
-        <h1 className="text-center text-4xl md:text-left md:text-5xl lg:text-6xl xb:text-8xl tracking-tight leading-tight mb-6 px-4 md:px-0 text-white">{post.frontmatter.title}</h1>
-        <h2 className="italic text-center text-2xl md:text-left md:text-3xl lg:text-5xl xb:text-6xl leading-tight tracking-tight px-6 md:px-0 text-white">
-        {post.frontmatter.subtitle && (
-          <em>{post.frontmatter.subtitle}</em>
-        )}
-        {!post.frontmatter.subtitle && (
-          <>
-          &nbsp;
-          </>
-        )}
-        </h2>
-        <p className="hidden not-italic md:block md:text-2xl xb:text-4xl tracking-tight md:text-base md:mt-8 mb-6 text-white">{post.frontmatter.description}</p>
-        <p className="text-base xb:text-lg text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
-          <span style={{ fontVariant: "small-caps" }}>published:</span>&nbsp; <strong>{post.frontmatter.date}</strong><br />
-          <span className="text-sm">
-          <span style={{ fontVariant: "small-caps" }}>{lastModIntro}</span>&nbsp; {lastModText}
-          </span>
-        </p>
-      </div>
+      <BackgroundImage
+        fluid={featuredImageFluid} 
+        className="background-hero-div" 
+        alt={post.frontmatter.featured_image_alt}
+      >
+        <div className="background-hero-title-block">
+          <div class="background-hero-title-text">
+              <h1 className="text-center text-4xl md:text-left md:text-5xl lg:text-6xl xb:text-8xl tracking-tight leading-tight mb-6 px-4 md:px-0 text-white">{post.frontmatter.title}</h1>
+              <h2 class="italic text-center text-2xl md:text-left md:text-3xl lg:text-5xl xb:text-6xl leading-tight tracking-tight px-6 md:px-0 text-white">
+                {post.frontmatter.subtitle && (
+                  <em>{post.frontmatter.subtitle}</em>
+                )}
+                {!post.frontmatter.subtitle && (
+                  <>
+                  &nbsp;
+                  </>
+                )}
+              </h2>
+              <p className="hidden not-italic md:block md:text-2xl xb:text-4xl tracking-tight md:text-base md:mt-8 mb-6 text-white">{post.frontmatter.description}</p>
+              <p className="text-base xb:text-lg text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
+                <span style={{ fontVariant: "small-caps" }}>published:</span>&nbsp; <strong>{post.frontmatter.date}</strong><br />
+                <span className="text-sm">
+                  <span style={{ fontVariant: "small-caps" }}>{lastModIntro}</span>&nbsp; {lastModText}
+                </span>
+              </p>
+              <p className="text-center text-white text-xs mt-4 mb-0 md:mb-1 pb-1">
+                {post.frontmatter.featured_image_caption && (
+                  post.frontmatter.featured_image_caption
+                )}
+                {!post.frontmatter.featured_image_caption && (
+                  <>
+                  &nbsp;
+                  </>
+                )}
+              </p>
+          </div>
+        </div>
+      </BackgroundImage>
       <div className="sm:w-5/6 md:w-4/5 xl:w-1/2 xb:w-5/12 mt-10 mr-auto ml-auto px-6 lg:px-16">
         <article dangerouslySetInnerHTML={{ __html: post.html }}>
         </article>
       </div>
+      
 
       {post.frontmatter.oldComments && (
         <div dangerouslySetInnerHTML={{ __html: post.frontmatter.oldComments }} />
