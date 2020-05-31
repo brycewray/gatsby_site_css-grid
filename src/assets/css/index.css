@@ -123,16 +123,22 @@ h5, .h5, h6, .h6 {
   @apply object-cover object-center h-full w-full;
 }
 
+.background-hero-div {
+  background: linear-gradient(
+    rgba(0,0,170,1.00),
+    rgba(0,0,0,1.00)
+  );
+  @apply bg-no-repeat bg-center bg-cover relative pb-2;
+  height: 95vh;
+}
+
 .background-hero-image-div {
   @apply relative overflow-hidden w-full;
   /* Have to allow for mobile browsers' own "chrome"; can't go by Inspector simulations of smaller breakpoints */
-  height: 80vh;
-  max-height: 80vh;
 }
 
 .background-hero-title-block {
-  @apply block w-full;
-  bottom: 0;
+  @apply block w-full absolute bottom-0;
   background: linear-gradient (
     rgba(0, 0, 0, 0.00),
     rgba(0, 0, 0, 1.00)
