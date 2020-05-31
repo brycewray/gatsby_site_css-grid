@@ -21,7 +21,7 @@ const HomeLayout = ({ children }) => {
         </div>
         <div className="col-span-2 border-black border-t lg:border-0 pt-4 lg:pt-0">
           <h2 className="h1 mb-4">
-            <Link to="/posts">Posts</Link>
+            Recent <Link to="/posts">posts</Link>
           </h2>
           <PostsListHome />
         </div>
