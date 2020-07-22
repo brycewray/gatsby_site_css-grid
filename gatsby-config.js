@@ -163,7 +163,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-netlify-cache`,
     {
       resolve: `gatsby-plugin-html-attributes`,
       options: {
@@ -192,22 +191,6 @@ module.exports = {
         rule: {
           include: /\.svg$/
         },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-fonts-v2`,
-      options: {
-        fonts: [
-          {
-            family: 'Roboto Mono',
-            weights: ['400'],
-          },
-          {
-            family: 'Public Sans',
-            variable: true,
-            weights: ['400..700', '400..700'], // former is normal 400-700, latter is italic 400-700
-          }
-        ],
       },
     },
   ],
