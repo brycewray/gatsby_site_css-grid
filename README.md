@@ -1,6 +1,6 @@
 # Repo for brycewray.com
 
-This is the repository from which a shortened, [Gatsby](https://gatsbyjs.org)-generated version of [brycewray.com](https://brycewray.com) is built. Please note that this is just as an example; the **real** site, with **all** the site posts, is done in [Eleventy](https://11ty.dev).
+This is the repository from which a shortened, [Gatsby](https://gatsbyjs.org)-generated version of [brycewray.com](https://brycewray.com) is built.
 
 ## Not *(exactly)* a starter kit, but&nbsp;.&nbsp;.&nbsp;.
 
